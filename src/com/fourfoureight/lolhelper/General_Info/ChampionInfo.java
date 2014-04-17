@@ -42,6 +42,9 @@ private SpellInfo spells [];
 //Icons
 private String image;
 
+//Attributes
+private int attributes [];
+
 //We need to figure out how we will be displaying the champion image: URL or storing the image in our app
 //Note: Any setter with a Growth input. The Growth input is the increase in
 //that stat per level (or the extra number next to the stat on the wiki page)
@@ -164,6 +167,18 @@ public void setImagePath(String path)
 {
 	image = path;
 }
+public void setAttributes(int att [])
+{
+	attributes = new int[att.length];
+
+	for(int i = 0; i < attributes.length; i++)
+	{
+		attributes[i] = att[i];
+	}
+}
+
+
+
 
 //getters for names/titles
 public String getName()
@@ -323,4 +338,12 @@ public String getImagePath()
 {
 	return image;
 }
+
+//TeamBuilder Attributes
+public int[] getAttributes()
+{
+	return attributes;
+}
+
+
 }
