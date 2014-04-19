@@ -44,6 +44,12 @@ public class ChampionSelect extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	@Override
+	public void onBackPressed() {
+		Intent intent = new Intent(this, MainActivity.class);
+    	startActivity(intent);
+	}
 
 	/**
 	 * A placeholder fragment containing a simple view.
@@ -65,12 +71,12 @@ public class ChampionSelect extends ActionBarActivity {
     public void ingame(View view) {
     	Intent intent = new Intent(this, InGame.class);
     	startActivity(intent);
-    	finish();
     }
     
     /** Called when the user clicks the Champion Select button */
     public void championselect(View view) {
-    	finish();
+    	Intent intent = new Intent(this, MainActivity.class);
+    	startActivity(intent);
     }
     
     public void teambuilder(View view) {
@@ -83,18 +89,21 @@ public class ChampionSelect extends ActionBarActivity {
     	startActivity(intent);
     }
     
+    public void ultimateBravery(View view) {
+    	Intent intent = new Intent(this, UltimateBravery.class);
+    	startActivity(intent);
+    }
+    
     /** Called when the user clicks the Post Game button */
     public void postgame(View view) {
     	Intent intent = new Intent(this, PostGame.class);
     	startActivity(intent);
-    	finish();
     }
     
     /** Called when the user clicks the General Info button */
     public void generalinfo(View view) {
     	Intent intent = new Intent(this, GeneralInfo.class);
     	startActivity(intent);
-    	finish();
     }
     
     /** Called when the user clicks the Options button */

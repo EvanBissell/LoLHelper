@@ -10,45 +10,51 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.fourfoureight.lolhelper.MainActivity$PlaceholderFragment" >
 
+    
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/expand_down"
         android:layout_weight="1"
         android:onClick="ingame"
-        android:text="In Game" />
+        android:text="@string/in_game" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/expand_down"
         android:layout_weight="1"
         android:onClick="championselect"
-        android:text="Champion Select" />
+        android:text="@string/champion_select" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/player_stats"
         android:layout_weight="1"
-        android:onClick="postgame"
-        android:text="Post Game" />
+        android:onClick="playerstats"
+        android:text="@string/player_stats" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/expand_down"
         android:layout_weight="1"
         android:onClick="generalinfo"
-        android:text="General Info" />
+        android:text="@string/general_info" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/options"
         android:layout_weight="1"
         android:onClick="options"
-        android:text="Options" />
+        android:text="@string/options" />
     
       <LinearLayout
 	        android:layout_width="match_parent"

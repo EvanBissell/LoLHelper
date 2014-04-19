@@ -78,6 +78,10 @@
             android:name="com.fourfoureight.lolhelper.BuildScreen"
             android:label="@string/title_activity_build_screen" >
         </activity>
+        <activity
+            android:name="com.fourfoureight.lolhelper.UltimateBravery"
+            android:label="@string/title_activity_ultimate_bravery" >
+        </activity>
     </application>
 
 </manifest>

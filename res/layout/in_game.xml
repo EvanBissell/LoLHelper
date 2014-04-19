@@ -10,47 +10,47 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|fill"
-        android:text="In Game" />
+        android:text="@string/in_game" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|fill_horizontal"
-        android:text="Match Info" />
+        android:text="@string/match_info" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|fill_horizontal"
-        android:text="Build Guides" />
+        android:text="@string/build_guides" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|fill_horizontal"
-        android:text="Champion Select" />
+        android:text="@string/champion_select" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|fill_horizontal"
-        android:text="Post Game" />
+        android:text="@string/post_game" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|fill_horizontal"
-        android:text="General Info" />
+        android:text="@string/general_info" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Options" />
+        android:text="@string/options" />
 
 </LinearLayout>

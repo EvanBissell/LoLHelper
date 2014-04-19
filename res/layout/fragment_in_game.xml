@@ -14,14 +14,15 @@
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/expand_up"
         android:layout_weight="1"
         android:onClick="ingame"
-        android:text="In Game" />
+        android:text="@string/in_game" />
 
 	    <LinearLayout
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:layout_weight="2"
+	        android:layout_weight="1"
 	        android:orientation="horizontal" >
 	        	<LinearLayout
 	        	    android:layout_width="match_parent"
@@ -29,7 +30,7 @@
 		            android:layout_weight="4"
 		            android:orientation="vertical" ></LinearLayout>
 
-		       <LinearLayout
+		      <LinearLayout
 		           android:layout_width="match_parent"
 		           android:layout_height="match_parent"
 		           android:layout_weight="1"
@@ -39,19 +40,12 @@
 		               android:id="@+id/button3"
 		               android:layout_width="match_parent"
 		               android:layout_height="0dp"
-		               android:layout_centerVertical="true"
+		               android:drawableLeft="@drawable/build_guides"
 		               android:layout_weight="1"
 		               android:onClick="buildguides"
-		               android:text="Build Guides" />
+		               android:text="@string/build_guides" />
 
-		           <Button
-		               android:id="@+id/button2"
-		               android:layout_width="match_parent"
-		               android:layout_height="0dp"
-		               android:layout_centerVertical="true"
-		               android:layout_weight="1"
-		               android:onClick="matchinfo"
-		               android:text="Match Info" />
+
 		       </LinearLayout>
 
 	    </LinearLayout>
@@ -60,32 +54,36 @@
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/expand_down"
         android:layout_weight="1"
         android:onClick="championselect"
-        android:text="Champion Select" />
+        android:text="@string/champion_select" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/expand_down"
         android:layout_weight="1"
         android:onClick="postgame"
-        android:text="Post Game" />
+        android:text="@string/post_game" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/expand_down"
         android:layout_weight="1"
         android:onClick="generalinfo"
-        android:text="General Info" />
+        android:text="@string/general_info" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/options"
         android:layout_weight="1"
         android:onClick="options"
-        android:text="Options" />
+        android:text="@string/options" />
 
 </LinearLayout>
