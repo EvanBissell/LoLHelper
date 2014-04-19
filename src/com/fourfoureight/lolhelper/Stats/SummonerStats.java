@@ -24,10 +24,10 @@ public class SummonerStats {
 			JsonObject  jsonSummary = jsonSummaries.getJsonObject(i);
 			String      summaryType = jsonSummary.get("playerStatSummaryType").toString();
 			StatSummary statSummary = new StatSummary(summaryType);
-			
+
 			for (Entry<String, JsonValue> entry : jsonSummary.entrySet()) {
 				statSummary.addStat(entry.getKey().replace("\"", "")
-				                   ,entry.getValue().toString());
+				                   ,new Stat(entry.getValue()));
 			}
 			
 			// Remove double quotes from around summary types

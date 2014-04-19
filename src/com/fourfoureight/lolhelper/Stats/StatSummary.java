@@ -4,23 +4,23 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class StatSummary {
-	private String              summaryType;
-	private Map<String, String> stats;
+	private String            summaryType;
+	private Map<String, Stat> stats;
 	
 	public StatSummary(String summaryType) {
 		this.summaryType = summaryType;
-		this.stats       = new HashMap<String, String>();
+		this.stats       = new HashMap<String, Stat>();
 	}
 	
 	public String getSummaryType() {
 		return summaryType;
 	}
 	
-	public Map<String, String> getStats() {
+	public Map<String, Stat> getStats() {
 		return stats;
 	}
 	
-	public void addStat(String name, String stat) {
+	public void addStat(String name, Stat stat) {
 		stats.put(name, stat);
 	}
 	
