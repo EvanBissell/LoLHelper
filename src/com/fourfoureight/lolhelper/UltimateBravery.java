@@ -1,5 +1,9 @@
 package com.fourfoureight.lolhelper;
 
+import java.util.Random;
+
+import com.fourfoureight.lolhelper.General_Info.items;
+
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -9,6 +13,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.os.Build;
 
 public class UltimateBravery extends ActionBarActivity {
@@ -20,13 +26,13 @@ public class UltimateBravery extends ActionBarActivity {
 
 
 
-	int champIcon,viktorItem,item1,item2,item3,item4,item5,item6;
+//	int champIcon,viktorItem,item1,item2,item3,item4,item5,item6;
 
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+//	@Override
+//	protected void onCreate(Bundle savedInstanceState) {
+//		super.onCreate(savedInstanceState);
+//		setContentView(R.layout.activity_main);
 
 		items.runMain();
 		
@@ -36,7 +42,7 @@ public class UltimateBravery extends ActionBarActivity {
 			public void onClick(View v)
 			{
 
-				
+				int champIcon,viktorItem,item1,item2,item3,item4,item5,item6;				
 				
 				
 				champIcon = getChampionIcon(); //champion selector
