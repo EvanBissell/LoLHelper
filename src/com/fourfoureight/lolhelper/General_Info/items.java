@@ -1,3 +1,5 @@
+package com.fourfoureight.lolhelper.General_Info;
+
 import java.util.Random;
 
 

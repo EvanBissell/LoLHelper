@@ -1,3 +1,5 @@
+package com.fourfoureight.lolhelper.General_Info;
+
 public class ChampionInfo {
 
 // Name, Title, and Roles

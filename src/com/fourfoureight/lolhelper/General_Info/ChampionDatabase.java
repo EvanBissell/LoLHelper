@@ -1,7 +1,10 @@
+package com.fourfoureight.lolhelper.General_Info;
+
+
 public class ChampionDatabase {
 
 
-	private ChampionInfo champions = new ChampionInfo[118];
+	private ChampionInfo[] champions = new ChampionInfo[118];
 
 	public ChampionDatabase()
 	{
@@ -158,7 +161,7 @@ public class ChampionDatabase {
 		Cassiopeia.setRange(550, "Ranged");
 		Cassiopeia.setMoveSpeed(335);
 		Cassiopeia.setHealthInfo(380, 75, 4.85, 0.5);
-		Cassiopeia.setManaInfo(250, 50, 7.1, 0.75, "Mana";
+		Cassiopeia.setManaInfo(250, 50, 7.1, 0.75, "Mana");
 	        Cassiopeia.setMagicRes(30, 0);
 
 		ChampionInfo ChoGath = new ChampionInfo();
@@ -171,7 +174,7 @@ public class ChampionDatabase {
 		ChoGath.setRange(125, "Melee");
 		ChoGath.setMoveSpeed(345);
 		ChoGath.setHealthInfo(440, 80, 7.5, 0.85);
-		ChoGath.setManaInfo(205, 40, 6.45, 0.45, 30, 1.25);
+//		ChoGath.setManaInfo(205, 40, 6.45, 0.45, 30, 1.25);
 	        ChoGath.setMagicRes(30, 1.25);
 
 		ChampionInfo Corki = new ChampionInfo();
@@ -1069,6 +1072,7 @@ public class ChampionDatabase {
 		 * 
 		*/
 		
+		SpellDatabase sd = new SpellDatabase();
 		
 		ChampionInfo Shen = new ChampionInfo();
 		Shen.setNameTitle("Shen", "Eye of Twilight");
@@ -1082,7 +1086,7 @@ public class ChampionDatabase {
 		Shen.setHealthInfo(428, 85, 7.45, 0.55);
 		Shen.setManaInfo(200, 0, 50, 0, "Energy");
 		Shen.setMagicRes(30, 0);
-		Shen.setSpells(champSpells[78]);
+		Shen.setSpells(sd.champSpells[78]);
 		//Which Size image do we want?  Should we use two: one for list and one for main page?
 		Shen.setImagePath("http://img2.wikia.nocookie.net/__cb20100319000456/leagueoflegends/images/d/d3/ShenSquare.png");
 		//Shen.setImagePath("http://img2.wikia.nocookie.net/__cb20100319000456/leagueoflegends/images/thumb/d/d3/ShenSquare.png/48px-ShenSquare.png");
@@ -1100,7 +1104,7 @@ public class ChampionDatabase {
 		Shyvana.setHealthInfo(435, 95, 7.25, 0.8);
 		Shyvana.setManaInfo(100, 0, 0, 0, "Fury");  // How do we handle lack of info?
 		Shyvana.setMagicRes(30, 1.25);
-		Shyvana.setSpells(champSpells[79]);
+		Shyvana.setSpells(sd.champSpells[79]);
 		Shyvana.setImagePath("http://img1.wikia.nocookie.net/__cb20111101205452/leagueoflegends/images/f/f6/ShyvanaSquare.png");
 		
 		ChampionInfo Singed = new ChampionInfo();
@@ -1115,7 +1119,7 @@ public class ChampionDatabase {
 		Singed.setHealthInfo(405, 82, 7.1, 0.55);
 		Singed.setManaInfo(215, 45, 6.6, 0.55, "Mana");
 		Singed.setMagicRes(30, 0);
-		Singed.setSpells(champSpells[80]);
+		Singed.setSpells(sd.champSpells[80]);
 		Singed.setImagePath("http://img3.wikia.nocookie.net/__cb20091218195328/leagueoflegends/images/9/96/SingedSquare.png");
 		
 		ChampionInfo Sion = new ChampionInfo();
@@ -1130,7 +1134,7 @@ public class ChampionDatabase {
 		Sion.setHealthInfo(403, 104, 7.9, 0.95);
 		Sion.setManaInfo(200, 40, 6.3, 0.4, "Mana");
 		Sion.setMagicRes(30, 1.25);
-		Sion.setSpells(champSpells[81]);
+		Sion.setSpells(sd.champSpells[81]);
 		Sion.setImagePath("http://img3.wikia.nocookie.net/__cb20091218195336/leagueoflegends/images/6/61/SionSquare.png");
 		
 		ChampionInfo Sivir = new ChampionInfo();
@@ -1145,7 +1149,7 @@ public class ChampionDatabase {
 		Sivir.setHealthInfo(378, 82, 4.25, 0.55);
 		Sivir.setManaInfo(203, 43, 6.5, 0.5, "Mana");
 		Sivir.setMagicRes(30, 0);
-		Sivir.setSpells(champSpells[82]);
+		Sivir.setSpells(sd.champSpells[82]);
 		Sivir.setImagePath("http://img1.wikia.nocookie.net/__cb20131124195956/leagueoflegends/images/e/e1/SivirSquare.png");
 		
 		ChampionInfo Skarner = new ChampionInfo();
@@ -1160,7 +1164,7 @@ public class ChampionDatabase {
 		Skarner.setHealthInfo(440, 96, 7.5, 0.85);
 		Skarner.setManaInfo(205, 40, 6.45, 0.45, "Mana");
 		Skarner.setMagicRes(30, 1.25);
-		Skarner.setSpells(champSpells[83]);
+		Skarner.setSpells(sd.champSpells[83]);
 		Skarner.setImagePath("http://img1.wikia.nocookie.net/__cb20110809201431/leagueoflegends/images/8/80/SkarnerSquare.png");
 		
 		ChampionInfo Sona = new ChampionInfo();
@@ -1175,7 +1179,7 @@ public class ChampionDatabase {
 		Sona.setHealthInfo(380, 70, 4.5, 0.55);
 		Sona.setManaInfo(265, 45, 7, 0.65, "Mana");
 		Sona.setMagicRes(30, 0);
-		Sona.setSpells(champSpells[84]);
+		Sona.setSpells(sd.champSpells[84]);
 		Sona.setImagePath("http://img2.wikia.nocookie.net/__cb20130329041042/leagueoflegends/images/5/56/SonaSquare.png");
 		
 		ChampionInfo Soraka = new ChampionInfo();
@@ -1190,7 +1194,7 @@ public class ChampionDatabase {
 		Soraka.setHealthInfo(405, 76, 4.5, 0.55);
 		Soraka.setManaInfo(240, 60, 6.8, 0.65, "Mana");
 		Soraka.setMagicRes(30, 0);
-		Soraka.setSpells(champSpells[85]);
+		Soraka.setSpells(sd.champSpells[85]);
 		Soraka.setImagePath("http://img4.wikia.nocookie.net/__cb20140124030744/leagueoflegends/images/8/8d/SorakaSquare.png");
 		
 		ChampionInfo Swain = new ChampionInfo();
@@ -1205,7 +1209,7 @@ public class ChampionDatabase {
 		Swain.setHealthInfo(385, 78, 6.75, 0.65);
 		Swain.setManaInfo(240, 50, 6.8, 0.65, "Mana");
 		Swain.setMagicRes(30, 0);
-		Swain.setSpells(champSpells[86]);
+		Swain.setSpells(sd.champSpells[86]);
 		Swain.setImagePath("http://img2.wikia.nocookie.net/__cb20101005195413/leagueoflegends/images/8/8c/SwainSquare.png");
 		
 		ChampionInfo Syndra = new ChampionInfo();
@@ -1220,7 +1224,7 @@ public class ChampionDatabase {
 		Syndra.setHealthInfo(380, 78, 5.5, 0.6);
 		Syndra.setManaInfo(250, 50, 6.9, 0.6, "Mana");
 		Syndra.setMagicRes(30, 0);
-		Syndra.setSpells(champSpells[87]);
+		Syndra.setSpells(sd.champSpells[87]);
 		Syndra.setImagePath("http://img4.wikia.nocookie.net/__cb20120828063438/leagueoflegends/images/6/65/SyndraSquare.png");
 		
 		ChampionInfo Talon = new ChampionInfo();
@@ -1235,7 +1239,7 @@ public class ChampionDatabase {
 		Talon.setHealthInfo(440, 85, 7.25, 0.75);
 		Talon.setManaInfo(260, 40, 6.75, 0.5, "Mana");
 		Talon.setMagicRes(30, 1.25);
-		Talon.setSpells(champSpells[88]);
+		Talon.setSpells(sd.champSpells[88]);
 		Talon.setImagePath("http://img1.wikia.nocookie.net/__cb20110825002740/leagueoflegends/images/f/f9/TalonSquare.png");
 		
 		ChampionInfo Taric = new ChampionInfo();
@@ -1250,7 +1254,7 @@ public class ChampionDatabase {
 		Taric.setHealthInfo(468, 90, 7.1, 0.5);
 		Taric.setManaInfo(255, 56, 4.1, 0.4, "Mana");
 		Taric.setMagicRes(30, 1.25);
-		Taric.setSpells(champSpells[89]);
+		Taric.setSpells(sd.champSpells[89]);
 		Taric.setImagePath("http://img1.wikia.nocookie.net/__cb20110613151120/leagueoflegends/images/c/c4/TaricSquare.png");
 		
 		ChampionInfo Teemo = new ChampionInfo();
@@ -1265,14 +1269,14 @@ public class ChampionDatabase {
 		Teemo.setHealthInfo(378, 82, 4.65, 0.65);
 		Teemo.setManaInfo(200, 40, 6.45, 0.45, "Mana");
 		Teemo.setMagicRes(30, 0);
-		Teemo.setSpells(champSpells[90]);
+		Teemo.setSpells(sd.champSpells[90]);
 		Teemo.setImagePath("http://img3.wikia.nocookie.net/__cb20140402021425/leagueoflegends/images/0/04/TeemoSquare.png");
 		
 		ChampionInfo Thresh = new ChampionInfo();
 		Thresh.setNameTitle("Thresh", "the Chain Warden");
 		Thresh.setTypes("Support", "Fighter");
 		Thresh.setInfo(5, 6, 6, 7);
-		Thresh.setAttackDam(46, 2,2);
+		Thresh.setAttackDam(46, 2.2);
 		Thresh.setAttackSpeed(0.625, 3.5);
 		Thresh.setArmor(16, 0);
 		Thresh.setRange(450, "Ranged");
@@ -1280,7 +1284,7 @@ public class ChampionDatabase {
 		Thresh.setHealthInfo(411, 89, 6, 0.55);
 		Thresh.setManaInfo(200, 44, 5, 0.7, "Mana");
 		Thresh.setMagicRes(30, 0);
-		Thresh.setSpells(champSpells[91]);
+		Thresh.setSpells(sd.champSpells[91]);
 		Thresh.setImagePath("http://img4.wikia.nocookie.net/__cb20130110021156/leagueoflegends/images/7/7b/ThreshSquare.png");
 		
 		ChampionInfo Tristana = new ChampionInfo();
@@ -1295,7 +1299,7 @@ public class ChampionDatabase {
 		Tristana.setHealthInfo(415, 82, 5.1, 0.65);
 		Tristana.setManaInfo(193, 32, 6.45, 0.45, "Mana");
 		Tristana.setMagicRes(30, 0);
-		Tristana.setSpells(champSpells[92]);
+		Tristana.setSpells(sd.champSpells[92]);
 		Tristana.setImagePath("http://img4.wikia.nocookie.net/__cb20091218195500/leagueoflegends/images/0/06/TristanaSquare.png");
 		
 		ChampionInfo Trundle = new ChampionInfo();
@@ -1310,7 +1314,7 @@ public class ChampionDatabase {
 		Trundle.setHealthInfo(455, 96, 8, 0.85);
 		Trundle.setManaInfo(206, 45, 6.5, 0.6, "Mana");
 		Trundle.setMagicRes(30, 1.25);
-		Trundle.setSpells(champSpells[93]);
+		Trundle.setSpells(sd.champSpells[93]);
 		Trundle.setImagePath("http://img2.wikia.nocookie.net/__cb20130430130154/leagueoflegends/images/c/c4/TrundleSquare.png");
 		
 		ChampionInfo Tryndamere = new ChampionInfo();
@@ -1325,7 +1329,7 @@ public class ChampionDatabase {
 		Tryndamere.setHealthInfo(461, 98, 7, 0.9);
 		Tryndamere.setManaInfo(100, 0, 0, 0, "Fury");
 		Tryndamere.setMagicRes(30, 1.25);
-		Tryndamere.setSpells(champSpells[94]);
+		Tryndamere.setSpells(sd.champSpells[94]);
 		Tryndamere.setImagePath("http://img2.wikia.nocookie.net/__cb20130216000820/leagueoflegends/images/5/5f/TryndamereSquare.png");
 		
 		ChampionInfo TwistedFate = new ChampionInfo();
@@ -1340,7 +1344,7 @@ public class ChampionDatabase {
 		TwistedFate.setHealthInfo(384, 82, 4.5, 0.6);
 		TwistedFate.setManaInfo(202, 38, 6.5, 0.5, "Mana");
 		TwistedFate.setMagicRes(30, 0);
-		TwistedFate.setSpells(champSpells[95]);
+		TwistedFate.setSpells(sd.champSpells[95]);
 		TwistedFate.setImagePath("http://img4.wikia.nocookie.net/__cb20121018075023/leagueoflegends/images/1/1f/TwistedFateSquare.png");
 		
 		ChampionInfo Twitch = new ChampionInfo();
@@ -1355,7 +1359,7 @@ public class ChampionDatabase {
 		Twitch.setHealthInfo(389, 81, 5, 0.6);
 		Twitch.setManaInfo(220, 40, 6.5, 0.45, "Mana");
 		Twitch.setMagicRes(30, 0);
-		Twitch.setSpells(champSpells[96]);
+		Twitch.setSpells(sd.champSpells[96]);
 		Twitch.setImagePath("http://img3.wikia.nocookie.net/__cb20110301211118/leagueoflegends/images/7/79/TwitchSquare.png");
 		
 		ChampionInfo Udyr = new ChampionInfo();
@@ -1370,7 +1374,7 @@ public class ChampionDatabase {
 		Udyr.setHealthInfo(427, 99, 7.45, 0.75);
 		Udyr.setManaInfo(220, 30, 6.75, 0.45, "Mana");
 		Udyr.setMagicRes(30, 1.25);
-		Udyr.setSpells(champSpells[97]);
+		Udyr.setSpells(sd.champSpells[97]);
 		Udyr.setImagePath("http://img1.wikia.nocookie.net/__cb20091218195656/leagueoflegends/images/d/d1/UdyrSquare.png");
 		
 		ChampionInfo Urgot = new ChampionInfo();
@@ -1385,7 +1389,7 @@ public class ChampionDatabase {
 		Urgot.setHealthInfo(437, 89, 5.5, 0.6);
 		Urgot.setManaInfo(220, 55, 7.5, 0.65, "Mana");
 		Urgot.setMagicRes(30, 0);
-		Urgot.setSpells(champSpells[98]);
+		Urgot.setSpells(sd.champSpells[98]);
 		Urgot.setImagePath("http://img4.wikia.nocookie.net/__cb20100821202313/leagueoflegends/images/8/88/UrgotSquare.png");
 		
 		ChampionInfo Varus = new ChampionInfo();
@@ -1400,7 +1404,7 @@ public class ChampionDatabase {
 		Varus.setHealthInfo(400, 82, 4.5, 0.55);
 		Varus.setManaInfo(250, 36, 6.5, 0.5, "Mana");
 		Varus.setMagicRes(30, 0);
-		Varus.setSpells(champSpells[99]);
+		Varus.setSpells(sd.champSpells[99]);
 		Varus.setImagePath("http://img4.wikia.nocookie.net/__cb20120425041212/leagueoflegends/images/c/c2/VarusSquare.png");
 		
 		ChampionInfo Vayne = new ChampionInfo();
@@ -1415,7 +1419,7 @@ public class ChampionDatabase {
 		Vayne.setHealthInfo(359, 83, 4.5, 0.55);
 		Vayne.setManaInfo(173, 35, 6.3, 0.4, "Mana");
 		Vayne.setMagicRes(30, 0);
-		Vayne.setSpells(champSpells[100]);
+		Vayne.setSpells(sd.champSpells[100]);
 		Vayne.setImagePath("http://img2.wikia.nocookie.net/__cb20110511160403/leagueoflegends/images/9/95/VayneSquare.png");
 		
 		ChampionInfo Veigar = new ChampionInfo();
@@ -1430,7 +1434,7 @@ public class ChampionDatabase {
 		Veigar.setHealthInfo(355, 82, 4.5, 0.55);
 		Veigar.setManaInfo(250, 55, 6.9, 0.6, "Mana");
 		Veigar.setMagicRes(30, 0);
-		Veigar.setSpells(champSpells[101]);
+		Veigar.setSpells(sd.champSpells[101]);
 		Veigar.setImagePath("http://img2.wikia.nocookie.net/__cb20110316004312/leagueoflegends/images/8/8f/VeigarSquare.png");
 		
 		ChampionInfo Velkoz = new ChampionInfo();
@@ -1445,7 +1449,7 @@ public class ChampionDatabase {
 		Velkoz.setHealthInfo(380, 76, 4.5, 0.55);
 		Velkoz.setManaInfo(250, 45, 7, 0.6, "Mana");
 		Velkoz.setMagicRes(30, 0);
-		Velkoz.setSpells(champSpells[102]);
+		Velkoz.setSpells(sd.champSpells[102]);
 		Velkoz.setImagePath("http://img1.wikia.nocookie.net/__cb20140214210400/leagueoflegends/images/0/05/Vel%27KozSquare.png");
 		
 		ChampionInfo Vi = new ChampionInfo();
@@ -1460,7 +1464,7 @@ public class ChampionDatabase {
 		Vi.setHealthInfo(440, 85, 7.5, 0.9);
 		Vi.setManaInfo(220, 45, 7, 0.65, "Mana");
 		Vi.setMagicRes(30, 1.25);
-		Vi.setSpells(champSpells[103]);
+		Vi.setSpells(sd.champSpells[103]);
 		Vi.setImagePath("http://img3.wikia.nocookie.net/__cb20121212052755/leagueoflegends/images/c/c0/ViSquare.png");
 		
 		ChampionInfo Viktor = new ChampionInfo();
@@ -1475,7 +1479,7 @@ public class ChampionDatabase {
 		Viktor.setHealthInfo(385, 78, 6.75, 0.65);
 		Viktor.setManaInfo(240, 50, 6.9, 0.45, "Mana");
 		Viktor.setMagicRes(30, 0);
-		Viktor.setSpells(champSpells[104]);
+		Viktor.setSpells(sd.champSpells[104]);
 		Viktor.setImagePath("http://img2.wikia.nocookie.net/__cb20111222172103/leagueoflegends/images/a/a3/ViktorSquare.png");
 		
 		ChampionInfo Vladimir = new ChampionInfo();
@@ -1490,7 +1494,7 @@ public class ChampionDatabase {
 		Vladimir.setHealthInfo(400, 85, 6, 0.6);
 		Vladimir.setManaInfo(0, 0, 0, 0, "Health"); // another tricky one
 		Vladimir.setMagicRes(30, 0);
-		Vladimir.setSpells(champSpells[105]);
+		Vladimir.setSpells(sd.champSpells[105]);
 		Vladimir.setImagePath("http://img4.wikia.nocookie.net/__cb20121025183912/leagueoflegends/images/7/75/VladimirSquare.png");
 		
 		ChampionInfo Volibear = new ChampionInfo();
@@ -1505,7 +1509,7 @@ public class ChampionDatabase {
 		Volibear.setHealthInfo(440, 86, 7, 0.65);
 		Volibear.setManaInfo(220, 30, 7, 0.65, "Mana");
 		Volibear.setMagicRes(30, 1.25);
-		Volibear.setSpells(champSpells[106]);
+		Volibear.setSpells(sd.champSpells[106]);
 		Volibear.setImagePath("http://img1.wikia.nocookie.net/__cb20111129224537/leagueoflegends/images/f/f9/VolibearSquare.png");
 		
 		ChampionInfo Warwick = new ChampionInfo(); 
@@ -1520,7 +1524,7 @@ public class ChampionDatabase {
 		Warwick.setHealthInfo(428, 98, 7.05, 0.8);
 		Warwick.setManaInfo(190, 30, 7.1, 0.6, "Mana");
 		Warwick.setMagicRes(30, 1.25);
-		Warwick.setSpells(champSpells[107]);
+		Warwick.setSpells(sd.champSpells[107]);
 		Warwick.setImagePath("http://img2.wikia.nocookie.net/__cb20120619100928/leagueoflegends/images/4/42/WarwickSquare.png");
 		
 		ChampionInfo Wukong = new ChampionInfo(); 
@@ -1535,7 +1539,7 @@ public class ChampionDatabase {
 		Wukong.setHealthInfo(435, 85, 5.1, 0.65);
 		Wukong.setManaInfo(202, 38, 6.95, 0.65, "Mana");
 		Wukong.setMagicRes(30, 1.25);
-		Wukong.setSpells(champSpells[108]);
+		Wukong.setSpells(sd.champSpells[108]);
 		Wukong.setImagePath("http://img2.wikia.nocookie.net/__cb20110731191412/leagueoflegends/images/6/6d/WukongSquare.png");
 		
 		ChampionInfo Xerath = new ChampionInfo(); 
@@ -1550,7 +1554,7 @@ public class ChampionDatabase {
 		Xerath.setHealthInfo(380, 80, 4.5, 0.55);
 		Xerath.setManaInfo(238, 47, 6, 0.65, "Mana");
 		Xerath.setMagicRes(30, 0);
-		Xerath.setSpells(champSpells[109]);
+		Xerath.setSpells(sd.champSpells[109]);
 		Xerath.setImagePath("http://img1.wikia.nocookie.net/__cb20140204123621/leagueoflegends/images/7/7a/XerathSquare.png");
 
 		ChampionInfo XinZhao = new ChampionInfo(); 
@@ -1565,7 +1569,7 @@ public class ChampionDatabase {
 		XinZhao.setHealthInfo(445, 87, 7, 0.7);
 		XinZhao.setManaInfo(215, 35, 6.5, 0.45, "Mana");
 		XinZhao.setMagicRes(30, 1.25);
-		XinZhao.setSpells(champSpells[110]);
+		XinZhao.setSpells(sd.champSpells[110]);
 		XinZhao.setImagePath("http://img2.wikia.nocookie.net/__cb20120619163755/leagueoflegends/images/b/bf/XinZhaoSquare.png");
 		
 		ChampionInfo Yasuo = new ChampionInfo(); 
@@ -1580,7 +1584,7 @@ public class ChampionDatabase {
 		Yasuo.setHealthInfo(430, 82, 5, 0.9);
 		Yasuo.setManaInfo(0, 0, 0, 0, "No Resource");
 		Yasuo.setMagicRes(30, 0);
-		Yasuo.setSpells(champSpells[111]);
+		Yasuo.setSpells(sd.champSpells[111]);
 		Yasuo.setImagePath("http://img3.wikia.nocookie.net/__cb20131213161007/leagueoflegends/images/c/c0/YasuoSquare.png");
 		
 		ChampionInfo Yorick = new ChampionInfo(); 
@@ -1595,7 +1599,7 @@ public class ChampionDatabase {
 		Yorick.setHealthInfo(421, 85, 7, 0.7);
 		Yorick.setManaInfo(235, 35, 6, 0.45, "Mana");
 		Yorick.setMagicRes(30, 1.25);
-		Yorick.setSpells(champSpells[112]);
+		Yorick.setSpells(sd.champSpells[112]);
 		Yorick.setImagePath("http://img2.wikia.nocookie.net/__cb20110622160122/leagueoflegends/images/d/d8/YorickSquare.png");
 		
 		ChampionInfo Zac = new ChampionInfo(); 
@@ -1610,7 +1614,7 @@ public class ChampionDatabase {
 		Zac.setHealthInfo(455, 95, 7, 0.55);
 		Zac.setManaInfo(0, 0, 0, 0, "Health");
 		Zac.setMagicRes(30, 1.25);
-		Zac.setSpells(champSpells[113]);
+		Zac.setSpells(sd.champSpells[113]);
 		Zac.setImagePath("http://img1.wikia.nocookie.net/__cb20130317162905/leagueoflegends/images/8/81/ZacSquare.png");
 		
 		ChampionInfo Zed = new ChampionInfo(); 
@@ -1625,7 +1629,7 @@ public class ChampionDatabase {
 		Zed.setHealthInfo(445, 80, 6, 0.65);
 		Zed.setManaInfo(200, 0, 50, 0, "Energy");
 		Zed.setMagicRes(30, 1.25);
-		Zed.setSpells(champSpells[114]);
+		Zed.setSpells(sd.champSpells[114]);
 		Zed.setImagePath("http://img4.wikia.nocookie.net/__cb20121102025349/leagueoflegends/images/b/bb/ZedSquare.png");
 		
 		ChampionInfo Ziggs = new ChampionInfo(); 
@@ -1640,7 +1644,7 @@ public class ChampionDatabase {
 		Ziggs.setHealthInfo(390, 80, 5.25, 0.6);
 		Ziggs.setManaInfo(250, 50, 6.75, 0.6, "Mana");
 		Ziggs.setMagicRes(30, 0);
-		Ziggs.setSpells(champSpells[115]);
+		Ziggs.setSpells(sd.champSpells[115]);
 		Ziggs.setImagePath("http://img1.wikia.nocookie.net/__cb20120201131554/leagueoflegends/images/5/55/ZiggsSquare.png");
 		
 		ChampionInfo Zilean = new ChampionInfo(); 
@@ -1655,7 +1659,7 @@ public class ChampionDatabase {
 		Zilean.setHealthInfo(380, 71, 4.6, 0.5);
 		Zilean.setManaInfo(260, 60, 6.95, 0.65, "Mana");
 		Zilean.setMagicRes(30, 0);
-		Zilean.setSpells(champSpells[116]);
+		Zilean.setSpells(sd.champSpells[116]);
 		Zilean.setImagePath("http://img2.wikia.nocookie.net/__cb20091218195802/leagueoflegends/images/a/ac/ZileanSquare.png");
 		
 		ChampionInfo Zyra = new ChampionInfo(); 
@@ -1670,12 +1674,12 @@ public class ChampionDatabase {
 		Zyra.setHealthInfo(355, 74, 4.85, 0.5);
 		Zyra.setManaInfo(250, 50, 7.1, 0.75, "Mana");
 		Zyra.setMagicRes(30,0);
-		Zyra.setSpells(champSpells[117]);
+		Zyra.setSpells(sd.champSpells[117]);
 		Zyra.setImagePath("http://img2.wikia.nocookie.net/__cb20121111132956/leagueoflegends/images/1/1a/ZyraSquare.png");
 		
 	}
 
-	public ChapmpionInfo[] getChampList()
+	public ChampionInfo[] getChampList()
 	{
 		return champions;
 	}
