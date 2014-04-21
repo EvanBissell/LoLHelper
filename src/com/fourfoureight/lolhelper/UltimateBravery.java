@@ -971,7 +971,11 @@ public class UltimateBravery extends ActionBarActivity {
 		
 	}
 	
-	
+	@Override
+	public void onBackPressed() {
+
+	    super.onBackPressed();
+	}
 
 	
 	//Method to get random champion. High must be 1 higher than the desired index

@@ -76,14 +76,14 @@
 
 	    </LinearLayout>
 
-    <Button
+  <Button
         android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/expand_down"
         android:layout_weight="1"
-        android:onClick="postgame"
-        android:text="@string/post_game" />
+        android:onClick="playerstats"
+        android:text="@string/player_stats" />
 
     <Button
         android:id="@+id/button6"

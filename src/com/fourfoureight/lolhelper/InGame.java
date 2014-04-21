@@ -17,7 +17,8 @@ public class InGame extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_in_game);
+		setContentView(R.layout.activity_in_game); 
+		getSupportActionBar().setTitle("LoL Helper > In Game");
 	}
 
 	@Override
@@ -57,6 +58,11 @@ public class InGame extends ActionBarActivity {
     	startActivity(intent);
     }
     
+    public void playerstats(View view) {
+    	Intent intent = new Intent(this, PlayerStats.class);
+    	startActivity(intent);
+    }
+    
     public void matchinfo(View view) {
     	Intent intent = new Intent(this, MatchInfo.class);
     	startActivity(intent);
@@ -64,12 +70,6 @@ public class InGame extends ActionBarActivity {
     
     public void buildguides(View view) {
     	Intent intent = new Intent(this, BuildGuides.class);
-    	startActivity(intent);
-    }
-    
-    /** Called when the user clicks the Post Game button */
-    public void postgame(View view) {
-    	Intent intent = new Intent(this, PostGame.class);
     	startActivity(intent);
     }
     

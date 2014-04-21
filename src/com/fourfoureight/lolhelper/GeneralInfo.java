@@ -68,9 +68,8 @@ public class GeneralInfo extends ActionBarActivity {
     	startActivity(intent);
     }
     
-    /** Called when the user clicks the Post Game button */
-    public void postgame(View view) {
-    	Intent intent = new Intent(this, PostGame.class);
+    public void playerstats(View view) {
+    	Intent intent = new Intent(this, PlayerStats.class);
     	startActivity(intent);
     }
     
