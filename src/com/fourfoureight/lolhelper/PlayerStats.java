@@ -18,11 +18,6 @@ public class PlayerStats extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_player_stats);
-
-		if (savedInstanceState == null) {
-			getSupportFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
-		}
 	}
 
 	@Override
@@ -50,22 +45,4 @@ public class PlayerStats extends ActionBarActivity {
 		Intent intent = new Intent(this, MainActivity.class);
     	startActivity(intent);
 	}
-
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-	public static class PlaceholderFragment extends Fragment {
-
-		public PlaceholderFragment() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_player_stats,
-					container, false);
-			return rootView;
-		}
-	}
-
 }

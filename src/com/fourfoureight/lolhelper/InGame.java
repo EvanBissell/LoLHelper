@@ -18,11 +18,6 @@ public class InGame extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_in_game);
-
-		if (savedInstanceState == null) {
-			getSupportFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
-		}
 	}
 
 	@Override
@@ -49,23 +44,6 @@ public class InGame extends ActionBarActivity {
 	public void onBackPressed() {
 		Intent intent = new Intent(this, MainActivity.class);
     	startActivity(intent);
-	}
-
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-	public static class PlaceholderFragment extends Fragment {
-
-		public PlaceholderFragment() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_in_game,
-					container, false);
-			return rootView;
-		}
 	}
 	
     public void ingame(View view) {

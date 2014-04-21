@@ -18,11 +18,6 @@ public class ChampionSelect extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_champion_select);
-
-		if (savedInstanceState == null) {
-			getSupportFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
-		}
 	}
 
 	@Override
@@ -49,23 +44,6 @@ public class ChampionSelect extends ActionBarActivity {
 	public void onBackPressed() {
 		Intent intent = new Intent(this, MainActivity.class);
     	startActivity(intent);
-	}
-
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-	public static class PlaceholderFragment extends Fragment {
-
-		public PlaceholderFragment() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_champion_select,
-					container, false);
-			return rootView;
-		}
 	}
 	
     public void ingame(View view) {

@@ -18,11 +18,6 @@ public class GeneralInfo extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_general_info);
-
-		if (savedInstanceState == null) {
-			getSupportFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
-		}
 	}
 
 	@Override
@@ -49,25 +44,7 @@ public class GeneralInfo extends ActionBarActivity {
 	public void onBackPressed() {
 		Intent intent = new Intent(this, MainActivity.class);
     	startActivity(intent);
-	}
-
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-	public static class PlaceholderFragment extends Fragment {
-
-		public PlaceholderFragment() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_general_info,
-					container, false);
-			return rootView;
-		}
-	}
-	
+	}	
     
     /** Called when the user clicks the In Game button */
     public void ingame(View view) {
