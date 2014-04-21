@@ -18,6 +18,7 @@ public class ChampionSelect extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_champion_select);
+		getSupportActionBar().setTitle("LoL Helper > Champion Select");
 	}
 
 	@Override
