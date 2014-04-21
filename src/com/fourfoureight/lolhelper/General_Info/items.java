@@ -42,6 +42,17 @@ public class items {
 		
 	}
 	
+	//Method to get a random item for Viktor (hexcore upgrades). High must be 1 higher than desired index
+	//VALID INDEXES ARE 0 TO 2
+	public static int getViktorItem(){
+		Random r = new Random();
+		int Low = 0;
+		int High = 3;
+		int R = r.nextInt(High-Low) + Low;
+		return R;
+		
+	}
+	
 	//Constructor, removed iconUrl
 	public items(String a, String c, String d, String e, String f, String g, String h, String i, String j, String k, String l, String m){
 		name = a;
