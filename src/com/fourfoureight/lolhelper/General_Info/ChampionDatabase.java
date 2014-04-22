@@ -283,7 +283,7 @@ public class ChampionDatabase {
 		Draven.setManaInfo(240, 42, 6.95, 0.65, "Mana");
 		Draven.setMagicRes(30, 0);
 		Draven.setSpells(champSpells[17]);
-		champions[17] = draven;
+		champions[17] = Draven;
 
 		ChampionInfo Elise = new ChampionInfo();
 		Elise.setNameTitle("Elise", "the Spider Queen");
