@@ -561,7 +561,6 @@ public class ChampionDatabase {
 		Kayle.setManaInfo(255, 40, 6.9, 0.525, "Mana");
 		Kayle.setMagicRes(30, 0);
 		Kayle.setSpells(champSpells[41]);
-		Kayle.setImagePath("http:img4.wikia.nocookie.net/__cb20110726183334/leagueoflegends/images/b/bd/KayleSquare.png");
 		Kayle.setAttributes(new int[]{10,20,20,20,10,0,0,0,10,10});
 		champions[41] = Kayle;
 		
