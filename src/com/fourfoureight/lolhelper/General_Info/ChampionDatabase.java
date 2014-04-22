@@ -8,6 +8,13 @@ public class ChampionDatabase {
 
 	public ChampionDatabase()
 	{
+		for(int i = 0; i < champSpells.length; i++)
+		{
+			champSpells[i] = spells.getSpellArray()[i];
+		}
+		
+		
+		
 		ChampionInfo Aatrox = new ChampionInfo();
 		Aatrox.setNameTitle("Aatrox", "the Darkin Blade");
 		Aatrox.setTypes("Fighter", "Tank");
