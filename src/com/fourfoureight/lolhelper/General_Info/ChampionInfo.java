@@ -41,8 +41,6 @@ private int magicAbility;
 //Spells
 private SpellInfo spells [];
 
-//Icons
-private String image;
 
 //Attributes
 private int attributes [];
@@ -165,10 +163,6 @@ public void setSpells(SpellInfo spellArray [] )
 	}
 }
 
-public void setImagePath(String path)
-{
-	image = path;
-}
 public void setAttributes(int att [])
 {
 	attributes = new int[att.length];
@@ -335,11 +329,6 @@ public SpellInfo[] getSpells()
 	return spells;
 }
 
-//Image
-public String getImagePath()
-{
-	return image;
-}
 
 //TeamBuilder Attributes
 public int[] getAttributes()
