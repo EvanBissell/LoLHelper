@@ -591,7 +591,7 @@ public class ChampionDatabase {
 		Katarina.setRange(125, "Melee");
 		Katarina.setMoveSpeed(345);
 		Katarina.setHealthInfo(425, 80, 6.95, 0.55);
-		Katarina.setManaInfo(0,0,0,0, null);
+		Katarina.setManaInfo(0,0,0,0, "No Resource");
 		Katarina.setMagicRes( 30, 1.25);
 		Katarina.setSpells(champSpells[40]);
 		Katarina.setAttributes(new int[]{20,0,0,10,20,0,0,0,10,0});
@@ -631,7 +631,7 @@ public class ChampionDatabase {
 		
 		ChampionInfo KhaZix= new ChampionInfo();
 		KhaZix.setNameTitle("Kha'Zix", "the Voidreaver");
-		KhaZix.setTypes("Assassin", null);
+		KhaZix.setTypes("Assassin", "");
 		KhaZix.setInfo(9, 4, 3, 7);
 		KhaZix.setAttackDam(50, 3.1);
 		KhaZix.setAttackSpeed(0.668, 2.7);
@@ -711,7 +711,7 @@ public class ChampionDatabase {
 		
 		ChampionInfo Lissandra = new ChampionInfo();
 		Lissandra.setNameTitle("Lissandra", "the Ice Witch");
-		Lissandra.setTypes("Mage", null);
+		Lissandra.setTypes("Mage", "");
 		Lissandra.setInfo(2, 5, 8, 8);
 		Lissandra.setAttackDam(48, 2.7);
 		Lissandra.setAttackSpeed(0.625, 1.36);
@@ -727,7 +727,7 @@ public class ChampionDatabase {
 		
 		ChampionInfo Lucian = new ChampionInfo();
 		Lucian.setNameTitle("Lucian", "the Purifier");
-		Lucian.setTypes("Marksman", null);
+		Lucian.setTypes("Marksman", "");
 		Lucian.setInfo(8, 5, 3, 8);
 		Lucian.setAttackDam(46, 3);
 		Lucian.setAttackSpeed(0.638, 3.3);
@@ -839,7 +839,7 @@ public class ChampionDatabase {
 		
 		ChampionInfo MissFortune = new ChampionInfo();
 		MissFortune.setNameTitle("Miss Fortune", "the Bounty Hunter");
-		MissFortune.setTypes("Marksman", null);
+		MissFortune.setTypes("Marksman", "");
 		MissFortune.setInfo(8, 2,5,3);
 		MissFortune.setAttackDam(46.5, 3);
 		MissFortune.setAttackSpeed(0.656, 3.01);
@@ -863,7 +863,7 @@ public class ChampionDatabase {
 		Mordekaiser.setRange(125, "Melee");
 		Mordekaiser.setMoveSpeed(340);
 		Mordekaiser.setHealthInfo(421, 80, 7.45, 0.55);
-		Mordekaiser.setManaInfo(0,0,0,0, null);
+		Mordekaiser.setManaInfo(0,0,0,0, "Uses Health");
 		Mordekaiser.setMagicRes(30, 1.25);
 		Mordekaiser.setSpells(champSpells[57]);
 		Mordekaiser.setAttributes(new int[]{10,0,0,10,10,0,0,0,10,10});
@@ -1119,7 +1119,7 @@ public class ChampionDatabase {
 		Riven.setRange(125,"Melee");
 		Riven.setMoveSpeed(345);
 		Riven.setHealthInfo(414,86,2.5,0.5);
-		Riven.setManaInfo(0,0,0,0, null);
+		Riven.setManaInfo(0,0,0,0, "No Resource");
 		Riven.setMagicRes(30, 1.25);
 		Riven.setSpells(champSpells[73]);
 		Riven.setAttributes(new int[]{20,0,0,20,10,20,0,0,20,10});
@@ -1175,7 +1175,7 @@ public class ChampionDatabase {
 		
 		ChampionInfo Shaco = new ChampionInfo();
 		Shaco.setNameTitle("Shaco", "the Demon Jester");
-		Shaco.setTypes("Assasin", null);
+		Shaco.setTypes("Assasin", "");
 		Shaco.setInfo(8, 4, 6, 9);
 		Shaco.setAttackDam(51.7,3.5);
 		Shaco.setAttackSpeed(0.694,3);
