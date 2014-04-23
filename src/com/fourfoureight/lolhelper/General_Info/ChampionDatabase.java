@@ -27,7 +27,7 @@ public class ChampionDatabase {
 		Aatrox.setRange(150, "Melee");
 		Aatrox.setMoveSpeed(345);
 		Aatrox.setHealthInfo(395, 85, 5.75, 0.5);
-		Aatrox.setManaInfo(0, 0, 0, 0, "Health"); //Uses Health as resource
+		Aatrox.setManaInfo(0, 0, 0, 0, "Uses Health"); //Uses Health as resource
 		Aatrox.setMagicRes(30, 1.25);
 		Aatrox.setSpells(champSpells[0]);
 		champions[0] = Aatrox;
@@ -267,7 +267,7 @@ public class ChampionDatabase {
 		DrMundo.setRange(125, "Melee");
 		DrMundo.setMoveSpeed(345);
 		DrMundo.setHealthInfo(433, 89, 6.5, 0.75);
-		DrMundo.setManaInfo(0, 0, 0, 0, "Health"); //Uses Health as resource
+		DrMundo.setManaInfo(0, 0, 0, 0, "Uses Health"); //Uses Health as resource
 	        DrMundo.setMagicRes(30, 1.25);
 	        DrMundo.setSpells(champSpells[16]);
 		champions[16] = DrMundo;
@@ -407,7 +407,7 @@ public class ChampionDatabase {
 		Garen.setRange(125, "Melee");
 		Garen.setMoveSpeed(345);
 		Garen.setHealthInfo(455, 96, 7, 0.5);
-		Garen.setManaInfo(0, 0, 0, 0, "Health"); //Uses Health as resource
+		Garen.setManaInfo(0, 0, 0, 0, "No Resource"); //Uses Health as resource
 		Garen.setMagicRes(30, 1.25);
 
 		ChampionInfo Gragas = new ChampionInfo();
@@ -1641,7 +1641,7 @@ public class ChampionDatabase {
 		Vladimir.setRange(450, "Ranged");
 		Vladimir.setMoveSpeed(335);
 		Vladimir.setHealthInfo(400, 85, 6, 0.6);
-		Vladimir.setManaInfo(0, 0, 0, 0, "Health"); // another tricky one
+		Vladimir.setManaInfo(0, 0, 0, 0, "Uses Health"); // another tricky one
 		Vladimir.setMagicRes(30, 0);
 		Vladimir.setSpells(champSpells[105]);
 		Vladimir.setAttributes(new int[] {0, 10, 10, 0, 20, 0, 0, 0, 10, 10});
@@ -1769,7 +1769,7 @@ public class ChampionDatabase {
 		Zac.setRange(125, "Melee");
 		Zac.setMoveSpeed(335);
 		Zac.setHealthInfo(455, 95, 7, 0.55);
-		Zac.setManaInfo(0, 0, 0, 0, "Health");
+		Zac.setManaInfo(0, 0, 0, 0, "Uses Health");
 		Zac.setMagicRes(30, 1.25);
 		Zac.setSpells(champSpells[113]);
 		Zac.setAttributes(new int[] {20, 10, 0, 20, 20, 20, 0, 20, 10, 10});
