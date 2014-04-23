@@ -70,7 +70,6 @@ public ChampionInfo()
 	difficulty = 0; 
 	magicAbility = 0; 
 	spells = null;
-	image = null;
 }
 
 
