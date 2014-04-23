@@ -5,7 +5,9 @@ public class ChampionDatabase {
 
 
 	private ChampionInfo[] champions = new ChampionInfo[118];
-
+	private SpellInfo[][] champSpells = new SpellInfo[118][];
+	private SpellDatabase spells = new SpellDatabase();
+	
 	public ChampionDatabase()
 	{
 		for(int i = 0; i < champSpells.length; i++)
