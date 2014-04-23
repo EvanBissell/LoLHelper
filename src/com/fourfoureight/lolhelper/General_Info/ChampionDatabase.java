@@ -1728,7 +1728,7 @@ public class ChampionDatabase {
 		Ziggs.setManaInfo(250, 50, 6.75, 0.6, "Mana");
 		Ziggs.setMagicRes(30, 0);
 		Ziggs.setSpells(champSpells[115]);
-		Ziggs.setAttributes(new int[] {10, 10, 20, C, 20, 0, 20, 0, 10, 10});
+		Ziggs.setAttributes(new int[] {10, 10, 20, 10, 20, 0, 20, 0, 10, 10});
 		champions[115] = Ziggs;
 		
 		ChampionInfo Zilean = new ChampionInfo(); 
