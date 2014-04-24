@@ -12,7 +12,6 @@ import javax.json.JsonReader;
 import javax.json.JsonValue;
 
 public class SummonerStats {
-	private String summonerId;
 	private Map<String, StatSummary> summaries;
 	
 	private void parseSummaries(Reader reader) {
@@ -35,14 +34,9 @@ public class SummonerStats {
 		}
 	}
 	
-	public SummonerStats(String summonerId, Reader reader) {
-		this.summonerId = summonerId;
+	public SummonerStats(Reader reader) {
 		this.summaries  = new HashMap<String, StatSummary>();
 		parseSummaries(reader);
-	}
-	
-	public String getSummonerId() {
-		return summonerId;
 	}
 	
 	public Map<String, StatSummary> getSummaries() {
