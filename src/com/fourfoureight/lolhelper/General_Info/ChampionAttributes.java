@@ -1,4 +1,4 @@
-package com.example.test;
+package com.fourfoureight.lolhelper.General_Info;
 
 // utility class ChampionAttributes to store a champion is good at some
 // strategy or not.
