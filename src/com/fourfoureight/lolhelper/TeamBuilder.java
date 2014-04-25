@@ -1,17 +1,19 @@
 package com.fourfoureight.lolhelper;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
-import android.widget.*;
+import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.Spinner;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+
 import com.fourfoureight.lolhelper.General_Info.ChampionAttributes;
 
 public class TeamBuilder extends ActionBarActivity {
@@ -98,9 +100,9 @@ public class TeamBuilder extends ActionBarActivity {
 					for (int i = 0; i < suggestedTop.length; i++){
 						final Button newButton = new Button(TeamBuilder.this);
 						newButton.setText(suggestedTop[i].getName());
-						newButton.setHeight(80);
-						newButton.setWidth(80);
-						newButton.setTextSize(15);
+						newButton.setHeight(50);
+						newButton.setWidth(50);
+						newButton.setTextSize(9);
 						if (suggestedTop[i].getName() == "NONAME"){
 							newButton.setVisibility(View.GONE);
 						}
@@ -129,9 +131,9 @@ public class TeamBuilder extends ActionBarActivity {
 					for (int i = 0; i < suggestedJungle.length; i++){
 						final Button newButton = new Button(TeamBuilder.this);
 						newButton.setText(suggestedJungle[i].getName());
-						newButton.setHeight(80);
-						newButton.setWidth(80);
-						newButton.setTextSize(15);
+						newButton.setHeight(50);
+						newButton.setWidth(50);
+						newButton.setTextSize(9);
 						if (suggestedJungle[i].getName() == "NONAME"){
 							newButton.setVisibility(View.GONE);
 						}
@@ -160,9 +162,9 @@ public class TeamBuilder extends ActionBarActivity {
 					for (int i = 0; i < suggestedMid.length; i++){
 						final Button newButton = new Button(TeamBuilder.this);
 						newButton.setText(suggestedMid[i].getName());
-						newButton.setHeight(80);
-						newButton.setWidth(80);
-						newButton.setTextSize(15);
+						newButton.setHeight(50);
+						newButton.setWidth(50);
+						newButton.setTextSize(9);
 						if (suggestedMid[i].getName() == "NONAME"){
 							newButton.setVisibility(View.GONE);
 						}
@@ -191,9 +193,9 @@ public class TeamBuilder extends ActionBarActivity {
 					for (int i = 0; i < suggestedADC.length; i++){
 						final Button newButton = new Button(TeamBuilder.this);
 						newButton.setText(suggestedADC[i].getName());
-						newButton.setHeight(80);
-						newButton.setWidth(80);
-						newButton.setTextSize(15);
+						newButton.setHeight(50);
+						newButton.setWidth(50);
+						newButton.setTextSize(9);
 						if (suggestedADC[i].getName() == "NONAME"){
 							newButton.setVisibility(View.GONE);
 						}
@@ -222,9 +224,9 @@ public class TeamBuilder extends ActionBarActivity {
 					for (int i = 0; i < suggestedSupport.length; i++){
 						final Button newButton = new Button(TeamBuilder.this);
 						newButton.setText(suggestedSupport[i].getName());
-						newButton.setHeight(80);
-						newButton.setWidth(80);
-						newButton.setTextSize(15);
+						newButton.setHeight(50);
+						newButton.setWidth(50);
+						newButton.setTextSize(9);
 						if (suggestedSupport[i].getName() == "NONAME"){
 							newButton.setVisibility(View.GONE);
 						}
@@ -250,11 +252,11 @@ public class TeamBuilder extends ActionBarActivity {
 				
 				// Table to display all available champions
 				table.removeAllViews();
-				int buttonInRow = 8;
+				int buttonInRow = 5;
 				TableRow currentRow = null;
 				ChampionAttributes[] allAvailableChampions = teambuilder.getAllAvailableChampions();
 				for (int i = 0; i < allAvailableChampions.length; i++){
-					if (buttonInRow == 8){
+					if (buttonInRow == 5){
 						buttonInRow = 0;
 						TableRow newRow = new TableRow(TeamBuilder.this);
 						table.addView(newRow);
@@ -262,9 +264,9 @@ public class TeamBuilder extends ActionBarActivity {
 					}
 					final Button newButton = new Button(TeamBuilder.this);
 					newButton.setText(allAvailableChampions[i].getName());
-					newButton.setHeight(80);
-					newButton.setWidth(80);
-					newButton.setTextSize(15);
+					newButton.setHeight(50);
+					newButton.setWidth(50);
+					newButton.setTextSize(9);
 					if (suggestedTop[i].getName() == "NONAME"){
 						newButton.setVisibility(View.GONE);
 					}
