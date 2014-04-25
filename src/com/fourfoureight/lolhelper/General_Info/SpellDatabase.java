@@ -699,7 +699,7 @@ public class SpellDatabase {
 		shenSpells[3] = new SpellInfo("Shadow Dash", "600", "16 / 14 / 12 / 10 / 8", "120 ENERGY", new String[]{"MAGIC DAMAGE: 50 / 85 / 120 / 155 / 190 (+ 50% AP)"}, new String[]{"ACTIVE: Shen dashes along target line, dealing magic damage to enemy champions he contacts and taunting them for 1.5 seconds. While taunted, enemies are forced to attack Shen and their basic attacks deal half damage. Shen gains 40 energy for each enemy champion he contacts."});
 		 // This one's range is "global" so ... maybe we set a special number that indicates global and another for self.  Or we change them to strings
 		shenSpells[4] = new SpellInfo("Stand United", "Global", "200 / 180 / 160", "NO COST", new String[]{"SHIELD: 250 / 550 / 850 (+ 135% AP)"}, new String[]{"ACTIVE: Target allied champion gains a shield that absorbs a certain amount of damage. The shield dissipates after 5 seconds if not already destroyed. After 3 seconds of channeling, Shen teleports to the allied champion."});
-		champSpells[79] = shenSpells;
+		champSpells[78] = shenSpells;
 
 		 SpellInfo[]  shyvanaSpells = new SpellInfo[5];
 		shyvanaSpells[0] = new SpellInfo("Dragonborn", "", "", "", arrS, new String[]{"Shyvana gains 5 / 10 / 15 / 20 armor and magic resist. These bonuses are doubled in Dragon Form."});
