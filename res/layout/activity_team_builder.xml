@@ -25,43 +25,23 @@
 	
 	        <Button
 	            android:id="@+id/Button03"
-	            android:layout_width="80dp"
-	            android:layout_height="80dp"
+	            android:layout_width="70dp"
+	            android:layout_height="70dp"
 	            android:layout_alignLeft="@+id/Button02"
 	            android:layout_below="@+id/Button02"
-	            android:layout_marginTop="10dp"
-	            android:textSize="15dp" 
+	            android:layout_marginTop="6dp"
+	            android:textSize="8sp"  
 	            android:text="ADC" />
 	
 	        <Button
 	            android:id="@+id/Button04"
-	            android:layout_width="80dp"
-	            android:layout_height="80dp"
+	            android:layout_width="70dp"
+	            android:layout_height="70dp"
 	            android:layout_alignLeft="@+id/Button03"
 	            android:layout_below="@+id/Button03"
-	            android:layout_marginTop="10dp"
-	            android:textSize="15dp" 
+	            android:layout_marginTop="6dp"
+	            android:textSize="8sp"  
 	            android:text="Support" />
-	
-	        <Spinner
-	            android:id="@+id/spinner1"
-	            android:layout_width="200dp"
-	            android:layout_height="42dp"
-	            android:layout_alignParentLeft="true"
-	            android:layout_alignParentTop="true"
-	            android:layout_marginLeft="30dp"
-	            android:layout_marginTop="110dp"
-	            tools:listitem="@android:layout/simple_spinner_dropdown_item" />
-	
-	        <Button
-	            android:id="@+id/Button00"
-	            android:layout_width="80dp"
-	            android:layout_height="80dp"
-	            android:layout_alignLeft="@+id/spinner1"
-	            android:layout_below="@+id/spinner1"
-	            android:layout_marginTop="40dp"
-	            android:textSize="15dp" 
-	            android:text="Top" />
 	
 	        <TextView
 	            android:id="@+id/textView1"
@@ -69,28 +49,29 @@
 	            android:layout_height="wrap_content"
 	            android:layout_alignParentTop="true"
 	            android:layout_centerHorizontal="true"
-	            android:layout_marginTop="20dp"
+	            android:layout_marginTop="12dp"
 	            android:text="Welcome to Team Builder"
-	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textSize="20sp" />
 	
 	        <Button
 	            android:id="@+id/Button01"
-	            android:layout_width="80dp"
-	            android:layout_height="80dp"
+	            android:layout_width="70dp"
+	            android:layout_height="70dp"
 	            android:layout_alignLeft="@+id/Button00"
 	            android:layout_below="@+id/Button00"
-	            android:layout_marginTop="10dp"
-	            android:textSize="15dp" 
+	            android:layout_marginTop="6dp"
+	            android:textSize="8sp"  
 	            android:text="Jungle" />
 	
 	        <Button
 	            android:id="@+id/Button02"
-	            android:layout_width="80dp"
-	            android:layout_height="80dp"
+	            android:layout_width="70dp"
+	            android:layout_height="70dp"
 	            android:layout_alignLeft="@+id/Button01"
 	            android:layout_below="@+id/Button01"
-	            android:layout_marginTop="10dp"
-	            android:textSize="15dp" 
+	            android:layout_marginTop="6dp"
+	            android:textSize="8sp"  
 	            android:text="Middle" />
 
 	        <HorizontalScrollView
@@ -98,9 +79,10 @@
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
 	            android:layout_alignBottom="@+id/Button00"
-	            android:layout_alignLeft="@+id/textView1"
 	            android:layout_alignRight="@+id/Button05"
-	            android:layout_alignTop="@+id/Button00" >
+	            android:layout_alignTop="@+id/Button00"
+	            android:layout_alignLeft="@+id/Button00"
+	            android:layout_marginLeft="80dp" >
 
 	            <LinearLayout
 	                android:id="@+id/Linear1"
@@ -178,25 +160,6 @@
 	            </LinearLayout>
 	        </HorizontalScrollView>
 
-	        <Button
-	            android:id="@+id/Button06"
-	            android:layout_width="200dp"
-	            android:layout_height="38dp"
-	            android:layout_above="@+id/Button00"
-	            android:layout_alignParentRight="true"
-	            android:layout_marginRight="27dp"
-	            android:textSize="15dp"
-	            android:text="Suggest Champions" />
-
-	        <Button
-	            android:id="@+id/Button05"
-	            android:layout_width="200dp"
-	            android:layout_height="38dp"
-	            android:layout_above="@+id/Button06"
-	            android:layout_alignLeft="@+id/Button06"
-	            android:textSize="15dp" 
-	            android:text="Suggest Style" />
-
 	        <TableLayout
 	            android:id="@+id/Table"
 	            android:layout_width="fill_parent"
@@ -204,7 +167,7 @@
 	            android:layout_alignLeft="@+id/Button04"
 	            android:layout_below="@+id/Button04"
 	            android:layout_centerHorizontal="true"
-	            android:layout_marginTop="50dp" >
+	            android:layout_marginTop="38dp" >
 
 	        </TableLayout>
 
@@ -216,16 +179,8 @@
 	            android:layout_alignLeft="@+id/Button00"
 	            android:layout_marginBottom="6dp"
 	            android:text="Positions:"
-	            android:textAppearance="?android:attr/textAppearanceSmall" />
-
-	        <TextView
-	            android:id="@+id/textView3"
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:layout_alignBottom="@+id/textView2"
-	            android:layout_alignLeft="@+id/horizontalScrollView1"
-	            android:text="Suggested Champions:"
-	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textSize="10sp" />
 
 	        <TextView
 	            android:id="@+id/textView4"
@@ -233,9 +188,61 @@
 	            android:layout_height="wrap_content"
 	            android:layout_alignLeft="@+id/Button04"
 	            android:layout_below="@+id/Button04"
-	            android:layout_marginTop="32dp"
+	            android:layout_marginTop="20dp"
 	            android:text="All Available Champions:"
-	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textSize="10sp" />
+
+	        <TextView
+	            android:id="@+id/textView3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBaseline="@+id/textView2"
+	            android:layout_alignBottom="@+id/textView2"
+	            android:layout_alignLeft="@+id/horizontalScrollView1"
+	            android:text="Suggested Champions:"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textSize="10sp" />
+
+	        <Button
+	            android:id="@+id/Button06"
+	            android:layout_width="125dp"
+	            android:layout_height="30dp"
+	            android:layout_alignLeft="@+id/spinner1"
+	            android:layout_below="@+id/spinner1"
+	            android:text="Suggest Champions"
+	            android:textSize="9sp" />
+
+	        <Button
+	            android:id="@+id/Button05"
+	            android:layout_width="125dp"
+	            android:layout_height="30dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/spinner1"
+	            android:layout_marginRight="18dp"
+	            android:text="Suggest Style"
+	            android:textSize="9sp" />
+
+	        <Spinner
+	            android:id="@+id/spinner1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignRight="@+id/Button05"
+	            android:layout_below="@+id/textView1"
+	            android:layout_marginLeft="18dp"
+	            android:layout_marginTop="15dp"
+	            tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+	        <Button
+	            android:id="@+id/Button00"
+	            android:layout_width="70dp"
+	            android:layout_height="70dp"
+	            android:layout_alignLeft="@+id/Button06"
+	            android:layout_below="@+id/Button06"
+	            android:layout_marginTop="27dp"
+	            android:text="Top"
+	            android:textSize="8sp" />
 
 	    </RelativeLayout>
            
