@@ -53,12 +53,12 @@ public class GeneralInfo extends ActionBarActivity {
     	startActivity(intent);
     }
     
-    public void items(View view) {
+    public void viewitems(View view) {
     	Intent intent = new Intent(this, Items.class);
     	startActivity(intent);
     }
     
-    public void champions(View view) {
+    public void viewchampions(View view) {
     	Intent intent = new Intent(this, Champions.class);
     	startActivity(intent);
     }

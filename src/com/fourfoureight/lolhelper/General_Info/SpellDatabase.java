@@ -3,8 +3,8 @@ package com.fourfoureight.lolhelper.General_Info;
 public class SpellDatabase {
 
 
-	public SpellInfo[][] champSpells = new SpellInfo[118][];
-	public SpellDatabase()
+	public static SpellInfo[][] champSpells = new SpellInfo[118][];
+	public static void makeSpellDatabase()
 	{
 
 

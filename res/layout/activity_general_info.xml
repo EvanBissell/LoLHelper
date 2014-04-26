@@ -70,6 +70,7 @@
 				        android:layout_height="wrap_content"
 				        android:drawableLeft="@drawable/champions"
 				        android:layout_weight="1"
+				        android:onClick="viewchampions"
 				        android:text="@string/champions" />
 				
 				    <Button
@@ -78,6 +79,7 @@
 				        android:layout_height="wrap_content"
 				        android:drawableLeft="@drawable/items"
 				        android:layout_weight="1"
+				        android:onClick="viewitems"
 				        android:text="@string/items" />
 				    
 				    <Button
@@ -86,6 +88,7 @@
 				        android:layout_height="wrap_content"
 				        android:drawableLeft="@drawable/summoner_spells"
 				        android:layout_weight="1"
+				        android:onClick="viewsummonerspells"
 				        android:text="@string/summoner_spells" />
 		       </LinearLayout>
 
