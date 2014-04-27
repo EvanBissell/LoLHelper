@@ -13,15 +13,12 @@ public class ChampionAttributes{
 	 * index2: Poke;
 	 * index3: CatchOut;
 	 * index4: WomboCombo;
-	 * note: index 0 - 4 are team strategies. 
-	 * values encoding: 0 means not good at, 10 means fair, 20 means very good at.
-	 * 
 	 * index5: DunkSquad;
 	 * index6: YordleOnly;
 	 * index7: FullReviveBungaloo;
 	 * index8: EarlyGame;
 	 * index9: LateGame;
-	 * note: index 5 - 9 are only champion characteristics, not team strategies.
+	 *
 	 * values encoding: 0 means not good at, 10 means fair, 20 means very good at.
 	 */	
 	
@@ -33,6 +30,7 @@ public class ChampionAttributes{
 	 * index2: ADC;
 	 * index3: support;
 	 * index4: jungle;
+	 * 
 	 * values encoding: 0 means not good at this position, 1 means good at.
 	 */
 	
