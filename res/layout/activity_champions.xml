@@ -25,7 +25,7 @@
         android:layout_above="@+id/button1"
         android:layout_alignRight="@+id/icon"
         android:layout_marginBottom="24dp"
-        android:text="Medium Text"
+        android:text="Aatrox"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Spinner
