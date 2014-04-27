@@ -2640,11 +2640,11 @@ public class TeamBuilder extends ActionBarActivity {
 				
 				// Table to display all available champions
 				table.removeAllViews();
-				int buttonInRow = 6;
+				int buttonInRow = 5;
 				TableRow currentRow = null;
 				ChampionAttributes[] allAvailableChampions = teambuilder.getAllAvailableChampions();
 				for (int i = 0; i < allAvailableChampions.length; i++){
-					if (buttonInRow == 6){
+					if (buttonInRow == 5){
 						buttonInRow = 0;
 						TableRow newRow = new TableRow(TeamBuilder.this);
 						newRow.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, 60));
@@ -5218,14 +5218,12 @@ public class TeamBuilder extends ActionBarActivity {
     }
     
     private ImageButton initializeButton(ImageButton icon, ChampionAttributes champion){
-    	icon.setMaxHeight(70);
-    	icon.setMaxWidth(70);
-    	icon.setMinimumHeight(70);
-    	icon.setMinimumWidth(70);
+    	icon.setMaxHeight(87);
+    	icon.setMaxWidth(87);
+    	icon.setMinimumHeight(87);
+    	icon.setMinimumWidth(87);
     	icon.setAdjustViewBounds(true);
     	icon.setScaleType(ScaleType.CENTER);
-//    	icon.setScaleX((float) 1.2);
-//    	icon.setScaleY((float) 1.2);
     	String message = champion.getName();
     	int i;
     	
