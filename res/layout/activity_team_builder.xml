@@ -42,6 +42,7 @@
 	            android:layout_alignRight="@+id/Button05"
 	            android:layout_alignTop="@+id/imageButton00"
 	            android:layout_alignLeft="@+id/imageButton00"
+	            android:layout_marginTop="4dp"
 	            android:layout_marginLeft="80dp" >
 
 	            <LinearLayout
@@ -59,7 +60,8 @@
 	            android:layout_above="@+id/imageButton02"
 	            android:layout_alignLeft="@+id/horizontalScrollView1"
 	            android:layout_alignRight="@+id/horizontalScrollView1"
-	            android:layout_alignTop="@+id/imageButton01" >
+	            android:layout_alignTop="@+id/imageButton01"
+	            android:layout_marginTop="4dp" >
 
 	            <LinearLayout
 	                android:id="@+id/Linear2"
@@ -76,7 +78,8 @@
 	            android:layout_alignBottom="@+id/imageButton02"
 	            android:layout_alignLeft="@+id/horizontalScrollView2"
 	            android:layout_alignRight="@+id/horizontalScrollView2"
-	            android:layout_alignTop="@+id/imageButton02" >
+	            android:layout_alignTop="@+id/imageButton02"
+	            android:layout_marginTop="4dp" >
 
 	            <LinearLayout
 	                android:id="@+id/Linear3"
@@ -93,7 +96,8 @@
 	            android:layout_alignBottom="@+id/imageButton03"
 	            android:layout_alignLeft="@+id/horizontalScrollView3"
 	            android:layout_alignRight="@+id/horizontalScrollView3"
-	            android:layout_alignTop="@+id/imageButton03" >
+	            android:layout_alignTop="@+id/imageButton03"
+	            android:layout_marginTop="4dp" >
 
 	            <LinearLayout
 	                android:id="@+id/Linear4"
@@ -110,7 +114,8 @@
 	            android:layout_alignBottom="@+id/imageButton04"
 	            android:layout_alignLeft="@+id/horizontalScrollView4"
 	            android:layout_alignRight="@+id/horizontalScrollView4"
-	            android:layout_alignTop="@+id/imageButton04" >
+	            android:layout_alignTop="@+id/imageButton04"
+	            android:layout_marginTop="4dp" >
 
 	            <LinearLayout
 	                android:id="@+id/Linear5"
