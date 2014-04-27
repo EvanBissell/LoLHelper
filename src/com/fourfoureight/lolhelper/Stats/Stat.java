@@ -1,34 +1,22 @@
 package com.fourfoureight.lolhelper.Stats;
 
-import javax.json.JsonObject;
-import javax.json.JsonValue;
-import javax.json.JsonValue.ValueType;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 
 public class Stat {
-	private JsonValue jsonValue;
-	
-	public Stat(JsonValue jsonValue) {
-		this.jsonValue = jsonValue;
+	private JSONObject jsonObject;
+
+	public Stat(JSONObject jsonObject) {
+		this.jsonObject = jsonObject;
 	}
-	
-	public boolean isLeaf() {
-		return jsonValue.getValueType() == ValueType.STRING
-		    || jsonValue.getValueType() == ValueType.NUMBER;
-	}
-	
-	public Object get() {
-		if (isLeaf()) {
-			return jsonValue.toString();
-		} else {
-			return jsonValue;
-		}
-	}
-	
-	public Object get(String property) {
-		return ((JsonObject)jsonValue).get(property);
+
+	public Object get(String stat) throws JSONException {
+		return jsonObject.get(stat);
 	}
 	
 	public String toString() {
-		return jsonValue.toString();
+		return jsonObject.toString();
 	}
 }
+
