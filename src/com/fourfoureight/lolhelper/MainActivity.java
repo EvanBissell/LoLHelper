@@ -128,15 +128,15 @@ public class MainActivity extends ActionBarActivity {
                 }
                 else if (check == "Player Stats")
                 {
-                	ultimateBravery(v);
+                	playerStats(v);
                 }
                 else if (check == "Champions")
                 {
-                	ultimateBravery(v);
+                	champions(v);
                 }
                 else if (check == "Items")
                 {
-                	ultimateBravery(v);
+                	items(v);
                 }
                 else if (check == "Summoner Spells")
                 {
@@ -233,10 +233,10 @@ public class MainActivity extends ActionBarActivity {
     	startActivity(intent);
     }
     
-    //public void playerStats(View view) {
-    //	Intent intent = new Intent(this, PlayerStats.class);
-    //	startActivity(intent);
-    //}
+    public void playerStats(View view) {
+    	Intent intent = new Intent(this, PlayerStats.class);
+    	startActivity(intent);
+    }
     
     public void items(View view) {
     	Intent intent = new Intent(this, Items.class);

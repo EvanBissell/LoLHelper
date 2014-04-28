@@ -173,8 +173,6 @@ public void setAttributes(int att [])
 }
 
 
-
-
 //getters for names/titles
 public String getName()
 {
