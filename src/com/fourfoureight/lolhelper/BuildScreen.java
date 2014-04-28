@@ -1,7 +1,5 @@
 package com.fourfoureight.lolhelper;
 
-import com.fourfoureight.lolhelper.General_Info.SpellDatabase;
-
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -28,8 +26,6 @@ public class BuildScreen extends ActionBarActivity {
      protected void onCreate(Bundle savedInstanceState) {
              super.onCreate(savedInstanceState);
              setContentView(R.layout.activity_build_screen);
-             
-             SpellDatabase.makeSpellDatabase();
 
              
              final TextView display1 = (TextView)findViewById(R.id.textView1);

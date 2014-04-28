@@ -22,7 +22,7 @@ public class BuildGuides extends ActionBarActivity {
 		setContentView(R.layout.activity_build);
 		
 		Intent intent = getIntent();
-        String message = intent.getStringExtra(Champions.EXTRA_MESSAGE);
+        String message = intent.getStringExtra(BuildScreen.EXTRA_MESSAGE);
 		
 		BuildDatabase database = new BuildDatabase();
 		int i;
