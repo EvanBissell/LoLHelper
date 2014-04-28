@@ -1,8 +1,137 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.fourfoureight.lolhelper.Build"
-    tools:ignore="MergeRootFrame" />
+    tools:ignore="MergeRootFrame" >
+
+   <LinearLayout
+    android:id="@+id/container1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="com.fourfoureight.lolhelper.Build"
+    tools:ignore="MergeRootFrame" >
+       <TextView
+           android:id="@+id/imageViewStartHead"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Starting Items" />
+   </LinearLayout>
+   <LinearLayout
+    android:id="@+id/container2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="com.fourfoureight.lolhelper.Build"
+    tools:ignore="MergeRootFrame" >
+       <ImageView
+           android:id="@+id/imageViewStart1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
+       <ImageView
+           android:id="@+id/imageViewStart2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
+       <ImageView
+           android:id="@+id/imageViewStart3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
+       <ImageView
+           android:id="@+id/imageViewStart4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
+   </LinearLayout>
+    
+   <LinearLayout
+    android:id="@+id/container3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="com.fourfoureight.lolhelper.Build"
+    tools:ignore="MergeRootFrame" >
+       <TextView
+           android:id="@+id/imageViewRushHead"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Rush" />
+   </LinearLayout>
+   <LinearLayout
+    android:id="@+id/container4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="com.fourfoureight.lolhelper.Build"
+    tools:ignore="MergeRootFrame" >
+       <ImageView
+           android:id="@+id/imageViewRush1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
+       <ImageView
+           android:id="@+id/imageViewRush2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
+       <ImageView
+           android:id="@+id/imageViewRush3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
+   </LinearLayout>
+       
+    <LinearLayout
+    android:id="@+id/container5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="com.fourfoureight.lolhelper.Build"
+    tools:ignore="MergeRootFrame" >
+       <TextView
+           android:id="@+id/imageViewAsNeededHead"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="As Needed" />
+   </LinearLayout>
+   <LinearLayout
+    android:id="@+id/container6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="com.fourfoureight.lolhelper.Build"
+    tools:ignore="MergeRootFrame" >
+       <ImageView
+           android:id="@+id/imageViewAsNeeded1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
+       <ImageView
+           android:id="@+id/imageViewAsNeeded2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
+       <ImageView
+           android:id="@+id/imageViewAsNeeded3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
+       <ImageView
+           android:id="@+id/imageViewAsNeeded4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
+       <ImageView
+           android:id="@+id/imageViewAsNeeded5"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
+   </LinearLayout>
+     
+</LinearLayout>
 

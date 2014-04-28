@@ -1,5 +1,7 @@
 package com.fourfoureight.lolhelper;
 
+import com.fourfoureight.lolhelper.General_Info.ItemBuild;
+
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -9,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.os.Build;
 
 public class BuildGuides extends ActionBarActivity {
@@ -16,7 +19,14 @@ public class BuildGuides extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_build_guides);
+		setContentView(R.layout.activity_build);
+		
+		ItemBuild build = new ItemBuild();
+		build.setStart("ionianbootsoflucidity");
+		
+		int resID = getResources().getIdentifier("ionianbootsoflucidity", "drawable", getPackageName());
+		ImageView view = (ImageView) findViewById(R.id.imageViewStart1);
+		view.setImageResource(resID);
 	}
 
 	@Override
