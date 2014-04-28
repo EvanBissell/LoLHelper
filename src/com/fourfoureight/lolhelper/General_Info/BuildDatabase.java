@@ -8,6 +8,7 @@ public class BuildDatabase {
 		
 		database[0] = new BuildInfo();
 		database[0].setStart("ionianbootsoflucidity");
+		database[0].setRush("ionianbootsoflucidity");
 	}
 	
 	public BuildInfo[] getDatabase(){

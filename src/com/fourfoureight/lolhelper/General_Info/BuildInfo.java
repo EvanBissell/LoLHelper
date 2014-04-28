@@ -2,9 +2,21 @@ package com.fourfoureight.lolhelper.General_Info;
 
 public class BuildInfo {
 	//Build Guide Variables - Start (4), Rush (3), As Needed (5)
-	private String[] start = {"","","",""};
-	private String[] rush = {"","",""};
-	private String[] asNeeded = {"","","","",""};
+	private String[] start = {
+			"abc_ab_bottom_transparent_dark_holo",
+			"abc_ab_bottom_transparent_dark_holo",
+			"abc_ab_bottom_transparent_dark_holo",
+			"abc_ab_bottom_transparent_dark_holo"};
+	private String[] rush = {
+			"abc_ab_bottom_transparent_dark_holo"
+			,"abc_ab_bottom_transparent_dark_holo"
+			,"abc_ab_bottom_transparent_dark_holo"};
+	private String[] asNeeded = {
+			"abc_ab_bottom_transparent_dark_holo",
+			"abc_ab_bottom_transparent_dark_holo",
+			"abc_ab_bottom_transparent_dark_holo",
+			"abc_ab_bottom_transparent_dark_holo",
+			"abc_ab_bottom_transparent_dark_holo"};
 	//Build Guide - Counters to add items
 	private int startcur = 0;
 	private int rushcur = 0;

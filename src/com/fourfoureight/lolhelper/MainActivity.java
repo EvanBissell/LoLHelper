@@ -214,7 +214,7 @@ public class MainActivity extends ActionBarActivity {
  
     
     public void buildguides(View view) {
-    	Intent intent = new Intent(this, BuildGuides.class);
+    	Intent intent = new Intent(this, BuildScreen.class);
     	startActivity(intent);
     }
     
