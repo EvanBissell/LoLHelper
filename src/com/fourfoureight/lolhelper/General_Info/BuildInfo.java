@@ -1,7 +1,7 @@
 package com.fourfoureight.lolhelper.General_Info;
 
 public class BuildInfo {
-	//Build Guide Variables - Start (4), Rush (3), As Needed (5)
+	//Build Guide Variables - Start (4), Rush (4), As Needed (5)
 	private String[] start = {
 			"abc_ab_bottom_transparent_dark_holo",
 			"abc_ab_bottom_transparent_dark_holo",
@@ -9,6 +9,7 @@ public class BuildInfo {
 			"abc_ab_bottom_transparent_dark_holo"};
 	private String[] rush = {
 			"abc_ab_bottom_transparent_dark_holo"
+			,"abc_ab_bottom_transparent_dark_holo"
 			,"abc_ab_bottom_transparent_dark_holo"
 			,"abc_ab_bottom_transparent_dark_holo"};
 	private String[] asNeeded = {
@@ -63,14 +64,14 @@ public class BuildInfo {
 	}
 	
 	public void setRush(String set){
-		if(rushcur < 3){
+		if(rushcur < 4){
 			rush[rushcur]=set;
 			rushcur++;
 		}
 	}
 	
 	public void setRush(String set1, String set2){
-		if(rushcur < 2){
+		if(rushcur < 3){
 			rush[rushcur]=set1;
 			rush[rushcur+1]=set2;
 			rushcur+=2;
@@ -78,11 +79,21 @@ public class BuildInfo {
 	}
 	
 	public void setRush(String set1, String set2, String set3){
-		if(rushcur < 1){
+		if(rushcur < 2){
 			rush[rushcur]=set1;
 			rush[rushcur+1]=set2;
 			rush[rushcur+2]=set3;
 			rushcur+=3;
+		}
+	}
+	
+	public void setRush(String set1, String set2, String set3, String set4){
+		if(rushcur < 1){
+			rush[rushcur]=set1;
+			rush[rushcur+1]=set2;
+			rush[rushcur+2]=set3;
+			rush[rushcur+3]=set4;
+			rushcur+=4;
 		}
 	}
 	
