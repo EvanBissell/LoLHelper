@@ -1,6 +1,7 @@
 package com.fourfoureight.lolhelper;
 
 import java.io.IOException;
+import java.io.Serializable;
 
 import com.fourfoureight.lolhelper.R;
 import com.fourfoureight.lolhelper.R.menu;
@@ -9,6 +10,7 @@ import com.fourfoureight.lolhelper.Stats.StatsPull;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -24,6 +26,8 @@ public class PlayerStats extends ActionBarActivity {
 	String results[];
 	EditText edit1;
 	TextView text1, text2, text3, text4, text5, text6, text7, text8, text9, text10, text11, text12, text13, text14, text15, text16, text17, text18, text19, text20, text21, text22, text23, text24;
+	static StatsPull stats;
+	String summonerName;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -81,11 +85,11 @@ public class PlayerStats extends ActionBarActivity {
 	private class StatsTask extends AsyncTask<String, Void, String[]>{
 		@Override
 		protected String[] doInBackground(String... params){
-			String summonerName = edit1.getText().toString();
+			summonerName = edit1.getText().toString();
 			results[0] = summonerName;
 			
 			try {
-				StatsPull stats = new StatsPull(summonerName);
+				stats = new StatsPull(summonerName);
 				
 				results[1] = stats.getProfileIcon();
 				results[2] = stats.getLevel();
@@ -163,6 +167,51 @@ public class PlayerStats extends ActionBarActivity {
         protected void onProgressUpdate(Void... values) {}
 	}
 	
+	//Called when "Advanced Stats" button is pressed
+	public void advanced(View view){
+		if(stats!=null){
+			//Grab information
+			String[] info = {
+					"One For All Wins: " + Long.toString(stats.getOfaWins()),
+					"Assists: " + Long.toString(stats.getOfaAssists()),
+					"Kills: " + Long.toString(stats.getOfaChampKills()),
+					"Minion Kills: " + Long.toString(stats.getOfaMinionKills()),
+					"Neutral Monster Kills: " + Long.toString(stats.getOfaNeutralMonsterKills()),
+					"Turret Kills: " + Long.toString(stats.getOfaTotalTurretKills()),
+					"First Blood (1v1) Wins: " + Long.toString(stats.getFb1Wins()),
+					"Assists: " + Long.toString(stats.getFb1Assists()),
+					"Kills: " + Long.toString(stats.getFb1ChampKills()),
+					"Minion Kills: " + Long.toString(stats.getFb1MinionKills()),
+					"Neutral Monster Kills: " + Long.toString(stats.getFb1NeutralMonsterKills()),
+					"Turret Kills: " + Long.toString(stats.getFb1TotalTurretKills()),
+					"First Blood (2v2) Wins: " + Long.toString(stats.getFb2Wins()),
+					"Assists: " + Long.toString(stats.getFb2Assists()),
+					"Kills: " + Long.toString(stats.getFb2ChampKills()),
+					"Minion Kills: " + Long.toString(stats.getFb2MinionKills()),
+					"Neutral Monster Kills: " + Long.toString(stats.getFb2NeutralMonsterKills()),
+					"Turret Kills: " + Long.toString(stats.getFb2TotalTurretKills()),
+					"Hexakill Wins: " + Long.toString(stats.getHexWins()),
+					"Assists: " + Long.toString(stats.getHexAssists()),
+					"Kills: " + Long.toString(stats.getHexChampKills()),
+					"Minion Kills: " + Long.toString(stats.getHexMinionKills()),
+					"Neutral Monster Kills: " + Long.toString(stats.getHexNeutralMonsterKills()),
+					"Turret Kills: " + Long.toString(stats.getHexTotalTurretKills()),
+					"URF Wins: " + Long.toString(stats.getUrfWins()),
+					"Assists: " + Long.toString(stats.getUrfAssists()),
+					"Kills: " + Long.toString(stats.getUrfChampKills()),
+					"Minion Kills: " + Long.toString(stats.getUrfMinionKills()),
+					"Neutral Monster Kills: " + Long.toString(stats.getUrfNeutralMonsterKills()),
+					"Turret Kills: " + Long.toString(stats.getUrfTotalTurretKills())
+			};
+			
+			Bundle bundle = new Bundle();
+			bundle.putStringArray("info", info);
+	         Intent intent = new Intent(this, PlayerStatsAdvanced.class);
+	         intent.putExtra("bundle", bundle);
+	         startActivity(intent);
+		}
+		
+	}
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

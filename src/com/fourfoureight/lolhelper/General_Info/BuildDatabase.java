@@ -1268,7 +1268,9 @@ public class BuildDatabase {
 		//Janna
 		database[32] = new BuildInfo();
 		database[32].setStart("yellowtrinket", "ancientcoin", "stealthward", "healthpotion");
-
+		database[32].setRush("rubysightstone", "talismanofascension", "mercurytreads");
+		database[32].setAsNeeded("mikaelscrucible", "locketoftheironsolari", "morellonomicon", "rabadonsdeathcap");
+		
 		//J4
 		database[33] = new BuildInfo();
 

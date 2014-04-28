@@ -5,7 +5,7 @@ import java.io.*;
 
 import org.json.JSONException;
 
-public class StatsPull {
+public class StatsPull  {
 	private String summonerName, summonerID, profileIcon, level;
 	private SummonerStats summonerStats;
 	private String apikey = "?api_key=f685bd80-568e-4ff3-9d20-4bde13ab7106";
@@ -13,14 +13,25 @@ public class StatsPull {
 	//  ---===== Player Statistics data =====---
 	// Wins
 	private long rankedPremade3x3Wins, rankedPremade5x5Wins, rankedTeam3x3Wins, rankedTeam5x5Wins, rankedSolo5x5Wins;
-	private long unrankedWins, unranked3x3Wins, coopVsAIWins;
+	private long unrankedWins, unranked3x3Wins, coopVsAIWins, ofaWins, fb1Wins, fb2Wins, hexWins, urfWins;
 	// Normal Stats
 	private long nChampKills, nAssists, nMinionKills, nNeutralMonsterKills, nTotalTurretKills; 
 	// Ranked Solo 5x5 Stats
 	private long rChampKills, rAssists, rMinionKills, rNeutralMonsterKills, rTotalTurretKills;
 	// Normal 3x3 Stats
 	private long tvtChampKills, tvtAssists, tvtMinionKills, tvtNeutralMonsterKills, tvtTotalTurretKills;
-
+	//One For All Stats
+	private long ofaChampKills, ofaAssists, ofaMinionKills, ofaNeutralMonsterKills, ofaTotalTurretKills;
+	//First Blood 1x1 Stats
+	private long fb1ChampKills, fb1Assists, fb1MinionKills, fb1NeutralMonsterKills, fb1TotalTurretKills;
+	//First Blood 2x2 Stats
+	private long fb2ChampKills, fb2Assists, fb2MinionKills, fb2NeutralMonsterKills, fb2TotalTurretKills;
+	//Hexakill Stats
+	private long hexChampKills, hexAssists, hexMinionKills, hexNeutralMonsterKills, hexTotalTurretKills;
+	//URF Stats
+	private long urfChampKills, urfAssists, urfMinionKills, urfNeutralMonsterKills, urfTotalTurretKills;
+	
+	
 	//--------------------------------------------------
 	// Takes in summoner name and returns summonerID
 	//--------------------------------------------------
@@ -119,6 +130,57 @@ public class StatsPull {
 		//Coop Vs AI
 		if(summonerStats.hasSummary("CoopVsAI")){
 			this.coopVsAIWins         = summonerStats.getSummary("CoopVsAI").getField("wins");
+		}
+		
+		//One For All Stats
+		if(summonerStats.hasSummary("OneForAll5x5")){
+			this.ofaWins      = summonerStats.getSummary("OneForAll5x5").getField("wins");
+			this.ofaAssists			  = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalAssists");
+			this.ofaChampKills          = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalChampionKills");
+			this.ofaMinionKills         = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalMinionKills");
+			this.ofaNeutralMonsterKills = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalNeutralMinionsKilled");
+			this.ofaTotalTurretKills    = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalTurretsKilled");
+		}
+		
+		//First Blood 1x1 Stats
+		if(summonerStats.hasSummary("FirstBlood1x1")){
+			this.fb1Wins      = summonerStats.getSummary("FirstBlood1x1").getField("wins");
+			this.fb1Assists			  = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalAssists");
+			this.fb1ChampKills          = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalChampionKills");
+			this.fb1MinionKills         = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalMinionKills");
+			this.fb1NeutralMonsterKills = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalNeutralMinionsKilled");
+			this.fb1TotalTurretKills    = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalTurretsKilled");
+		}
+		
+		//First Blood 2x2 Stats
+		if(summonerStats.hasSummary("FirstBlood2x2")){
+			this.fb2Wins      = summonerStats.getSummary("FirstBlood2x2").getField("wins");
+			this.fb2Assists			  = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalAssists");
+			this.fb2ChampKills          = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalChampionKills");
+			this.fb2MinionKills         = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalMinionKills");
+			this.fb2NeutralMonsterKills = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalNeutralMinionsKilled");
+			this.fb2TotalTurretKills    = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalTurretsKilled");
+		}
+		
+		//Hexakill Stats
+		if(summonerStats.hasSummary("SummonersRift6x6")){
+			this.hexWins      = summonerStats.getSummary("SummonersRift6x6").getField("wins");
+			this.hexAssists			  = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalAssists");
+			this.hexChampKills          = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalChampionKills");
+			this.hexMinionKills         = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalMinionKills");
+			this.hexNeutralMonsterKills = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalNeutralMinionsKilled");
+			this.hexTotalTurretKills    = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalTurretsKilled");
+		}
+		
+		//URF Stats
+		if(summonerStats.hasSummary("URF")){
+			this.urfWins      = summonerStats.getSummary("URF").getField("wins");
+			this.urfAssists			  = summonerStats.getSummary("URF").getAggregatedStat("totalAssists");
+			this.urfChampKills          = summonerStats.getSummary("URF").getAggregatedStat("totalChampionKills");
+			this.urfMinionKills         = summonerStats.getSummary("URF").getAggregatedStat("totalMinionKills");
+			this.urfNeutralMonsterKills = summonerStats.getSummary("URF").getAggregatedStat("totalNeutralMinionsKilled");
+			this.urfTotalTurretKills    = summonerStats.getSummary("URF").getAggregatedStat("totalTurretsKilled");
+		
 		}
 	}
 	
@@ -273,5 +335,99 @@ public class StatsPull {
 
 	public long getTvtTotalTurretKills() {
 		return tvtTotalTurretKills;
+	}
+	public long getOfaWins(){
+		return ofaWins;
+	}
+	public long getOfaChampKills() {
+		return ofaChampKills;
+	}
+
+	public long getOfaAssists() {
+		return ofaAssists;
+	}
+
+	public long getOfaMinionKills() {
+		return ofaMinionKills;
+	}
+
+	public long getOfaNeutralMonsterKills() {
+		return ofaNeutralMonsterKills;
+	}
+
+	public long getOfaTotalTurretKills() {
+		return ofaTotalTurretKills;
+	}
+	public long getFb1Wins(){
+		return fb1Wins;
+	}
+	public long getFb1ChampKills() {
+		return fb1ChampKills;
+	}
+	public long getFb1Assists() {
+		return fb1Assists;
+	}
+	public long getFb1MinionKills() {
+		return fb1MinionKills;
+	}
+	public long getFb1NeutralMonsterKills() {
+		return fb1NeutralMonsterKills;
+	}
+	public long getFb1TotalTurretKills() {
+		return fb1TotalTurretKills;
+	}
+	public long getFb2Wins(){
+		return fb2Wins;
+	}
+	public long getFb2ChampKills() {
+		return fb2ChampKills;
+	}
+	public long getFb2Assists() {
+		return fb2Assists;
+	}
+	public long getFb2MinionKills() {
+		return fb2MinionKills;
+	}
+	public long getFb2NeutralMonsterKills() {
+		return fb2NeutralMonsterKills;
+	}
+	public long getFb2TotalTurretKills() {
+		return fb2TotalTurretKills;
+	}
+	public long getHexWins(){
+		return hexWins;
+	}
+	public long getHexChampKills() {
+		return hexChampKills;
+	}
+	public long getHexAssists() {
+		return hexAssists;
+	}
+	public long getHexMinionKills() {
+		return hexMinionKills;
+	}
+	public long getHexNeutralMonsterKills() {
+		return hexNeutralMonsterKills;
+	}
+	public long getHexTotalTurretKills() {
+		return hexTotalTurretKills;
+	}
+	public long getUrfWins(){
+		return urfWins;
+	}
+	public long getUrfChampKills() {
+		return urfChampKills;
+	}
+	public long getUrfAssists() {
+		return urfAssists;
+	}
+	public long getUrfMinionKills() {
+		return urfMinionKills;
+	}
+	public long getUrfNeutralMonsterKills() {
+		return urfNeutralMonsterKills;
+	}
+	public long getUrfTotalTurretKills() {
+		return urfTotalTurretKills;
 	}
 }

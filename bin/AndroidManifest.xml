@@ -69,6 +69,10 @@
             android:label="@string/title_activity_player_stats" >
         </activity>
         <activity
+            android:name="com.fourfoureight.lolhelper.PlayerStatsAdvanced"
+            android:label="@string/title_activity_player_stats_advanced" >
+        </activity>
+        <activity
             android:name="com.fourfoureight.lolhelper.Champions"
             android:label="@string/title_activity_champions" >
         </activity>

@@ -361,5 +361,6 @@
     <string name="title_activity_champion_info">ChampionInfo</string>
     <string name="title_activity_item_info">ItemInfo</string>
     <string name="title_activity_summoner_spell_info">SummonerSpellInfo</string>
+    <string name="title_activity_player_stats_advanced">More Stats</string>
 
 </resources>
