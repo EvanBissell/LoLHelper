@@ -43,7 +43,7 @@
 	            android:layout_alignTop="@+id/imageButton00"
 	            android:layout_alignLeft="@+id/imageButton00"
 	            android:layout_marginTop="4dp"
-	            android:layout_marginLeft="80dp" >
+	            android:layout_marginLeft="70dp" >
 
 	            <LinearLayout
 	                android:id="@+id/Linear1"
@@ -177,16 +177,7 @@
 	            android:layout_alignLeft="@+id/spinner1"
 	            android:layout_below="@+id/spinner1"
 	            android:text="Suggest Champions"
-	            android:textSize="9sp" />
-
-	        <Button
-	            android:id="@+id/Button05"
-	            android:layout_width="125dp"
-	            android:layout_height="30dp"
-	            android:layout_alignParentRight="true"
-	            android:layout_below="@+id/spinner1"
-	            android:layout_marginRight="18dp"
-	            android:text="Suggest Style"
+	            android:visibility="invisible"
 	            android:textSize="9sp" />
 
 	        <Spinner
@@ -194,23 +185,11 @@
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
 	            android:layout_alignParentLeft="true"
-	            android:layout_alignRight="@+id/Button05"
 	            android:layout_below="@+id/textView1"
 	            android:layout_marginLeft="15dp"
 	            android:layout_marginTop="12dp"
+	            android:layout_toLeftOf="@+id/Button05"
 	            tools:listitem="@android:layout/simple_spinner_dropdown_item" />
-
-	        <ImageButton
-	            android:id="@+id/imageButton00"
-	            android:layout_width="60dp"
-	            android:layout_height="60dp"
-	            android:layout_alignLeft="@+id/Button06"
-	            android:layout_below="@+id/Button06"
-	            android:layout_marginTop="27dp"
-	            android:minHeight="60dip"
-	            android:minWidth="60dip"
-	            android:scaleType="center"
-	            android:src="@drawable/top" />
 
 	        <ImageButton
 	            android:id="@+id/imageButton01"
@@ -259,6 +238,30 @@
 	            android:minWidth="60dip"
 	            android:scaleType="center"
 	            android:src="@drawable/support" />
+
+	        <Button
+	            android:id="@+id/Button05"
+	            android:layout_width="70dp"
+	            android:layout_height="wrap_content"
+	            android:layout_above="@+id/textView3"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignTop="@+id/spinner1"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="15dp"
+	            android:gravity="center"
+	            android:text="Suggest Style"
+	            android:textSize="10sp" />
+
+	        <ImageButton
+	            android:id="@+id/imageButton00"
+	            android:layout_width="60dp"
+	            android:layout_height="60dp"
+	            android:layout_alignLeft="@+id/Button06"
+	            android:layout_below="@+id/Button06"
+	            android:minHeight="60dip"
+	            android:minWidth="60dip"
+	            android:scaleType="center"
+	            android:src="@drawable/top" />
 
 	    </RelativeLayout>
            
