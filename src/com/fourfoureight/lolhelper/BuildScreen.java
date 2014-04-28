@@ -20,6 +20,7 @@ import android.os.Build;
 public class BuildScreen extends ActionBarActivity {
 
 	 public static String EXTRA_MESSAGE = "";
+	 public static String TYPE = "";
      public static int arrayValue = 0;
      
      @Override
@@ -544,9 +545,43 @@ public class BuildScreen extends ActionBarActivity {
      
      }
      
-     public void viewbuild(View view) {
+     public void viewtop(View view) {
          Intent intent = new Intent(this, BuildGuides.class);
          intent.putExtra(EXTRA_MESSAGE, EXTRA_MESSAGE);
+         TYPE = "Top";
+         intent.putExtra(TYPE, TYPE);
+         startActivity(intent);
+    }
+     
+     public void viewmid(View view) {
+         Intent intent = new Intent(this, BuildGuides.class);
+         intent.putExtra(EXTRA_MESSAGE, EXTRA_MESSAGE);
+         TYPE = "Mid";
+         intent.putExtra(TYPE, TYPE);
+         startActivity(intent);
+    }
+     
+     public void viewadc(View view) {
+         Intent intent = new Intent(this, BuildGuides.class);
+         intent.putExtra(EXTRA_MESSAGE, EXTRA_MESSAGE);
+         TYPE = "ADC";
+         intent.putExtra(TYPE, TYPE);
+         startActivity(intent);
+    }
+     
+     public void viewsupp(View view) {
+         Intent intent = new Intent(this, BuildGuides.class);
+         intent.putExtra(EXTRA_MESSAGE, EXTRA_MESSAGE);
+         TYPE = "Support";
+         intent.putExtra(TYPE, TYPE);
+         startActivity(intent);
+    }
+     
+     public void viewjung(View view) {
+         Intent intent = new Intent(this, BuildGuides.class);
+         intent.putExtra(EXTRA_MESSAGE, EXTRA_MESSAGE);
+         TYPE = "Jungle";
+         intent.putExtra(TYPE, TYPE);
          startActivity(intent);
     }
 

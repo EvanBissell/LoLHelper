@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
@@ -7,14 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.fourfoureight.lolhelper.build_screen" >
 
     <ImageView
         android:id="@+id/icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-        android:layout_alignLeft="@+id/button1"
         android:layout_marginBottom="63dp"
         android:src="@drawable/aatrox" />
 
@@ -22,9 +21,6 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-        android:layout_alignRight="@+id/icon"
-        android:layout_marginBottom="24dp"
         android:text="Aatrox"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -32,18 +28,49 @@
         android:id="@+id/spinner1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="40dp" />
+        android:layout_alignParentTop="true" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/spinner1"
-        android:layout_marginBottom="96dp"
-        android:layout_marginRight="19dp"
-        android:onClick="viewbuild"
-        android:text="View" />
+    <LinearLayout
+    	android:id="@+id/container2"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal"
+	    tools:context="com.fourfoureight.lolhelper.build_screen" >
+	    <Button
+	        android:id="@+id/button2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="viewtop"
+	        android:text="Top" />
+	    
+	    <Button
+	        android:id="@+id/button3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="viewmid"
+	        android:text="Mid" />
+	    
+	    <Button
+	        android:id="@+id/button4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="viewadc"
+	        android:text="ADC" />
+	
+	    <Button
+	        android:id="@+id/button1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="110dp"
+	        android:onClick="viewsupp"
+	        android:text="Supp" />
+	
+	    <Button
+	        android:id="@+id/button5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="viewjung"
+	        android:text="Jung" />
+	</LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

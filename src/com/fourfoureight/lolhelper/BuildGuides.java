@@ -23,8 +23,9 @@ public class BuildGuides extends ActionBarActivity {
 		
 		Intent intent = getIntent();
         String message = intent.getStringExtra(BuildScreen.EXTRA_MESSAGE);
+		String type = intent.getStringExtra(BuildScreen.TYPE);
+		BuildDatabase database = new BuildDatabase(type);
 		
-		BuildDatabase database = new BuildDatabase();
 		int i;
 			if(message.equals("Aatrox")){
                 i = 0;
