@@ -596,6 +596,7 @@ public class TeamBuilder extends ActionBarActivity {
 									buttonPressFlags[4] = -1;
 									buttonChangedFlags[0] = 1;
 									newButton.setVisibility(View.GONE);
+									suggestChampion.performClick();
 								}
 					        }
 						});
@@ -1105,6 +1106,7 @@ public class TeamBuilder extends ActionBarActivity {
 									buttonPressFlags[4] = -1;
 									buttonChangedFlags[1] = 1;
 									newButton.setVisibility(View.GONE);
+									suggestChampion.performClick();
 								}
 					        }
 						});
@@ -1614,6 +1616,7 @@ public class TeamBuilder extends ActionBarActivity {
 									buttonPressFlags[4] = -1;
 									buttonChangedFlags[2] = 1;
 									newButton.setVisibility(View.GONE);
+									suggestChampion.performClick();
 								}
 					        }
 						});
@@ -2123,6 +2126,7 @@ public class TeamBuilder extends ActionBarActivity {
 									buttonPressFlags[4] = -1;
 									buttonChangedFlags[3] = 1;
 									newButton.setVisibility(View.GONE);
+									suggestChampion.performClick();
 								}
 					        }
 						});
@@ -2632,6 +2636,7 @@ public class TeamBuilder extends ActionBarActivity {
 									buttonPressFlags[4] = -1;
 									buttonChangedFlags[4] = 1;
 									newButton.setVisibility(View.GONE);
+									suggestChampion.performClick();
 								}
 					        }
 						});
@@ -5100,6 +5105,7 @@ public class TeamBuilder extends ActionBarActivity {
 							buttonPressFlags[3] = -1;
 							buttonPressFlags[4] = -1;
 							newButton.setVisibility(View.GONE);
+							suggestChampion.performClick();
 				        }
 					});
 				}
