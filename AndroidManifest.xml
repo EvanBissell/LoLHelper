@@ -7,7 +7,9 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
-	<uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -82,17 +84,33 @@
             android:name="com.fourfoureight.lolhelper.UltimateBravery"
             android:label="@string/title_activity_ultimate_bravery" >
         </activity>
-		<activity
+        <activity
             android:name="com.fourfoureight.lolhelper.ViewChampions"
             android:label="@string/title_activity_viewchampions" >
         </activity>
-		<activity
+        <activity
             android:name="com.fourfoureight.lolhelper.ViewItems"
             android:label="@string/title_activity_viewitems" >
         </activity>
-		<activity
+        <activity
             android:name="com.fourfoureight.lolhelper.ViewSummonerSpells"
             android:label="@string/title_activity_viewsummonerspells" >
+        </activity>
+        <activity
+            android:name="com.fourfoureight.lolhelper.JungleTimer"
+            android:label="@string/title_activity_jungle_timer" >
+        </activity>
+        <activity
+            android:name="com.fourfoureight.lolhelper.ChampionInfo"
+            android:label="@string/title_activity_champion_info" >
+        </activity>
+        <activity
+            android:name="com.fourfoureight.lolhelper.ItemInfo"
+            android:label="@string/title_activity_item_info" >
+        </activity>
+        <activity
+            android:name="com.fourfoureight.lolhelper.SummonerSpellInfo"
+            android:label="@string/title_activity_summoner_spell_info" >
         </activity>
     </application>
 
