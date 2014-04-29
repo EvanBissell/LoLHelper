@@ -10,6 +10,7 @@ import com.fourfoureight.lolhelper.Stats.StatsPull;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.*;
 import android.os.Build;
 
@@ -73,6 +75,10 @@ public class PlayerStats extends ActionBarActivity {
 		View.OnClickListener myListener = new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				InputMethodManager inputManager = (InputMethodManager)
+                        getSystemService(Context.INPUT_METHOD_SERVICE); 
+				inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
+                           InputMethodManager.HIDE_NOT_ALWAYS);
 				new StatsTask().execute();
 			};
 			

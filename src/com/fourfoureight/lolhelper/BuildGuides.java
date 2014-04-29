@@ -274,6 +274,7 @@ public class BuildGuides extends ActionBarActivity {
 				(ImageView) findViewById(R.id.imageViewRush1),
 				(ImageView) findViewById(R.id.imageViewRush2),
 				(ImageView) findViewById(R.id.imageViewRush3),
+				(ImageView) findViewById(R.id.imageViewRush4),
 				(ImageView) findViewById(R.id.imageViewAsNeeded1),
 				(ImageView) findViewById(R.id.imageViewAsNeeded2),
 				(ImageView) findViewById(R.id.imageViewAsNeeded3),
@@ -283,13 +284,13 @@ public class BuildGuides extends ActionBarActivity {
 			resID = getResources().getIdentifier(database.getDatabase()[i].getStart()[j], "drawable", getPackageName());
 			views[j].setImageResource(resID);
 		}
-		for(int j=0; j<3; j++){
+		for(int j=0; j<4; j++){
 			resID = getResources().getIdentifier(database.getDatabase()[i].getRush()[j], "drawable", getPackageName());
 			views[j+4].setImageResource(resID);
 		}
 		for(int j=0; j<5; j++){
 			resID = getResources().getIdentifier(database.getDatabase()[i].getAsNeeded()[j], "drawable", getPackageName());
-			views[j+7].setImageResource(resID);
+			views[j+8].setImageResource(resID);
 		}
 	}
 

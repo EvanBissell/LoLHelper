@@ -84,6 +84,11 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
+              <ImageView
+           android:id="@+id/imageViewRush4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
    </LinearLayout>
        
     <LinearLayout
