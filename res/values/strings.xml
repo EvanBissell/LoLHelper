@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    
+    <string name="Button_Enter">Enter</string>
+    <string name="Summoner_Name">Summoner Name</string>
+    <string name="Ranked_Solo_5v5">Ranked Solo 5v5</string>
+    <string name="Normal_5v5">Normal 5v5</string>
+    <string name="Dominion">Dominion</string>
+    <string name="Normal_3v3">Normal 3v3</string>
+    <string name="One_For_All">One For All</string>
+    <string name="First_Blood_1v1">First Blood 1v1</string>
+    <string name="First_Blood_2v2">First Blood 2v2</string>
+    <string name="Hexakill">Hexakill</string>
+    <string name="URF">U.R.F</string>
+    <string name="Wins">Wins</string>
+    <string name="Kills">Kills</string>
+    <string name="Assists">Assists</string>
+    <string name="Minion_Kills">Minion Kills</string>
+    <string name="Neutral_Minion_Kills">Neutral Minion Kills</string>
+    <string name="Turrets_Destroyed">Turrets Destroyed</string>
+    <string name="Most_Kills">Most Kills</string>
+    <string name="Most_Assists">Most Assists</string>
+    <string name="Highest_Score">Highest Score</string>
+    <string name="Most_Nodes_Captured">Most Nodes Captured</string>
+    <string name="Nodes_Captured">Nodes Captured</string>
+    <string name="Nodes_Neutralized">Nodes Neutralized</string>
+    <string name="Most_Nodes_Neutralized">Most Nodes Neutralized</string>
 
     <string name="app_name">LoL Helper</string>
     <string name="action_settings">Settings</string>

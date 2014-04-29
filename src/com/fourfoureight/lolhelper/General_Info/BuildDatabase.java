@@ -1698,277 +1698,530 @@ public class BuildDatabase {
 	private void buildjung(){
 		//Aatrox
 		database[0] = new BuildInfo();
+		database[0].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[0].setRush("wriggleslantern", "guardianangel", "bootsofmobility", "bladeoftheruinedking");
+		database[0].setAsNeeded("spiritvisage", "warmogsarmor", "randuinsomen", "ravenoushydra", "swordofthedivine");
 
 		//Ahri
 		database[1] = new BuildInfo();
+		database[1].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[1].setRush("wriggleslantern", "bootsofmobility", "rabadonsdeathcap");
+		database[1].setAsNeeded("sheen", "zeal", "trinityforce", "hextechgunblade");
 
 		//Akali
 		database[2] = new BuildInfo();
+		database[2].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[2].setRush("hextechgunblade", "sorcerersshoes", "zhonyashourglass");
+		database[2].setAsNeeded("rabadonsdeathcap", "lichbane", "voidstaff", "rylaiscrystalscepter", "abyssalscepter");
 
 		//Alistar
 		database[3] = new BuildInfo();
+		database[3].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[3].setRush("iceborngauntlet", "bootsofmobility", "spiritoftheancientgolem", "spectrescowl");
+		database[3].setAsNeeded("guardianangel", "zekesherald", "athenesunholygrail", "twinshadows");
 
 		//Amumu
 		database[4] = new BuildInfo();
+		database[4].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[4].setRush("bootsofmobility", "sunfirecape", "locketoftheironsolari");
+		database[4].setAsNeeded("spiritoftheancientgolem", "abyssalscepter", "frozenheart", "randuinsomen");
 
 		//Anivia
 		database[5] = new BuildInfo();
 
 		//Annie
 		database[6] = new BuildInfo();
+		database[6].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[6].setRush("bootsofmobility", "rabadonsdeathcap", "spiritofthespectralwraith");
+		database[6].setAsNeeded("liandrystorment", "rylaiscrystalscepter", "voidstaff", "zhonyashourglass", "lichbane");
 
 		//Ashe
 		database[7] = new BuildInfo();
-
+		database[7].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[7].setRush("spiritoftheelderlizard", "liandrystorment", "bootsofmobility");
+		database[7].setAsNeeded("iceborngauntlet", "theblackcleaver", "mawofmalmortius", "guinsoosrageblade", "zekesherald");
+		
 		//Blitzcrank
 		database[8] = new BuildInfo();
-
+		database[8].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[8].setRush("wriggleslantern", "bootsofmobility", "tearofthegoddess");
+		database[8].setAsNeeded("thebrutalizer", "trinityforce", "manamune", "theblackcleaver", "frozenheart");
+		
 		//Brand
 		database[9] = new BuildInfo();
-
+		database[9].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[9].setRush("spiritofthespectralwraith", "bootsofmobility", "liandrystorment");
+		database[9].setAsNeeded("rabadonsdeathcap", "rylaiscrystalscepter", "voidstaff", "abyssalscepter");
+		
 		//Caitlyn
 		database[10] = new BuildInfo();
 		
 		//Cassiopeia
 		database[11] = new BuildInfo();
-
+		database[11].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[11].setRush("archangelsstaff", "rabadonsdeathcap", "spiritofthespectralwraith", "bootsofswiftness");
+		database[11].setAsNeeded("lichbane", "rylaiscrystalscepter", "liandrystorment", "deathfiregrasp");
+		
 		//Cho'Gath
 		database[12] = new BuildInfo();
-
+		database[12].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[12].setRush("spiritoftheancientgolem", "ninjatabi", "frozenheart");
+		database[12].setAsNeeded("abyssalscepter", "randuinsomen", "spiritvisage", "witsend");
+		
 		//Corki
 		database[13] = new BuildInfo();
+		database[13].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[13].setRush("spiritoftheelderlizard", "vampiricscepter", "bootsofswiftness");
+		database[13].setAsNeeded("theblackcleaver", "thebloodthirster", "warmogsarmor", "iceborngauntlets", "trinityforce");
 
 		//Darius
 		database[14] = new BuildInfo();
+		database[14].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[14].setRush("spiritoftheelderlizard", "bootsofmobility");
+		database[14].setAsNeeded("sunfirecape", "frozenmallet", "warmogsarmor", "randuinsomen");
 
 		//Diana
 		database[15] = new BuildInfo();
+		database[15].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[15].setRush("sorcerersshoes","spiritofthespectralwraith", "lichbane");
+		database[15].setAsNeeded("zhonyashourglass", "rabadonsdeathcap", "nashorstooth");
 
 		//Dr. Mundo
 		database[16] = new BuildInfo();
-
+		database[16].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[16].setRush("ninjatabi", "spiritoftheancientgolem");
+		database[16].setAsNeeded("spiritvisage", "sunfirecape", "randuinsomen", "warmogsarmor");
+		
 		//Draven
 		database[17] = new BuildInfo();
+		database[17].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[17].setRush("madredsrazors", "bootsofmobility", "wriggleslantern");
+		database[17].setAsNeeded("thebloodthirster", "trinityforce", "infinityedge", "phantomdancer", "guardianangel");
 
 		//Elise
 		database[18] = new BuildInfo();
+		database[18].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[18].setRush("spiritofthepectralwraith", "sorcerersshoes", "liandrystorment");
+		database[18].setAsNeeded("sunfirecape", "spiritvisage", "randuinsomen", "rylaiscrystalscepter", "frozenheart");
 
 		//Evelynn
 		database[19] = new BuildInfo();
+		database[19].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[19].setRush("spiritofthespectralwraith", "sorcerersshoes", "deathfiregrasp");
+		database[19].setAsNeeded("voidstaff", "zhonyashourglass", "rabadonsdeathcap", "abyssalscepter");
+		
 
 		//Ezreal
 		database[20] = new BuildInfo();
+		database[20].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[20].setRush("spiritoftheelderlizard", "ionianbootsoflucidity");
+		database[20].setAsNeeded("trinityforce", "thebloodthirster", "lastwhisper", "manamune", "iceborngauntlet");
 
 		//Fiddlesticks
 		database[21] = new BuildInfo();
+		database[21].setStart("redtrinket", "doransring", "stealthward");
+		database[21].setRush("bootsofmobility", "zhonyashourglass", "rabadonsdeathcap");
+		database[21].setAsNeeded("spiritofthespectralwraith", "voidstaff", "rylaiscrystalscepter", "liandrystorment");
 
 		//Fiora
 		database[22] = new BuildInfo();
+		database[22].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[22].setRush("wriggleslantern", "mercurytreads", "thebrutalizer");
+		database[22].setAsNeeded("thebloodthirster", "ravenoushydra", "lastwhisper", "youmuusghostblade");
 
 		//Fizz
 		database[23] = new BuildInfo();
+		database[23].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[23].setRush("bootsofmobility", "iceborngauntlet");
+		database[23].setAsNeeded("spiritoftheancientgolem", "locketoftheironsolari", "abyssalscepter", "lichbane");
 
 		//Galio
 		database[24] = new BuildInfo();
+		database[24].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[24].setRush("bootsofmobility", "spiritoftheancientgolem", "iceborngauntlet");
+		database[24].setAsNeeded("spiritvisage", "rodofages", "rylaiscrystalscepter", "warmogsarmor", "sunfirecape");
 
 		//Gangplank
 		database[25] = new BuildInfo();
+		database[25].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[25].setRush("mercurytreads", "spiritoftheelderlizard", "hexdrinker");
+		database[25].setAsNeeded("trinityforce", "mawofmalmortius", "ravenoushydra", "randuinsomen", "lastwhisper");
 
 		//Garen
 		database[26] = new BuildInfo();
+		database[26].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[26].setRush("mercurytreads", "spiritoftheancientgolem", "spiritvisage", "sunfirecape");
+		database[26].setAsNeeded("locketoftheironsolari", "randuinsomen", "thornmail", "zekesherald");
 
 		//Gragas
 		database[27] = new BuildInfo();
+		database[27].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[27].setRush("spiritofthespectralwraith", "sorcerersshoes");
+		database[27].setAsNeeded("liandrystorment", "voidstaff", "randuinsomen", "bansheesveil", "athenesunholygrail");
 
 		//Graves
 		database[28] = new BuildInfo();
-
+		database[28].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[28].setRush("wriggleslantern", "thebloodthirster", "berserkergreaves", "bladeoftheruinedking");
+		database[28].setAsNeeded("frozenmallet", "runaanshurricane", "infinityedge", "phantomdancer", "theblackcleaver");
+		
 		//Hecarim
 		database[29] = new BuildInfo();
+		database[29].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[29].setRush("spiritoftheelderlizard", "bootsofswiftness", "iceborngauntlet", "spiritvisage");
+		database[29].setAsNeeded("randuinsomen", "locketoftheironsolari", "sunfirecape", "trinityforce");
 
 		//Heimerdinger
 		database[30] = new BuildInfo();
+		database[30].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[30].setRush("sorcerersshoes", "rylaiscrystalscepter", "abyssalscepter");
+		database[30].setAsNeeded("zhonyashourglass", "rabadonsdeathcap", "voidstaff", "athenesunholygrail");
 
 		//Irelia
 		database[31] = new BuildInfo();
+		database[31].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[31].setRush("wriggleslantern", "bootsofswiftness", "bilgewatercutlass", "zephyr");
+		database[31].setAsNeeded("bladeoftheruinedking", "trinityforce", "ravenoushydra", "theblackcleaver");
 
 		//Janna
 		database[32] = new BuildInfo();
-
+		database[32].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[32].setRush("spiritoftheelderlizard", "bootsofmobility", "zephyr");
+		database[32].setAsNeeded("zhonyashourglass", "nashorstooth", "iceborngauntlet");
+		
 		//J4
 		database[33] = new BuildInfo();
+		database[33].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[33].setRush("spiritoftheancientgolem", "bootsofmobility", "tiamat");
+		database[33].setAsNeeded("randuinsomen", "ravenoushydra", "locketoftheironsolari", "spiritvisage");
 
 		//Jax
 		database[34] = new BuildInfo();
+		database[34].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[34].setRush("mercurytreads", "wriggleslantern", "bilgewatercutlass", "trinityforce");
+		database[34].setAsNeeded("frozenheart", "mawofmalmortius", "hextechgunblade");
 
 		//Jayce
 		database[35] = new BuildInfo();
+		database[35].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[35].setRush("mercurytreads", "frozenheart", "hexdrinker");
+		database[35].setAsNeeded("lastwhisper", "randuinsomen", "mawofmalmorius", "trinityforce");
 
 		//Jinx
 		database[36] = new BuildInfo();
+		database[36].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[36].setRush("spiritoftheelderlizard", "berserkergreaves", "phantomdancer", "lastwhisper");
+		database[36].setAsNeeded("thebloodthirster", "guardianangel", "infinityedge", "frozenmallet");
 
 		//Karma
 		database[37] = new BuildInfo();
+		database[37].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[37].setRush("sorcerersshoes", "liandrystorment", "spiritofthespectralwraith");
+		database[37].setAsNeeded("athenesunholygrail", "zhonyashourglass", "rabadonsdeathcap", "rylaiscrystalscepter");
 
 		//Karthus
 		database[38] = new BuildInfo();
+		database[38].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[38].setRush("spiritofthespectralwraith", "sorcerersshoes", "rodofages", "zhonyashourglass");
+		database[38].setAsNeeded("voidstaff", "rabadonsdeathcap", "rylaiscrystalscepter", "deathfiregrasp", "liandrystorment");
 
 		//Kassadin
 		database[39] = new BuildInfo();
+		database[39].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[39].setRush("spiritstone", "sorcerersshoes", "archangelsstaff");
+		database[39].setAsNeeded("rodofages", "rabadonsdeathcap", "voidstaff", "zhonyashourglass");
 
 		//Katarina
 		database[40] = new BuildInfo();
+		database[40].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[40].setRush("spiritoftheelderlizard", "sorcerersshoes", "liandrystorment");
+		database[40].setAsNeeded("rylaiscrystalscepter", "sunfirecape", "zhonyashourglass", "rabadonsdeathcap");
 
 		//Kayle
 		database[41] = new BuildInfo();
-
+		database[41].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[41].setRush("wriggleslantern", "sorcerersshoes", "nashorstooth", "rabadonsdeathcap");
+		database[41].setAsNeeded("lichbane", "zephyr", "feralflare", "voidstaff");
+		
 		//Kennen
 		database[42] = new BuildInfo();
+		database[42].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[42].setRush("berserkergreaves", "wriggleslantern", "phantomdancer");
+		database[42].setAsNeeded("trinityforce", "thebloodthirster", "frozenmallet", "infinityedge");
 
 		//Kha'Zix
 		database[43] = new BuildInfo();
-
+		database[43].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[43].setRush("mercurytreads", "spiritoftheelderlizard");
+		database[43].setAsNeeded("mawofmalmortius", "randuinsomen", "lastwhisper", "guardianangel");
+		
 		//Kog'Maw
 		database[44] = new BuildInfo();
 
 		//LeBlanc
 		database[45] = new BuildInfo();
+		database[45].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[45].setRush("wriggleslantern", "mercurytreads", "lichbane");
+		database[45].setAsNeeded("athenesunholygrail", "zhonyashourglass", "warmogsarmor", "rylaiscrystalscepter");
 
 		//Lee Sin
 		database[46] = new BuildInfo();
+		database[46].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[46].setRush("mercurytreads", "spiritoftheelderlizard", "tiamat");
+		database[46].setAsNeeded("lastwhisper", "theblackcleaver", "rubysightstone", "randuinsomen", "locketoftheironsolari");
 
 		//Leona
 		database[47] = new BuildInfo();
+		database[47].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[47].setRush("sheen", "sunfirecape", "bootsofmobility", "spiritoftheancientgolem");
+		database[47].setAsNeeded("iceborngauntlet", "trinityforce", "mawofmalmortius", "randuinsomen", "wriggleslantern");
 
 		//Lissandra
 		database[48] = new BuildInfo();
+		database[48].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[48].setRush("spiritofthespectralwraith", "sorcerersshoes", "zhonyashourglass", "rabadonsdeathcap");
+		database[48].setAsNeeded("morellonomicon", "voidstaff", "rylaiscrystalscepter", "liandrystorment");
 
 		//Lucian
 		database[49] = new BuildInfo();
 
 		//Lulu
 		database[50] = new BuildInfo();
-
+		database[50].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[50].setRush("spiritstone", "avariceblade", "ionianbootsoflucidity");
+		database[50].setAsNeeded("runaanshurricane", "zephyr", "spiritoftheelderlizard", "witsend", "staikkshiv");
+		
 		//Lux
 		database[51] = new BuildInfo();
+		database[51].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[51].setRush("sorcerersshoes", "fiendishcodex", "rabadonsdeathcap");
+		database[51].setAsNeeded("morellonomicon", "rylaiscrystalscepter", "voidstaff", "abyssalscepter");
 
 		//Malphite
 		database[52] = new BuildInfo();
+		database[52].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[52].setRush("ninjatabi", "spiriteoftheancientgolem");
+		database[52].setAsNeeded("locketoftheironsolari", "randuinomen", "abyssalscepter", "frozenmallet");
 		
 		//Malzahar
 		database[53] = new BuildInfo();
+		database[53].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[53].setRush("spiritstone", "bootsofmobility", "archangelsstaff", "spiritofthespectralwraith");
+		database[53].setAsNeeded("rodofages", "rabadonsdeathcap", "liandrystorment", "zhonyashourglass", "rylaiscrystalscepter");
 
 		//Maokai
 		database[54] = new BuildInfo();
+		database[54].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[54].setRush("bootsofmobility", "spiritoftheancientgolem", "locketoftheironsolari");
+		database[54].setAsNeeded("frozenheart", "randuinsomen", "abyssalscepter");
 
 		//Master Yi
 		database[55] = new BuildInfo();
+		database[55].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[55].setRush("wriggleslantern", "bootsofmobility", "youmuusghostblade", "infinityedge");
+		database[55].setAsNeeded("bladeoftheruinedking", "feralflare", "guardianangel");
 
 		//Miss Fortune
 		database[56] = new BuildInfo();
+		database[56].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[56].setRush("rabadonsdeathcap", "bootsofmobility", "spiritoftheelderlizard");
+		database[56].setAsNeeded("lichbane", "trinityforce", "guardianangel", "warmogsarmor", "hextechgunblade");
 
 		//Mordekaiser
 		database[57] = new BuildInfo();
+		database[57].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[57].setRush("spiritoftheancientgolem", "bootsofswiftness", "sunfirecape");
+		database[57].setAsNeeded("frozenheart", "bansheesveil", "voidstaff");
 
 		//Morgana
 		database[58] = new BuildInfo();
+		database[58].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[58].setRush("spiritofthespectralwraith", "sorcerersshoes", "zhonyashourglass");
+		database[58].setAsNeeded("rylaiscrystalscepter", "spiritvisage", "rodofages", "deathfiregrasp", "liandrystorment");
 
 		//Nami
 		database[59] = new BuildInfo();
+		database[59].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[59].setRush("spiritofthespectralwraith", "sorcerersshoes", "rodofages");
+		database[59].setAsNeeded("rabadonsdeathcap", "liandrystorment", "morellonomicon", "zhonyashourglass");
 
 		//Nasus
 		database[60] = new BuildInfo();
+		database[60].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[60].setRush("bootsofswiftness", "spiritoftheancientgolem", "spiritvisage");
+		database[60].setAsNeeded("randuinsomen", "iceborngauntlet", "warmogsarmor", "locketoftheironsolari");
 
 		//Nautilus
 		database[61] = new BuildInfo();
+		database[61].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[61].setRush("bootsofmobility", "spiritoftheancientgolem");
+		database[61].setAsNeeded("locketoftheironsolari", "randuinsomen", "witsend");
 
 		//Nidalee
 		database[62] = new BuildInfo();
+		database[62].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[62].setRush("archangelsstaff", "sorcerersshoes", "rabadonsdeathcap");
+		database[62].setAsNeeded("voidstaff", "morellonomicon", "zhonhashourglass", "lichbane");
 
 		//Nocturne
 		database[63] = new BuildInfo();
+		database[63].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[63].setRush("wriggleslantern", "mercurytreads", "bladeoftheruinedking");
+		database[63].setAsNeeded("randuinsomen", "bansheesveil", "lastwhisper", "frozenmallet");
 
 		//Nunu
 		database[64] = new BuildInfo();
+		database[64].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[64].setRush("spiritoftheancientgolem", "bootsofmobility", "locketoftheironsolari");
+		database[64].setAsNeeded("spiritvisage", "randuinsomen", "sunfirecape");
 
 		//Olaf
 		database[65] = new BuildInfo();
-
+		database[65].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[65].setRush("wriggleslantern", "thebrutalizer", "mercurytreads", "locketoftheironsolari");
+		database[65].setAsNeeded("warmogsarmor", "randuinsomen", "frozenheart", "frozenmallet");
+		
 		//Orianna
 		database[66] = new BuildInfo();
 
 		//Pantheon
 		database[67] = new BuildInfo();
+		database[67].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[67].setRush("bootsofmobility", "spiritoftheelderlizard", "thebrutalizer");
+		database[67].setAsNeeded("theblackcleaver", "locketoftheironsolari", "randuinsomen", "bladeoftheruinedking");
 
 		//Poppy
 		database[68] = new BuildInfo();
+		database[68].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[68].setRush("trinityforce", "spiritoftheelderlizard", "bootsofmobility");
+		database[68].setAsNeeded("ravenoushydra", "hextechgunblade", "randuinsomen", "thebloodthirster");
 
 		//Quinn
 		database[69] = new BuildInfo();
+		database[69].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[69].setRush("spiritoftheelderlizard", "bootsofmobility", "bladeoftheruinedking");
+		database[69].setAsNeeded("frozenmallet", "lastwhisper", "mercurialscimitar", "thebloodthirster");
 
 		//Rammus
 		database[70] = new BuildInfo();
+		database[70].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[70].setRush("spiritoftheancientgolem", "ninjatabi", "sunfirecape");
+		database[70].setAsNeeded("bansheesveil", "randuinsomen", "thornmail");
 
 		//Renekton
 		database[71] = new BuildInfo();
+		database[71].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[71].setRush("spiritoftheelderlizard", "bootsofmobility", "sunfirecape");
+		database[71].setAsNeeded("spiritvisage", "randuinsomen", "warmogsarmor", "mawofmalmortius", "thornmail");
 
 		//Rengar
 		database[72] = new BuildInfo();
+		database[72].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[72].setRush("mercurytreads", "ravenoushydra", "bonetoothnecklace");
+		database[72].setAsNeeded("lastwhisper", "randuinsomen", "mawofmalmortius", "spiritvisage", "guardianangel");
 
 		//Riven
 		database[73] = new BuildInfo();
+		database[73].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[73].setRush("thebrutalizer", "spiritoftheelderlizard", "mercurytreads");
+		database[73].setAsNeeded("ravenoushydra", "lastwhisper", "guardianangel", "theblackcleaver");
 
 		//Rumble
 		database[74] = new BuildInfo();
+		database[74].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[74].setRush("spiritofthespectralwraith", "sorcerersshoes", "zhonyashourglass");
+		database[74].setAsNeeded("abyssalscepter", "rabadonsdeathcap", "liandrystorment", "randuinsomen", "rylaiscrystalscepter");
 
 		//Ryze
 		database[75] = new BuildInfo();
+		database[75].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[75].setRush("spiritofthespectralwraith", "sorcerersshoes", "archangelsstaff");
+		database[75].setAsNeeded("athenesunholygrail", "abyssalsscepter", "zhonyashourglass", "randuinsomen", "iceborngauntlet");
 
 		//Sejuani
 		database[76] = new BuildInfo();
+		database[76].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[76].setRush("spiritoftheancientgolem", "ninjatabi", "liandrystorment", "randuinsomen");
+		database[76].setAsNeeded("spiritvisage", "sunfirecape", "guardianangel", "locketoftheironsolari", "frozenheart");
 
 		//Shaco
 		database[77] = new BuildInfo();
-
+		database[77].setStart("redtrinket", "doransblade");
+		database[77].setRush("doransblade", "berserkergreaves", "statikkshiv");
+		database[77].setAsNeeded("bladeoftheruinedking", "infinityedge", "lastwhisper", "phantomdancer");
+		
 		//Shen
 		database[78] = new BuildInfo();
+		database[78].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[78].setRush("madredsrazors", "ninjatabi", "sunfirecape");
+		database[78].setAsNeeded("warmogsarmor", "witsend", "randuinsomen", "bladeoftheruinedking");
 
 		//Shyvana
 		database[79] = new BuildInfo();
+		database[79].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[79].setRush("ninjatabi", "spiritoftheancientgolem", "bladeoftheruinedking");
+		database[79].setAsNeeded("sunfirecape", "randuinsomen", "locketoftheironsolari", "trinityforce", "spiritvisage");
 
 		//Singed
 		database[80] = new BuildInfo();
+		database[80].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[80].setRush("ninjatabi", "spiritoftheancientgolem", "rylaiscrystalscepter");
+		database[80].setAsNeeded("thornmail", "bansheesveil", "liandrystorment", "randuinsomen", "abyssalscepter");
 
 		//Sion
 		database[81] = new BuildInfo();
+		database[81].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[81].setRush("avariceblade", "berserkergreaves", "vampiricscepter", "ravenoushydra");
+		database[81].setAsNeeded("warmogsarmor", "infinityedge", "randuinsomen", "atmasimpaler", "zephyr");
 
 		//Sivir
 		database[82] = new BuildInfo();
+		database[82].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[82].setRush("berserkergreaves", "wriggleslantern");
+		database[82].setAsNeeded("infinityedge", "phantomdancer", "thebloodthirster", "theblackcleaver");
 
 		//Skarner
 		database[83] = new BuildInfo();
+		database[83].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[83].setRush("spiritoftheancientgolem", "bootsofmobility", "iceborngauntlet");
+		database[83].setAsNeeded("sunfirecape", "witsend", "randuinsomen", "frozenheart", "trinityforce");
 
 		//Sona
 		database[84] = new BuildInfo();
-
+		
 		//Soraka
 		database[85] = new BuildInfo();
+		database[85].setStart("yellowtrinket", "doransring", "healthpotion");
+		database[85].setRush("tearofthegoddess", "mercurytreads", "archangelsstaff");
+		database[85].setAsNeeded("bansheesveil", "locketoftheironsolari", "mikaelscrucible");
 
 		//Swain
 		database[86] = new BuildInfo();
 
 		//Syndra
 		database[87] = new BuildInfo();
+		database[87].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[87].setRush("spiritstone", "sorcerersshoes", "athenesunholygrail");
+		database[87].setAsNeeded("spiritofthespectralwraith", "rabadonsdeathcap", "zhonyashourglass", "liandrystorment", "voidstaff");
 
 		//Talon
 		database[88] = new BuildInfo();
+		database[88].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[88].setRush("spiritoftheelderlizard", "bootsofmobility", "tearofthegoddess", "vampiricscepter");
+		database[88].setAsNeeded("ravenoushydra", "theblackcleaver", "thebloodthirster", "spiritvisage", "lastwhisper");
 
 		//Taric
 		database[89] = new BuildInfo();
-
+		database[89].setStart("redtrinket", "huntersmachete", "healthpotion");
+		database[89].setRush("spiritoftheancientgolem", "ninjatabi", "manamune");
+		database[89].setAsNeeded("bilgewatercutlass", "hextechgunblade", "zhonyashourglass", "frozenheart", "locketoftheironsolari");
+		
 		//Teemo
 		database[90] = new BuildInfo();
-
+		database[90].setStart("yellowtrinket", "huntersmachete", "healthpotion");
+		database[90].setRush("wriggleslantern", "sorcerersshoes", "nashorstooth");
+		database[90].setAsNeeded("runaanashurricane", "rabadonsdeathcap", "liandrystorment", "lichbane");
+		
 		//Thresh
 		database[91] = new BuildInfo();
 
