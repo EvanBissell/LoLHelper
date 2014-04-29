@@ -114,6 +114,9 @@ public class MainActivity extends ActionBarActivity {
                 {
                 	buildguides(v);
                 }
+                else if (check == "Jungle Timer"){
+                	jungletimers(v);
+                }
                 else if (check == "Team Builder")
                 {
                 	teamBuilder(v);
@@ -217,7 +220,10 @@ public class MainActivity extends ActionBarActivity {
     	Intent intent = new Intent(this, BuildScreen.class);
     	startActivity(intent);
     }
-    
+    public void jungletimers(View view) {
+    	Intent intent = new Intent(this, JungleTimer.class);
+    	startActivity(intent);
+    }    
     public void teamBuilder(View view) {
     	Intent intent = new Intent(this, TeamBuilder.class);
     	startActivity(intent);
