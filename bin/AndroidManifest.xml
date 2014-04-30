@@ -89,14 +89,6 @@
             android:label="@string/title_activity_ultimate_bravery" >
         </activity>
         <activity
-            android:name="com.fourfoureight.lolhelper.ViewChampions"
-            android:label="@string/title_activity_viewchampions" >
-        </activity>
-        <activity
-            android:name="com.fourfoureight.lolhelper.ViewItems"
-            android:label="@string/title_activity_viewitems" >
-        </activity>
-        <activity
             android:name="com.fourfoureight.lolhelper.ViewSummonerSpells"
             android:label="@string/title_activity_viewsummonerspells" >
         </activity>
