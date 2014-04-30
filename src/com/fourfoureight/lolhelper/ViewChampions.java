@@ -28,6 +28,8 @@ public class ViewChampions extends ActionBarActivity {
              //final TextView display1 = (TextView)findViewById(R.id.textView1);
              int i = 0;
              
+             SpellDatabase.makeSpellDatabase();
+             
              Intent intent = getIntent();
              String message = intent.getStringExtra(Champions.EXTRA_MESSAGE);
      			//display1.setText(message);

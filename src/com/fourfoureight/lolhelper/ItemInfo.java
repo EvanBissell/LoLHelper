@@ -140,7 +140,7 @@ public class ItemInfo extends ActionBarActivity {
 	            		i = 45;
 	            	}else if(message.equals("Entropy")){
 	            		i = 46;
-	            	}else if(message.equals("Executioner’s Calling")){
+	            	}else if(message.equals("Executioners Calling")){
 	            		i = 47;
 	            	}else if(message.equals("Explorers Ward")){
 	            		i = 48;
@@ -156,7 +156,7 @@ public class ItemInfo extends ActionBarActivity {
 	            		i = 53;
 	            	}else if(message.equals("Forbidden Idol")){
 	            		i = 54;
-	            	}else if(message.equals("Frost Queen’s Claim")){
+	            	}else if(message.equals("Frost Queens Claim")){
 	            		i = 55;
 	            	}else if(message.equals("Frostfang")){
 	            		i = 56;
@@ -210,7 +210,7 @@ public class ItemInfo extends ActionBarActivity {
 	            		i = 80;
 	            	}else if(message.equals("Last Whisper")){
 	            		i = 81;
-	            	}else if(message.equals("Liandry’s Torment")){
+	            	}else if(message.equals("Liandrys Torment")){
 	            		i = 82;
 	            	}else if(message.equals("Lich Bane")){
 	            		i = 83;
@@ -244,7 +244,7 @@ public class ItemInfo extends ActionBarActivity {
 	            		i = 97;
 	            	}else if(message.equals("Muramana")){
 	            		i = 98;
-	            	}else if(message.equals("Nashor’s Tooth")){
+	            	}else if(message.equals("Nashors Tooth")){
 	            		i = 99;
 	            	}else if(message.equals("Needlessly Large Rod")){
 	            		i = 100;
@@ -284,7 +284,7 @@ public class ItemInfo extends ActionBarActivity {
 	            		i = 117;
 	            	}else if(message.equals("Rabadons Deathcap")){
 	            		i = 118;
-	            	}else if(message.equals("Randuin’s Omen")){
+	            	}else if(message.equals("Randuins Omen")){
 	            		i = 119;
 	            	}else if(message.equals("Ravenous Hydra")){
 	            		i = 120;
@@ -380,8 +380,8 @@ public class ItemInfo extends ActionBarActivity {
 	            		i = 165;
 	            	}else if(message.equals("Void Staff")){
 	            		i = 166;
-					}else if(message.equals("Wardens Mail")){
-						i = 167;
+			}else if(message.equals("Wardens Mail")){
+				i = 167;
 	            	}else if(message.equals("Warding Totem")){
 	            		i = 168;
 	            	}else if(message.equals("Warmogs Armor")){

@@ -25,15 +25,6 @@ public class UltimateBravery extends ActionBarActivity {
 		setContentView(R.layout.activity_ultimate_bravery);
 
 
-
-//	int champIcon,viktorItem,item1,item2,item3,item4,item5,item6;
-
-
-//	@Override
-//	protected void onCreate(Bundle savedInstanceState) {
-//		super.onCreate(savedInstanceState);
-//		setContentView(R.layout.activity_main);
-
 		items.runMain();
 		
 		Button rand = (Button)findViewById(R.id.btnRandom);

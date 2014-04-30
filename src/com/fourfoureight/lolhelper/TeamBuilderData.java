@@ -2,6 +2,9 @@ package com.fourfoureight.lolhelper;
 
 import com.fourfoureight.lolhelper.General_Info.ChampionAttributes;
 
+// Description:
+// Utitlity class for Team Builder, contains all the data processing methods.
+// Caller: TeamBuilder.java
 public class TeamBuilderData{
 
 	public static final int numOfChampions = 118;
@@ -16,13 +19,16 @@ public class TeamBuilderData{
 	// this team is good at, followed by a list of strategies.
 	// strategies are numbered from 0 to 9
 	private int[] availableStrategy;
+	
 	// this is the actual strategy the user pick. -1 means not picked yet.
 	private int ourStrategy;
 
 //==============================================================================
-
+	
+	// Constructor
 	public TeamBuilderData(){
-
+		
+		// Initialize everything
 		numOfPosition = new int[5];
 		ourTeam = new ChampionAttributes[5];
 		ourStrategy = -1;
@@ -33,11 +39,13 @@ public class TeamBuilderData{
 			ourTeam[i] = new ChampionAttributes();
 		}
 		
+		// initially all 10 strategies are available.
 		availableStrategy[0] = 10;
 		for (int i = 1; i < 11; i++){
 			availableStrategy[i] = i - 1;
 		}
 		
+		// Attributes data for all champions. See ChampionAttributes.java for encoding information.
 		int[] AatroxAttributes = {20, 10, 10, 10, 0, 20, 0, 20, 10, 10};
 		int[] AhriAttributes = {10, 10, 20, 20, 0, 0, 0, 0, 10, 10};
 		int[] AkaliAttributes = {20, 10, 0, 20, 0, 0, 0, 0, 0, 10};
@@ -156,7 +164,8 @@ public class TeamBuilderData{
 		int[] ZiggsAttributes = {10, 10, 20, 10, 20, 0, 20, 0, 10, 10};
 		int[] ZileanAttributes = {10, 10, 10, 20, 10, 0, 0, 20, 10, 10};
 		int[] ZyraAttributes = {10, 20, 10, 20, 20, 0, 0, 0, 10, 10};
-
+		
+		// Position data for all champions. See ChampionAttributes.java for encoding information.
 		int[] AatroxPositions = {1, 1, 0, 0, 0};
 		int[] AhriPositions = {0, 0, 1, 0, 0};
 		int[] AkaliPositions = {0, 0, 1, 0, 0};
@@ -276,6 +285,7 @@ public class TeamBuilderData{
 		int[] ZileanPositions = {0, 0, 1, 0, 1};
 		int[] ZyraPositions = {0, 0, 1, 0, 1};
 		
+		// Creating class instances for all champions and fit into the array allChampions[]
 		allChampions[0] = (new ChampionAttributes("Aatrox", AatroxAttributes, AatroxPositions));
 		allChampions[1] = (new ChampionAttributes("Ahri", AhriAttributes, AhriPositions));
 		allChampions[2] = (new ChampionAttributes("Akali", AkaliAttributes, AkaliPositions));
@@ -395,25 +405,36 @@ public class TeamBuilderData{
 		allChampions[116] = (new ChampionAttributes("Zilean", ZileanAttributes, ZileanPositions));
 		allChampions[117] = (new ChampionAttributes("Zyra", ZyraAttributes, ZyraPositions));
 		
+		// For all 5 positions, find how many champions are good at it.
 		findNumOfPositions();
 	}
 	
+//==============================================================================
+
+	// Set a team member in the team.
+	// postion is one of five positions in the team
+	// newChampion is the champion will be put on the position.
 	public void setOurTeam(int position, ChampionAttributes newChampion){
 		this.ourTeam[position] = newChampion;
 	}
 	
+	// Set the strategy for team
+	// strategy is the strategy user picked from available options.
 	public void setOurStrategy(int strategy){
 		this.ourStrategy = strategy;
 	}
 	
+	// Return the current team strategy
 	public int getOurStrategy(){
 		return this.ourStrategy;
 	}
 	
+	// Return an available strategy in the array availableStrategy[] with some index.
 	public int getAvailableStrategyArray(int index){
 		return this.availableStrategy[index];
 	}
 	
+	// Return an string array contains all available strategies for team
 	public String[] getAvailableStrategy(){
 		String[] returnArray = new String[availableStrategy[0] + 1];
 		returnArray[0] = "Check Team Style Here";
@@ -456,7 +477,7 @@ public class TeamBuilderData{
 	
 //==============================================================================
 	
-	// find the numbers of champions for each position
+	// For all 5 positions, find how many champions are good at it.
 	private void findNumOfPositions(){
 		// initialize the array
 		for (int i = 0; i < 5; i++){
@@ -469,7 +490,9 @@ public class TeamBuilderData{
 			}
 		}
 	}
-
+	
+	// Count champions who are good at given strategy and position.
+	// Return is the number of qualified champions
 	private int championCounter(int strategy, int position){
 		int count = 0;
 		for (int i = 0; i < numOfChampions; i++){
@@ -494,9 +517,8 @@ public class TeamBuilderData{
 		return count;
 	}
 	
-	// return a list of champions that matches the given strategy and given position.
-	// strategy is labeled from 0 to 9, the return list won't include the 
-	// champions that already in the team.
+	// Return a list of champions that matches the team strategy and given position.
+	// the return list won't include the champions that already in the team.
 	public ChampionAttributes[] suggestChampionsByStrategy(int position){
 		
 		if (ourStrategy == -1){
@@ -533,9 +555,9 @@ public class TeamBuilderData{
 		return returnArray;
 	}
 	
-	// return a list of champions that matches the given position.
-	// strategy is labeled from 0 to 9, the return list won't include the 
-	// champions that already in the given team.
+	// Return a list of champions that matches the given position, ignore the strategy.
+	// This method is called when the team strategy is -1 (haven't benn picked)
+	// return list won't include the champions that already in the given team.
 	private ChampionAttributes[] suggestChampionsByPosition(int position){
 
 		ChampionAttributes[] returnArray = new ChampionAttributes[numOfPosition[position]];
@@ -563,7 +585,7 @@ public class TeamBuilderData{
 		return returnArray;
 	}
 	
-	//	suggest a strategy for the team
+	// Suggest strategies for the team. The output will be written in availableStrategy[].
 	public void suggestStrategyForTeam(){
 		
 		// detect # of current team members
@@ -614,6 +636,7 @@ public class TeamBuilderData{
 		availableStrategy = returnArray;
 	}
 	
+	// Retrun an array contains every champion who is not in the team.
 	public ChampionAttributes[] getAllAvailableChampions(){
 		ChampionAttributes[] returnArray = new ChampionAttributes[numOfChampions];
 		for (int i = 0; i < numOfChampions; i++){
