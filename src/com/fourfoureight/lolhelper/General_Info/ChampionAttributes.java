@@ -1,7 +1,10 @@
 package com.fourfoureight.lolhelper.General_Info;
 
-// utility class ChampionAttributes to store a champion is good at some
+// Description:
+// Utility class ChampionAttributes to store a champion is good at some
 // strategy or not.
+// Caller: TeamBuilder.java, TeamBuilderData.java
+
 public class ChampionAttributes{
 	
 	private String name;
@@ -34,6 +37,7 @@ public class ChampionAttributes{
 	 * values encoding: 0 means not good at this position, 1 means good at.
 	 */
 	
+	// Default constructor
 	public ChampionAttributes(){
 		this.name = "NONAME";
 		for (int i = 0; i < 10; i++){
@@ -44,6 +48,7 @@ public class ChampionAttributes{
 		}
 	}
 	
+	// Constructor with champion data
 	public ChampionAttributes(String name, int attribute[], int[] position){
 		this.name = name;
 		for (int i = 0; i < 10; i++){
@@ -53,7 +58,8 @@ public class ChampionAttributes{
 			this.position[i] = position[i];
 		}
 	}
-			
+	
+	// return the name of a champion		
 	public String getName(){
 		return this.name;
 	}
@@ -63,9 +69,8 @@ public class ChampionAttributes{
 		return this.attribute[strategy];
 	}
 	
+	// return a champion is good at some position or not.
 	public int getPosition(int pos){
 		return this.position[pos];
 	}
 }
-
-//==============================================================================
