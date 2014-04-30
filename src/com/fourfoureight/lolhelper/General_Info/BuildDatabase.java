@@ -64,7 +64,7 @@ public class BuildDatabase {
 		//Ashe
 		database[7] = new BuildInfo();
 		database[7].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[7].setRush("statikkshiv", "berserkersgreaves", "infinityedge");
+		database[7].setRush("statikkshiv", "berserkergreaves", "infinityedge");
 		database[7].setAsNeeded("lastwhisper", "phantomdancer", "guardianangel", "zephyr");
 		
 		//Blitzcrank
@@ -82,7 +82,7 @@ public class BuildDatabase {
 		//Caitlyn
 		database[10] = new BuildInfo();
 		database[10].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[10].setRush("thebloodthirster", "berserkersgreaves", "infinityedge");
+		database[10].setRush("thebloodthirster", "berserkergreaves", "infinityedge");
 		database[10].setAsNeeded("lastwhisper", "phantomdancer", "guardianangel", "zephyr");
 				
 		//Cassiopeia
@@ -99,13 +99,13 @@ public class BuildDatabase {
 		//Corki
 		database[13] = new BuildInfo();
 		database[13].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[13].setRush("trinityforce", "berserkersgreaves", "infinityedge");
+		database[13].setRush("trinityforce", "berserkergreaves", "infinityedge");
 		database[13].setAsNeeded("lastwhisper", "phantomdancer", "guardianangel", "thebloodthirster");
 		//Darius
 		database[14] = new BuildInfo();
 		database[14].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[14].setRush("ravenoushydra", "mercurytreadss", "sunfirecape");
-		database[14].setAsNeeded("frozenheart", "trinityforce", "guardianangel", "mawofmalmortius");
+		database[14].setRush("ravenoushydra", "mercurytreads", "sunfirecape");
+		database[14].setAsNeeded("frozenheart", "trinityforce", "guardianangel", "mawofthemalmortius");
 		//Diana
 		database[15] = new BuildInfo();
 		database[15].setStart("yellowtrinket", "clotharmor", "healthpotion", "stealthward");
@@ -120,7 +120,7 @@ public class BuildDatabase {
 		//Draven
 		database[17] = new BuildInfo();
 		database[17].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[17].setRush("thebloodthirster", "berserkersgreaves", "infinityedge");
+		database[17].setRush("thebloodthirster", "berserkergreaves", "infinityedge");
 		database[17].setAsNeeded("lastwhisper", "phantomdancer", "guardianangel", "zephyr");
 		
 		//Elise
@@ -136,7 +136,7 @@ public class BuildDatabase {
 		//Ezreal
 		database[20] = new BuildInfo();
 		database[20].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[20].setRush("trinityforce", "berserkersgreaves", "infinityedge");
+		database[20].setRush("trinityforce", "berserkergreaves", "infinityedge");
 		database[20].setAsNeeded("lastwhisper", "phantomdancer", "guardianangel", "thebloodthirster");
 		
 		//Fiddlesticks
@@ -161,7 +161,7 @@ public class BuildDatabase {
 		database[24] = new BuildInfo();
 		database[24].setStart("yellowtrinket", "crystallineflask", "healthpotion");
 		database[24].setRush("athenesunholygrail", "abyssalscepter", "bansheesveil");
-		database[24].setAsNeeded("mercurytreadss", "spiritvisage", "rabadonsshield", "zhonyashourglass");
+		database[24].setAsNeeded("mercurytreads", "spiritvisage", "rabadonsshield", "zhonyashourglass");
 		
 		//Gangplank
 		database[25] = new BuildInfo();
@@ -173,7 +173,7 @@ public class BuildDatabase {
 		database[26] = new BuildInfo();
 		database[26].setStart("yellowtrinket", "clotharmor", "healthpotion");
 		database[26].setRush("sunfirecape", "theblackcleaver", "randuinsomen");
-		database[26].setAsNeeded("mercurytreads", "lastwhisper", "guardianangel", "mawofmalmortius");
+		database[26].setAsNeeded("mercurytreads", "lastwhisper", "guardianangel", "mawofthemalmortius");
 		
 		//Gragas
 		database[27] = new BuildInfo();
@@ -185,7 +185,7 @@ public class BuildDatabase {
 		//Graves
 		database[28] = new BuildInfo();
 		database[28].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[28].setRush("thebloodthirster", "berserkersgreaves", "infinityedge");
+		database[28].setRush("thebloodthirster", "berserkergreaves", "infinityedge");
 		database[28].setAsNeeded("lastwhisper", "phantomdancer", "guardianangel", "zephyr");
 		
 		//Hecarim
@@ -220,17 +220,17 @@ public class BuildDatabase {
 		//Jax
 		database[34] = new BuildInfo();
 		database[34].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[34].setRush("trinityforce", "mercurytreadss", "bladeoftheruinedking");
+		database[34].setRush("trinityforce", "mercurytreads", "bladeoftheruinedking");
 		database[34].setAsNeeded("randuinsomen", "bansheesveil", "warmogsarmor", "guardianangel");
 		//Jayce
 		database[35] = new BuildInfo();
 		database[35].setStart("yellowtrinket", "crystallineflask", "healthpotion");
 		database[35].setRush("manamune", "mercurytreads", "thebloodthirster");
-		database[35].setAsNeeded("bladeoftheruinedking", "mawofmalmortius", "guardianangel", "lastwhisper");
+		database[35].setAsNeeded("bladeoftheruinedking", "mawofthemalmortius", "guardianangel", "lastwhisper");
 		//Jinx
 		database[36] = new BuildInfo();
 		database[36].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[36].setRush("thebloodthirster", "berserkersgreaves", "infinityedge");
+		database[36].setRush("thebloodthirster", "berserkergreaves", "infinityedge");
 		database[36].setAsNeeded("lastwhisper", "phantomdancer", "guardianangel", "zephyr");
 		
 		//Karma
@@ -260,7 +260,7 @@ public class BuildDatabase {
 		//Kayle
 		database[41] = new BuildInfo();
 		database[41].setStart("yellowtrinket", "crystallineflask", "healthpotion");
-		database[41].setRush("nashorstooth", "berserkersgreaves", "lichbane");
+		database[41].setRush("nashorstooth", "berserkergreaves", "lichbane");
 		database[41].setAsNeeded("rabadonsdeathcap", "guinsoosrageblade", "liandrystorment","iceborngauntlet");
 		
 		//Kennen
@@ -273,7 +273,7 @@ public class BuildDatabase {
 		database[43] = new BuildInfo();
 		database[43].setStart("yellowtrinket", "crystallineflask", "healthpotion");
 		database[43].setRush("thebloodthirster", "mercurytreads", "lastwhisper");
-		database[43].setAsNeeded("mawofmalmortius", "randuinsomen", "theblackcleaver","ravenoushydra");
+		database[43].setAsNeeded("mawofthemalmortius", "randuinsomen", "theblackcleaver","ravenoushydra");
 		
 		//Kog'Maw
 		database[44] = new BuildInfo();
@@ -290,7 +290,7 @@ public class BuildDatabase {
 		//Lee Sin
 		database[46] = new BuildInfo();
 		database[46].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[46].setRush("ravenoushydra", "mercurytreads", "mawofmalmortius");
+		database[46].setRush("ravenoushydra", "mercurytreads", "mawofthemalmortius");
 		database[46].setAsNeeded("trinityforce", "rubysightstone", "theblackcleaver","frozenmallet");
 		
 		//Leona
@@ -307,7 +307,7 @@ public class BuildDatabase {
 		//Lucian
 		database[49] = new BuildInfo();
 		database[49].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[49].setRush("thebloodthirster", "berserkersgreaves", "infinityedge");
+		database[49].setRush("thebloodthirster", "berserkergreaves", "infinityedge");
 		database[49].setAsNeeded("lastwhisper", "phantomdancer", "guardianangel", "zephyr");
 		
 		//Lulu
@@ -342,11 +342,11 @@ public class BuildDatabase {
 		database[55] = new BuildInfo();
 		database[55].setStart("yellowtrinket", "longsword", "healthpotion");
 		database[55].setRush("bladeoftheruinedking", "berserkergreaves", "infinityedge");
-		database[55].setAsNeeded("phantomdancer", "ravenoushydra", "warmogsarmor", "mawofmalmortius");
+		database[55].setAsNeeded("phantomdancer", "ravenoushydra", "warmogsarmor", "mawofthemalmortius");
 		//Miss Fortune
 		database[56] = new BuildInfo();
 		database[56].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[56].setRush("thebloodthirster", "berserkersgreaves", "infinityedge");
+		database[56].setRush("thebloodthirster", "berserkergreaves", "infinityedge");
 		database[56].setAsNeeded("lastwhisper", "phantomdancer", "guardianangel", "zephyr");
 		
 		//Mordekaiser
@@ -369,13 +369,13 @@ public class BuildDatabase {
 		//Nasus
 		database[60] = new BuildInfo();
 		database[60].setStart("yellowtrinket", "doransshield", "healthpotion");
-		database[60].setRush("icebornguantlet", "mercurytreads", "spiritvisage");
+		database[60].setRush("iceborngauntlet", "mercurytreads", "spiritvisage");
 		database[60].setAsNeeded("randuinsomen", "trinityforce", "guardianangel", "bansheesveil");
 		
 		//Nautilus
 		database[61] = new BuildInfo();
 		database[61].setStart("yellowtrinket", "doransshield", "healthpotion");
-		database[61].setRush("icebornguantlet", "mercurytreads", "trinityforce");
+		database[61].setRush("iceborngauntlet", "mercurytreads", "trinityforce");
 		database[61].setAsNeeded("randuinsomen", "warmogsarmor", "guardianangel", "bansheesveil");
 		
 		//Nidalee
@@ -387,18 +387,18 @@ public class BuildDatabase {
 		//Nocturne
 		database[63] = new BuildInfo();
 		database[63].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[63].setRush("ravenoushydra", "mercurytreads", "mawofmalmortius");
+		database[63].setRush("ravenoushydra", "mercurytreads", "mawofthemalmortius");
 		database[63].setAsNeeded("trinityforce", "randuinsomen", "theblackcleaver","frozenmallet");
 		
 		//Nunu
 		database[64] = new BuildInfo();
 		database[64].setStart("yellowtrinket", "doransshield", "healthpotion");
-		database[64].setRush("rabadonsdeathcape", "sorcerersshoes", "zhonyashourglass");
+		database[64].setRush("rabadonsdeathcap", "sorcerersshoes", "zhonyashourglass");
 		database[64].setAsNeeded("deathfiregrasp", "lichbane", "voidstaff", "guardianangel");
 		//Olaf
 		database[65] = new BuildInfo();
 		database[65].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[65].setRush("ravenoushydra", "mercurytreads", "mawofmalmortius");
+		database[65].setRush("ravenoushydra", "mercurytreads", "mawofthemalmortius");
 		database[65].setAsNeeded("trinityforce", "randuinsomen", "theblackcleaver","frozenmallet");
 		
 		//Orianna
@@ -410,19 +410,19 @@ public class BuildDatabase {
 		//Pantheon
 		database[67] = new BuildInfo();
 		database[67].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[67].setRush("ravenoushydra", "mercurytreads", "mawofmalmortius");
+		database[67].setRush("ravenoushydra", "mercurytreads", "mawofthemalmortius");
 		database[67].setAsNeeded("trinityforce", "randuinsomen", "theblackcleaver","frozenmallet");
 		
 		//Poppy
 		database[68] = new BuildInfo();
 		database[68].setStart("yellowtrinket", "doransshield", "healthpotion");
-		database[68].setRush("icebornguantlet", "mercurytreads", "trinityforce");
+		database[68].setRush("iceborngauntlet", "mercurytreads", "trinityforce");
 		database[68].setAsNeeded("randuinsomen", "warmogsarmor", "guardianangel", "bansheesveil");
 		
 		//Quinn
 		database[69] = new BuildInfo();
 		database[69].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[69].setRush("thebloodthirster", "berserkersgreaves", "infinityedge");
+		database[69].setRush("thebloodthirster", "berserkergreaves", "infinityedge");
 		database[69].setAsNeeded("lastwhisper", "phantomdancer", "guardianangel", "zephyr");
 		
 		//Rammus
@@ -434,7 +434,7 @@ public class BuildDatabase {
 		database[71] = new BuildInfo();
 		database[71].setStart("yellowtrinket", "doransblade", "healthpotion");
 		database[71].setRush("thebloodthirster", "mercurytreads", "ravenoushydra");
-		database[71].setAsNeeded("lastwhisper", "mawofmalmortius", "guardianangel", "bloodthirster");
+		database[71].setAsNeeded("lastwhisper", "mawofthemalmortius", "guardianangel", "bloodthirster");
 		//Rengar
 		database[72] = new BuildInfo();
 		database[72].setStart("yellowtrinket", "clotharmor", "healthpotion");
@@ -444,7 +444,7 @@ public class BuildDatabase {
 		database[73] = new BuildInfo();
 		database[73].setStart("yellowtrinket", "clotharmor", "healthpotion");
 		database[73].setRush("ravenoushydra", "ionianbootsoflucidity", "lastwhisper");
-		database[73].setAsNeeded("theblackcleaver", "youmuusghostblade", "mawofmalmortius", "randuinsomen");
+		database[73].setAsNeeded("theblackcleaver", "youmuusghostblade", "mawofthemalmortius", "randuinsomen");
 		//Rumble
 		database[74] = new BuildInfo();
 		database[74].setStart("yellowtrinket", "clotharmor", "healthpotion");
@@ -464,7 +464,7 @@ public class BuildDatabase {
 		database[77] = new BuildInfo();
 		database[77].setStart("yellowtrinket", "longsword", "healthpotion");
 		database[77].setRush("bladeoftheruinedking", "berserkergreaves", "infinityedge");
-		database[77].setAsNeeded("phantomdancer", "ravenoushydra", "warmogsarmor", "mawofmalmortius");
+		database[77].setAsNeeded("phantomdancer", "ravenoushydra", "warmogsarmor", "mawofthemalmortius");
 		//Shen
 		database[78] = new BuildInfo();
 		database[78].setStart("yellowtrinket", "doransblade", "healthpotion");
@@ -488,7 +488,7 @@ public class BuildDatabase {
 		//Sivir
 		database[82] = new BuildInfo();
 		database[82].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[82].setRush("thebloodthirster", "berserkersgreaves", "infinityedge");
+		database[82].setRush("thebloodthirster", "berserkergreaves", "infinityedge");
 		database[82].setAsNeeded("lastwhisper", "phantomdancer", "guardianangel", "zephyr");
 		//Skarner
 		database[83] = new BuildInfo();
@@ -529,11 +529,11 @@ public class BuildDatabase {
 		database[90] = new BuildInfo();
 		database[90].setStart("yellowtrinket", "clotharmor", "healthpotion");
 		database[90].setRush("frozenmallet", "mercurytreads", "bladeoftheruinedking");
-		database[90].setAsNeeded("runannshurricane", "trinityforce", "liandrystorment", "witsend");
+		database[90].setAsNeeded("runaanshurricane", "trinityforce", "liandrystorment", "witsend");
 
 		//Thresh
 		database[91] = new BuildInfo();
-		database[91].setStart("yellowtrinket", "crsytallineflask", "healthpotion");
+		database[91].setStart("yellowtrinket", "crystallineflask", "healthpotion");
 		database[91].setRush("sunfirecape", "mercurytreads", "spiritvisage");
 		database[91].setAsNeeded("guardianangel", "thornmail", "liandrystorment", "warmogsarmor");
 		//Tristana
@@ -551,7 +551,7 @@ public class BuildDatabase {
 		database[94] = new BuildInfo();
 		database[94].setStart("yellowtrinket", "longsword", "healthpotion");
 		database[94].setRush("bladeoftheruinedking", "berserkergreaves", "statikkshiv");
-		database[94].setAsNeeded("ravenoushydra", "mawofmalmortius", "guardianangel","mercurialscimitar");
+		database[94].setAsNeeded("ravenoushydra", "mawofthemalmortius", "guardianangel","mercurialscimitar");
 
 		//Twisted Fate
 		database[95] = new BuildInfo();
@@ -562,7 +562,7 @@ public class BuildDatabase {
 		//Twitch
 		database[96] = new BuildInfo();
 		database[96].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[96].setRush("thebloodthirster", "berserkersgreaves", "infinityedge");
+		database[96].setRush("thebloodthirster", "berserkergreaves", "infinityedge");
 		database[96].setAsNeeded("lastwhisper", "phantomdancer", "guardianangel", "zephyr");
 		
 		//Udyr
@@ -574,16 +574,16 @@ public class BuildDatabase {
 		database[98] = new BuildInfo();
 		database[98].setStart("yellowtrinket", "crystallineflask", "healthpotion");
 		database[98].setRush("manamune", "mercurytreads", "thebloodthirster");
-		database[98].setAsNeeded("bladeoftheruinedking", "mawofmalmortius", "guardianangel", "lastwhisper");
+		database[98].setAsNeeded("bladeoftheruinedking", "mawofthemalmortius", "guardianangel", "lastwhisper");
 		//Varus
 		database[99] = new BuildInfo();
 		database[99].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[99].setRush("thebloodthirster", "berserkersgreaves", "infinityedge");
+		database[99].setRush("thebloodthirster", "berserkergreaves", "infinityedge");
 		database[99].setAsNeeded("lastwhisper", "phantomdancer", "guardianangel", "zephyr");
 		//Vayne
 		database[100] = new BuildInfo();
 		database[100].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[100].setRush("thebloodthirster", "berserkersgreaves", "infinityedge");
+		database[100].setRush("thebloodthirster", "berserkergreaves", "infinityedge");
 		database[100].setAsNeeded("lastwhisper", "phantomdancer", "guardianangel", "zephyr");
 		//Veigar
 		database[101] = new BuildInfo();
@@ -599,7 +599,7 @@ public class BuildDatabase {
 		database[103] = new BuildInfo();
 		database[103].setStart("yellowtrinket", "doransshield", "healthpotion");
 		database[103].setRush("trinityforce", "ninjatabi", "bladeoftheruinedking");
-		database[103].setAsNeeded("randuinsomen", "spiritvisage", "theblackcleaver", "mawofmalmortius");
+		database[103].setAsNeeded("randuinsomen", "spiritvisage", "theblackcleaver", "mawofthemalmortius");
 
 		//Viktor
 		database[104] = new BuildInfo();
@@ -641,7 +641,7 @@ public class BuildDatabase {
 		//Yasuo
 		database[111] = new BuildInfo();
 		database[111].setStart("yellowtrinket", "doransblade", "healthpotion");
-		database[111].setRush("statikk shiv", "mercurytreads", "bladeoftheruinedking");
+		database[111].setRush("statikkshiv", "mercurytreads", "bladeoftheruinedking");
 		database[111].setAsNeeded("lastwhisper", "infinityedge", "randuinsomen", "guardianangel");
 
 		//Yorick
@@ -659,13 +659,13 @@ public class BuildDatabase {
 		database[114] = new BuildInfo();
 		database[114].setStart("yellowtrinket", "clotharmor", "healthpotion");
 		database[114].setRush("bladeoftheruinedking", "ninjatabi", "lastwhisper");
-		database[114].setAsNeeded("sunfirecape", "theblackcleaver", "randuinsomen", "mawofmalmortius");
+		database[114].setAsNeeded("sunfirecape", "theblackcleaver", "randuinsomen", "mawofthemalmortius");
 
 		//Ziggs
 		database[115] = new BuildInfo();
 		database[115].setStart("yellowtrinket", "doransring", "healthpotion");
 		database[115].setRush("rabadonsdeathcap", "sorcerersshoes", "athenesunholygrail");
-		database[115].setAsNeeded("ryaliscrystalscepter", "zhonyashourglass", "voidstaff", "lichbane");
+		database[115].setAsNeeded("rylaiscrystalscepter", "zhonyashourglass", "voidstaff", "lichbane");
 		//Zilean
 		database[116] = new BuildInfo();
 		database[116].setStart("yellowtrinket", "crystallineflask", "healthpotion");
@@ -675,7 +675,7 @@ public class BuildDatabase {
 		database[117] = new BuildInfo();		
 		database[117].setStart("yellowtrinket", "doransring", "healthpotion");
 		database[117].setRush("rabadonsdeathcap", "sorcerersshoes", "athenesunholygrail");
-		database[117].setAsNeeded("ryaliscrystalscepter", "zhonyashourglass", "voidstaff", "liandrystorment");
+		database[117].setAsNeeded("rylaiscrystalscepter", "zhonyashourglass", "voidstaff", "liandrystorment");
 	}
 	
 	private void buildmid(){
@@ -2039,7 +2039,7 @@ public class BuildDatabase {
 		database[7] = new BuildInfo();
 		database[7].setStart("yellowtrinket", "huntersmachete", "healthpotion");
 		database[7].setRush("spiritoftheelderlizard", "liandrystorment", "bootsofmobility");
-		database[7].setAsNeeded("iceborngauntlet", "theblackcleaver", "mawofmalmortius", "guinsoosrageblade", "zekesherald");
+		database[7].setAsNeeded("iceborngauntlet", "theblackcleaver", "mawofthemalmortius", "guinsoosrageblade", "zekesherald");
 		
 		//Blitzcrank
 		database[8] = new BuildInfo();
@@ -2072,7 +2072,7 @@ public class BuildDatabase {
 		database[13] = new BuildInfo();
 		database[13].setStart("redtrinket", "huntersmachete", "healthpotion");
 		database[13].setRush("spiritoftheelderlizard", "vampiricscepter", "bootsofswiftness");
-		database[13].setAsNeeded("theblackcleaver", "thebloodthirster", "warmogsarmor", "iceborngauntlets", "trinityforce");
+		database[13].setAsNeeded("theblackcleaver", "thebloodthirster", "warmogsarmor", "iceborngauntlet", "trinityforce");
 
 		//Darius
 		database[14] = new BuildInfo();
@@ -2101,7 +2101,7 @@ public class BuildDatabase {
 		//Elise
 		database[18] = new BuildInfo();
 		database[18].setStart("redtrinket", "huntersmachete", "healthpotion");
-		database[18].setRush("spiritofthepectralwraith", "sorcerersshoes", "liandrystorment");
+		database[18].setRush("spiritofthespectralwraith", "sorcerersshoes", "liandrystorment");
 		database[18].setAsNeeded("sunfirecape", "spiritvisage", "randuinsomen", "rylaiscrystalscepter", "frozenheart");
 
 		//Evelynn
@@ -2145,7 +2145,7 @@ public class BuildDatabase {
 		database[25] = new BuildInfo();
 		database[25].setStart("yellowtrinket", "huntersmachete", "healthpotion");
 		database[25].setRush("mercurytreads", "spiritoftheelderlizard", "hexdrinker");
-		database[25].setAsNeeded("trinityforce", "mawofmalmortius", "ravenoushydra", "randuinsomen", "lastwhisper");
+		database[25].setAsNeeded("trinityforce", "mawofthemalmortius", "ravenoushydra", "randuinsomen", "lastwhisper");
 
 		//Garen
 		database[26] = new BuildInfo();
@@ -2199,13 +2199,13 @@ public class BuildDatabase {
 		database[34] = new BuildInfo();
 		database[34].setStart("redtrinket", "huntersmachete", "healthpotion");
 		database[34].setRush("mercurytreads", "wriggleslantern", "bilgewatercutlass", "trinityforce");
-		database[34].setAsNeeded("frozenheart", "mawofmalmortius", "hextechgunblade");
+		database[34].setAsNeeded("frozenheart", "mawofthemalmortius", "hextechgunblade");
 
 		//Jayce
 		database[35] = new BuildInfo();
 		database[35].setStart("yellowtrinket", "huntersmachete", "healthpotion");
 		database[35].setRush("mercurytreads", "frozenheart", "hexdrinker");
-		database[35].setAsNeeded("lastwhisper", "randuinsomen", "mawofmalmorius", "trinityforce");
+		database[35].setAsNeeded("lastwhisper", "randuinsomen", "mawofthemalmortius", "trinityforce");
 
 		//Jinx
 		database[36] = new BuildInfo();
@@ -2253,7 +2253,7 @@ public class BuildDatabase {
 		database[43] = new BuildInfo();
 		database[43].setStart("yellowtrinket", "huntersmachete", "healthpotion");
 		database[43].setRush("mercurytreads", "spiritoftheelderlizard");
-		database[43].setAsNeeded("mawofmalmortius", "randuinsomen", "lastwhisper", "guardianangel");
+		database[43].setAsNeeded("mawofthemalmortius", "randuinsomen", "lastwhisper", "guardianangel");
 		
 		//Kog'Maw
 		database[44] = new BuildInfo();
@@ -2274,7 +2274,7 @@ public class BuildDatabase {
 		database[47] = new BuildInfo();
 		database[47].setStart("redtrinket", "huntersmachete", "healthpotion");
 		database[47].setRush("sheen", "sunfirecape", "bootsofmobility", "spiritoftheancientgolem");
-		database[47].setAsNeeded("iceborngauntlet", "trinityforce", "mawofmalmortius", "randuinsomen", "wriggleslantern");
+		database[47].setAsNeeded("iceborngauntlet", "trinityforce", "mawofthemalmortius", "randuinsomen", "wriggleslantern");
 
 		//Lissandra
 		database[48] = new BuildInfo();
@@ -2300,8 +2300,8 @@ public class BuildDatabase {
 		//Malphite
 		database[52] = new BuildInfo();
 		database[52].setStart("yellowtrinket", "huntersmachete", "healthpotion");
-		database[52].setRush("ninjatabi", "spiriteoftheancientgolem");
-		database[52].setAsNeeded("locketoftheironsolari", "randuinomen", "abyssalscepter", "frozenmallet");
+		database[52].setRush("ninjatabi", "spiritoftheancientgolem");
+		database[52].setAsNeeded("locketoftheironsolari", "randuinsomen", "abyssalscepter", "frozenmallet");
 		
 		//Malzahar
 		database[53] = new BuildInfo();
@@ -2361,7 +2361,7 @@ public class BuildDatabase {
 		database[62] = new BuildInfo();
 		database[62].setStart("redtrinket", "huntersmachete", "healthpotion");
 		database[62].setRush("archangelsstaff", "sorcerersshoes", "rabadonsdeathcap");
-		database[62].setAsNeeded("voidstaff", "morellonomicon", "zhonhashourglass", "lichbane");
+		database[62].setAsNeeded("voidstaff", "morellonomicon", "zhonyashourglass", "lichbane");
 
 		//Nocturne
 		database[63] = new BuildInfo();
@@ -2412,13 +2412,13 @@ public class BuildDatabase {
 		database[71] = new BuildInfo();
 		database[71].setStart("yellowtrinket", "huntersmachete", "healthpotion");
 		database[71].setRush("spiritoftheelderlizard", "bootsofmobility", "sunfirecape");
-		database[71].setAsNeeded("spiritvisage", "randuinsomen", "warmogsarmor", "mawofmalmortius", "thornmail");
+		database[71].setAsNeeded("spiritvisage", "randuinsomen", "warmogsarmor", "mawofthemalmortius", "thornmail");
 
 		//Rengar
 		database[72] = new BuildInfo();
 		database[72].setStart("yellowtrinket", "huntersmachete", "healthpotion");
 		database[72].setRush("mercurytreads", "ravenoushydra", "bonetoothnecklace");
-		database[72].setAsNeeded("lastwhisper", "randuinsomen", "mawofmalmortius", "spiritvisage", "guardianangel");
+		database[72].setAsNeeded("lastwhisper", "randuinsomen", "mawofthemalmortius", "spiritvisage", "guardianangel");
 
 		//Riven
 		database[73] = new BuildInfo();
@@ -2436,7 +2436,7 @@ public class BuildDatabase {
 		database[75] = new BuildInfo();
 		database[75].setStart("redtrinket", "huntersmachete", "healthpotion");
 		database[75].setRush("spiritofthespectralwraith", "sorcerersshoes", "archangelsstaff");
-		database[75].setAsNeeded("athenesunholygrail", "abyssalsscepter", "zhonyashourglass", "randuinsomen", "iceborngauntlet");
+		database[75].setAsNeeded("athenesunholygrail", "abyssalscepter", "zhonyashourglass", "randuinsomen", "iceborngauntlet");
 
 		//Sejuani
 		database[76] = new BuildInfo();
@@ -2520,13 +2520,13 @@ public class BuildDatabase {
 		database[90] = new BuildInfo();
 		database[90].setStart("yellowtrinket", "huntersmachete", "healthpotion");
 		database[90].setRush("wriggleslantern", "sorcerersshoes", "nashorstooth");
-		database[90].setAsNeeded("runaanashurricane", "rabadonsdeathcap", "liandrystorment", "lichbane");
+		database[90].setAsNeeded("runaanshurricane", "rabadonsdeathcap", "liandrystorment", "lichbane");
 		
 		//Thresh
 		database[91] = new BuildInfo();
 		database[91].setStart("redtrinket", "huntersmachete", "healthpotion");
 		database[91].setRush("bootsofmobility", "wriggleslantern", "guinsoosrageblade");
-		database[91].setAsNeeded("frozenmallet", "mawofmalmortius", "atmasimpaler", "sunfirecape");
+		database[91].setAsNeeded("frozenmallet", "mawofthemalmortius", "atmasimpaler", "sunfirecape");
 
 		//Tristana
 		database[92] = new BuildInfo();
@@ -2562,13 +2562,13 @@ public class BuildDatabase {
 		database[97] = new BuildInfo();
 		database[97].setStart("yellowtrinket", "huntersmachete", "healthpotion");
 		database[97].setRush("wriggleslantern", "mercurytreads", "trinityforce");
-		database[97].setAsNeeded("frozenheart", "trinityforce", "bladeoftheruinedking", "mawofmalmortius");
+		database[97].setAsNeeded("frozenheart", "trinityforce", "bladeoftheruinedking", "mawofthemalmortius");
 
 		//Urgot
 		database[98] = new BuildInfo();
 		database[98].setStart("redtrinket", "huntersmachete", "healthpotion");
 		database[98].setRush("spiritoftheelderlizard", "thebrutalizer", "mercurytreads");
-		database[98].setAsNeeded("theblackcleaver", "iceborngauntlet", "mawofmalmortius", "thebloodthirster");
+		database[98].setAsNeeded("theblackcleaver", "iceborngauntlet", "mawofthemalmortius", "thebloodthirster");
 
 		//Varus
 		database[99] = new BuildInfo();
@@ -2625,7 +2625,7 @@ public class BuildDatabase {
 		database[108] = new BuildInfo();
 		database[108].setStart("yellowtrinket", "huntersmachete", "healthpotion");
 		database[108].setRush("spiritoftheelderlizard", "theblackcleaver", "mercurytreads");
-		database[108].setAsNeeded("bansheesveil","randuinsomen", "guardianangel", "mawofmalmortius", "lastwhisper");
+		database[108].setAsNeeded("bansheesveil","randuinsomen", "guardianangel", "mawofthemalmortius", "lastwhisper");
 
 		//Xerath
 		database[109] = new BuildInfo();

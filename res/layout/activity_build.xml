@@ -3,6 +3,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="25dp"
     android:orientation="vertical"
     tools:context="com.fourfoureight.lolhelper.BuildGuides"
     tools:ignore="MergeRootFrame" >
@@ -12,12 +13,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
+    android:layout_marginBottom="5dp"
     tools:context="com.fourfoureight.lolhelper.Build"
     tools:ignore="MergeRootFrame" >
        <TextView
            android:id="@+id/imageViewStartHead"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
+           android:textStyle="bold"
            android:text="Starting Items" />
    </LinearLayout>
    <LinearLayout
@@ -25,6 +28,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
+    android:layout_marginBottom="10dp"
     tools:context="com.fourfoureight.lolhelper.Build"
     tools:ignore="MergeRootFrame" >
        <ImageView
@@ -36,16 +40,19 @@
            android:id="@+id/imageViewStart2"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
            android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
        <ImageView
            android:id="@+id/imageViewStart3"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
            android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
        <ImageView
            android:id="@+id/imageViewStart4"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
            android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
    </LinearLayout>
     
@@ -54,12 +61,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
+    android:layout_marginBottom="5dp"
     tools:context="com.fourfoureight.lolhelper.Build"
     tools:ignore="MergeRootFrame" >
        <TextView
            android:id="@+id/imageViewRushHead"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
+           android:textStyle="bold"
            android:text="Rush" />
    </LinearLayout>
    <LinearLayout
@@ -67,6 +76,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
+    android:layout_marginBottom="10dp"
     tools:context="com.fourfoureight.lolhelper.Build"
     tools:ignore="MergeRootFrame" >
        <ImageView
@@ -78,16 +88,19 @@
            android:id="@+id/imageViewRush2"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
            android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
        <ImageView
            android:id="@+id/imageViewRush3"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
            android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
               <ImageView
            android:id="@+id/imageViewRush4"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
            android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
    </LinearLayout>
        
@@ -96,12 +109,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
+    android:layout_marginBottom="5dp"
     tools:context="com.fourfoureight.lolhelper.Build"
     tools:ignore="MergeRootFrame" >
        <TextView
            android:id="@+id/imageViewAsNeededHead"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
+           android:textStyle="bold"
            android:text="As Needed" />
    </LinearLayout>
    <LinearLayout
@@ -120,21 +135,25 @@
            android:id="@+id/imageViewAsNeeded2"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
            android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
        <ImageView
            android:id="@+id/imageViewAsNeeded3"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
            android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
        <ImageView
            android:id="@+id/imageViewAsNeeded4"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
            android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
        <ImageView
            android:id="@+id/imageViewAsNeeded5"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
            android:src="@drawable/abc_ab_bottom_transparent_dark_holo" />
    </LinearLayout>
      
