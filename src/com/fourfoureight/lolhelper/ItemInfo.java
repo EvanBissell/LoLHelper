@@ -140,7 +140,7 @@ public class ItemInfo extends ActionBarActivity {
 	            		i = 45;
 	            	}else if(message.equals("Entropy")){
 	            		i = 46;
-	            	}else if(message.equals("Executioner�s Calling")){
+	            	}else if(message.equals("Executioners Calling")){
 	            		i = 47;
 	            	}else if(message.equals("Explorers Ward")){
 	            		i = 48;
