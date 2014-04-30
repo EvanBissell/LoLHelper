@@ -11,6 +11,7 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.view.Menu;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -31,6 +32,9 @@ public class JungleTimer extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
+		//Keeps screen from sleeping
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_jungle_timer);
 		GR = (TextView) findViewById(R.id.textView1);
