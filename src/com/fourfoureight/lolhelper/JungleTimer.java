@@ -18,7 +18,6 @@ import android.widget.TextView;
 public class JungleTimer extends Activity{
 	TextView GR, GB, LR, LB, DR, BA;
 	ImageButton GRback, GBback, LRback, LBback, DRback, BAback; //Backgrounds
-	int normalColor = Color.WHITE; //Normal background color to reset to
 	Timer[] timer = new Timer[6];
 	boolean reset[] = {true, true, true, true, true, true};
 	boolean running[] = {false, false, false, false, false, false};
@@ -75,7 +74,7 @@ public class JungleTimer extends Activity{
 					running[0] = false;
 					timer[0].cancel();
 					timer[0].purge();
-					GRback.setBackgroundColor(normalColor);
+					GRback.setBackgroundColor(0xff7A1F00);
 				}else if(TimeLeft[0]>0){
 					if(TimeLeft[0]==30000){
 						ringtone.play();
@@ -98,7 +97,7 @@ public class JungleTimer extends Activity{
 					running[1] = false;
 					timer[1].cancel();
 					timer[1].purge();
-					LRback.setBackgroundColor(normalColor);
+					LRback.setBackgroundColor(0xff7A1F00);
 				}
 				else if(TimeLeft[1]>0){
 					if(TimeLeft[1]==30000){
@@ -122,7 +121,7 @@ public class JungleTimer extends Activity{
 					running[2] = false;
 					timer[2].cancel();
 					timer[2].purge();
-					GBback.setBackgroundColor(normalColor);
+					GBback.setBackgroundColor(0xff001F3D);
 				}
 				else if(TimeLeft[2]>0){
 					if(TimeLeft[2]==30000){
@@ -146,7 +145,7 @@ public class JungleTimer extends Activity{
 					running[3] = false;
 					timer[3].cancel();
 					timer[3].purge();
-					LBback.setBackgroundColor(normalColor);
+					LBback.setBackgroundColor(0xff001F3D);
 				}
 				else if(TimeLeft[3]>0){
 					if(TimeLeft[3]==30000){
@@ -170,7 +169,7 @@ public class JungleTimer extends Activity{
 					running[4] = false;
 					timer[4].cancel();
 					timer[4].purge();
-					DRback.setBackgroundColor(normalColor);
+					DRback.setBackgroundColor(0xff3C3C3C);
 				}
 				else if(TimeLeft[4]>0){
 					if(TimeLeft[4]==30000){
@@ -194,7 +193,7 @@ public class JungleTimer extends Activity{
 					running[5] = false;
 					timer[5].cancel();
 					timer[5].purge();
-					BAback.setBackgroundColor(normalColor);
+					BAback.setBackgroundColor(0xff3C3C3C);
 				}
 				else if(TimeLeft[5]>0){
 					if(TimeLeft[5]==60000){
@@ -230,7 +229,7 @@ public class JungleTimer extends Activity{
 		} else {
 			timer[0].cancel();
 			timer[0].purge();
-			GRback.setBackgroundColor(normalColor);
+			GRback.setBackgroundColor(0xff7A1F00);
 			GR.setText("Canceled");
 			running[0] = false;
 		}		
@@ -250,7 +249,7 @@ public class JungleTimer extends Activity{
 		} else {
 			timer[1].cancel();
 			timer[1].purge();
-			LRback.setBackgroundColor(normalColor);
+			LRback.setBackgroundColor(0xff7A1F00);
 			LR.setText("Canceled");
 			running[1] = false;
 		}
@@ -270,7 +269,7 @@ public class JungleTimer extends Activity{
 		} else {
 			timer[2].cancel();
 			timer[2].purge();
-			GBback.setBackgroundColor(normalColor);
+			GBback.setBackgroundColor(0xff001F3D);
 			GB.setText("Canceled");
 			running[2] = false;
 		}		
@@ -289,7 +288,7 @@ public class JungleTimer extends Activity{
 		} else {
 			timer[3].cancel();
 			timer[3].purge();
-			LBback.setBackgroundColor(normalColor);
+			LBback.setBackgroundColor(0xff001F3D);
 			LB.setText("Canceled");
 			running[3] = false;
 		}
@@ -309,7 +308,7 @@ public class JungleTimer extends Activity{
 		} else {
 			timer[4].cancel();
 			timer[4].purge();
-			DRback.setBackgroundColor(normalColor);
+			DRback.setBackgroundColor(0xff3C3C3C);
 			DR.setText("Canceled");
 			running[4] = false;
 		}
@@ -329,7 +328,7 @@ public class JungleTimer extends Activity{
 		} else {
 			timer[5].cancel();
 			timer[5].purge();
-			BAback.setBackgroundColor(normalColor);
+			BAback.setBackgroundColor(0xff3C3C3C);
 			BA.setText("Canceled");
 			running[5] = false;
 		}		
