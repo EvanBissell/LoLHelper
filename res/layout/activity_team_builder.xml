@@ -3,6 +3,7 @@
     android:id="@+id/container"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/bg"
     tools:context="com.fourfoureight.lolhelper.TeamBuilder"
     tools:ignore="MergeRootFrame" >
 
@@ -30,6 +31,7 @@
 	            android:layout_alignParentTop="true"
 	            android:layout_centerHorizontal="true"
 	            android:layout_marginTop="8dp"
+	            android:textColor="#FFFFFF"
 	            android:text="Welcome to Team Builder"
 	            android:textAppearance="?android:attr/textAppearanceLarge"
 	            android:textSize="20sp" />
