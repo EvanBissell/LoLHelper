@@ -3,7 +3,6 @@ package com.fourfoureight.lolhelper;
 import java.io.IOException;
 
 import com.fourfoureight.lolhelper.R;
-import com.fourfoureight.lolhelper.R.menu;
 import com.fourfoureight.lolhelper.Stats.StatsPull;
 
 import android.support.v7.app.ActionBarActivity;
@@ -11,6 +10,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.app.AlertDialog;
 import android.content.Context;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -124,7 +124,6 @@ public class PlayerStats extends ActionBarActivity {
 		View.OnKeyListener myOnKeyListener = new View.OnKeyListener() {
 			@Override
 			public boolean onKey(View v, int keyCode, KeyEvent event) {
-				// TODO Auto-generated method stub
 				if((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)){
 					new StatsTask().execute();
 					return true;
@@ -246,6 +245,7 @@ public class PlayerStats extends ActionBarActivity {
 				for(int i=0; i<66; i++){
 					results[i] = "";
 				}
+				results[0] = "Invalid Summoner Name";
 				//e.printStackTrace();
 			}
 			return results;
@@ -253,7 +253,11 @@ public class PlayerStats extends ActionBarActivity {
 		
 		@Override
         protected void onPostExecute(String[] results) {
-			summonerName.setText(results[0] + " " + results[2]);
+			if(results[0].equals("Invalid Summoner Name")){
+				summonerName.setText(results[0]);
+			} else {
+				summonerName.setText(results[0] + ": " + results[2]);
+			}
 			// profile icon
 			t1.setText(results[3]);
 			t2.setText(results[4]);

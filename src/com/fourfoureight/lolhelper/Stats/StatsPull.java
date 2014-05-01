@@ -61,7 +61,7 @@ public class StatsPull  {
 	//Parse summonerInfo to extract level
 	newSummonerInfo = newSummonerInfo.substring(profileIcon.length() + 17);
 	index = newSummonerInfo.indexOf(",");	
-	level = newSummonerInfo.substring(1, index);
+	this.level = newSummonerInfo.substring(1, index);
 	}
 
 	//--------------------------------------------------
@@ -78,33 +78,87 @@ public class StatsPull  {
 	private void statsExtract() throws JSONException {
 
 	//Normal Stats
-	if(summonerStats.hasSummary("Unranked")){
-	this.unrankedWins         = summonerStats.getSummary("Unranked").getField("wins");
-	this.nAssists	  = summonerStats.getSummary("Unranked").getAggregatedStat("totalAssists");
-	this.nChampKills          = summonerStats.getSummary("Unranked").getAggregatedStat("totalChampionKills");
-	this.nMinionKills         = summonerStats.getSummary("Unranked").getAggregatedStat("totalMinionKills");
-	this.nNeutralMonsterKills = summonerStats.getSummary("Unranked").getAggregatedStat("totalNeutralMinionsKilled");
-	this.nTotalTurretKills    = summonerStats.getSummary("Unranked").getAggregatedStat("totalTurretsKilled");
+	try{	
+		if(summonerStats.hasSummary("Unranked")){
+		this.unrankedWins         = summonerStats.getSummary("Unranked").getField("wins");
+		this.nAssists	  = summonerStats.getSummary("Unranked").getAggregatedStat("totalAssists");
+		this.nChampKills          = summonerStats.getSummary("Unranked").getAggregatedStat("totalChampionKills");
+		this.nMinionKills         = summonerStats.getSummary("Unranked").getAggregatedStat("totalMinionKills");
+		this.nNeutralMonsterKills = summonerStats.getSummary("Unranked").getAggregatedStat("totalNeutralMinionsKilled");
+		this.nTotalTurretKills    = summonerStats.getSummary("Unranked").getAggregatedStat("totalTurretsKilled");
+		}
+	} catch (JSONException e){
+		this.unranked3x3Wins = 0;
+		this.nChampKills = 0;
+		this.nAssists = 0;
+		this.nMinionKills = 0;
+		this.nNeutralMonsterKills = 0;
+		this.nTotalTurretKills = 0;
 	}
 
 	//Ranked 5v5
-	if(summonerStats.hasSummary("RankedSolo5x5")){
-	this.rankedSolo5x5Wins    = summonerStats.getSummary("RankedSolo5x5").getField("wins");
-	this.rAssists             = summonerStats.getSummary("RankedSolo5x5").getAggregatedStat("totalAssists");
-	this.rChampKills          = summonerStats.getSummary("RankedSolo5x5").getAggregatedStat("totalChampionKills");
-	this.rMinionKills         = summonerStats.getSummary("RankedSolo5x5").getAggregatedStat("totalMinionKills");
-	this.rNeutralMonsterKills = summonerStats.getSummary("RankedSolo5x5").getAggregatedStat("totalNeutralMinionsKilled");
-	this.rTotalTurretKills    = summonerStats.getSummary("RankedSolo5x5").getAggregatedStat("totalTurretsKilled");
+	try{
+		if(summonerStats.hasSummary("RankedSolo5x5")){
+		this.rankedSolo5x5Wins    = summonerStats.getSummary("RankedSolo5x5").getField("wins");
+		this.rAssists             = summonerStats.getSummary("RankedSolo5x5").getAggregatedStat("totalAssists");
+		this.rChampKills          = summonerStats.getSummary("RankedSolo5x5").getAggregatedStat("totalChampionKills");
+		this.rMinionKills         = summonerStats.getSummary("RankedSolo5x5").getAggregatedStat("totalMinionKills");
+		this.rNeutralMonsterKills = summonerStats.getSummary("RankedSolo5x5").getAggregatedStat("totalNeutralMinionsKilled");
+		this.rTotalTurretKills    = summonerStats.getSummary("RankedSolo5x5").getAggregatedStat("totalTurretsKilled");
+		}
+	} catch (JSONException e){
+		this.rankedSolo5x5Wins = 0;
+		this.rChampKills = 0;
+		this.rAssists = 0;
+		this.rMinionKills = 0;
+		this.rNeutralMonsterKills = 0;
+		this.rTotalTurretKills = 0;
+	}
+	
+	//Dominion stats
+	try{
+		if((summonerStats.hasSummary("OdinUnranked"))){ //&& (!summonerStats.getSummary("OdinUnranked").getAgregatedStatString().equals("{}")))){
+		this.domWins                 = summonerStats.getSummary("OdinUnranked").getField("wins");
+		this.domAssists              = summonerStats.getSummary("OdinUnranked").getAggregatedStat("totalAssists");
+		this.domChampKills           = summonerStats.getSummary("OdinUnranked").getAggregatedStat("totalChampionKills");
+		this.domHighestScore	     = summonerStats.getSummary("OdinUnranked").getAggregatedStat("maxTotalPlayerScore");
+		this.domMostAssists	         = summonerStats.getSummary("OdinUnranked").getAggregatedStat("maxAssists");
+		this.domMostKills	         = summonerStats.getSummary("OdinUnranked").getAggregatedStat("maxChampionsKilled");
+		this.domMostNodesCaptured    = summonerStats.getSummary("OdinUnranked").getAggregatedStat("maxNodeCapture");
+		this.domMostNodesNeutralized = summonerStats.getSummary("OdinUnranked").getAggregatedStat("maxNodeNeutralize");
+		this.domNodesCaptured 	     = summonerStats.getSummary("OdinUnranked").getAggregatedStat("totalNodeCapture");
+		this.domNodesNeutralized	 = summonerStats.getSummary("OdinUnranked").getAggregatedStat("totalNodeNeutralize");
+		}
+	} catch (JSONException e){
+		this.domWins = 0;
+		this.domChampKills = 0;
+		this.domAssists = 0;
+		this.domMostAssists = 0;
+		this.domMostKills = 0;
+		this.domHighestScore = 0;
+		this.domNodesCaptured = 0;
+		this.domMostNodesCaptured = 0;
+		this.domNodesNeutralized = 0;
+		this.domMostNodesNeutralized = 0;
 	}
 
 	// Normal 3v3
-	if(summonerStats.hasSummary("Unranked3x3")){
-	this.unranked3x3Wins        = summonerStats.getSummary("Unranked3x3").getField("wins");
-	this.tvtAssists	    = summonerStats.getSummary("Unranked3x3").getAggregatedStat("totalAssists");
-	this.tvtChampKills          = summonerStats.getSummary("Unranked3x3").getAggregatedStat("totalChampionKills");
-	this.tvtMinionKills         = summonerStats.getSummary("Unranked3x3").getAggregatedStat("totalMinionKills");
-	this.tvtNeutralMonsterKills = summonerStats.getSummary("Unranked3x3").getAggregatedStat("totalNeutralMinionsKilled");
-	this.tvtTotalTurretKills    = summonerStats.getSummary("Unranked3x3").getAggregatedStat("totalTurretsKilled");
+	try{
+		if(summonerStats.hasSummary("Unranked3x3")){
+		this.unranked3x3Wins        = summonerStats.getSummary("Unranked3x3").getField("wins");
+		this.tvtAssists	    = summonerStats.getSummary("Unranked3x3").getAggregatedStat("totalAssists");
+		this.tvtChampKills          = summonerStats.getSummary("Unranked3x3").getAggregatedStat("totalChampionKills");
+		this.tvtMinionKills         = summonerStats.getSummary("Unranked3x3").getAggregatedStat("totalMinionKills");
+		this.tvtNeutralMonsterKills = summonerStats.getSummary("Unranked3x3").getAggregatedStat("totalNeutralMinionsKilled");
+		this.tvtTotalTurretKills    = summonerStats.getSummary("Unranked3x3").getAggregatedStat("totalTurretsKilled");
+		}
+	} catch (JSONException e){
+		this.unranked3x3Wins = 0;
+		this.tvtChampKills = 0;
+		this.tvtAssists = 0;
+		this.tvtMinionKills = 0;
+		this.tvtNeutralMonsterKills = 0;
+		this.tvtTotalTurretKills = 0;
 	}
 
 	//Ranked Premade 3v3
@@ -131,120 +185,99 @@ public class StatsPull  {
 	if(summonerStats.hasSummary("CoopVsAI")){
 	this.coopVsAIWins         = summonerStats.getSummary("CoopVsAI").getField("wins");
 	}
-	
-	//One For All Stats
-	if(summonerStats.hasSummary("OneForAll5x5")){
-	this.ofaWins      = summonerStats.getSummary("OneForAll5x5").getField("wins");
-	this.ofaAssists	  = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalAssists");
-	this.ofaChampKills          = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalChampionKills");
-	this.ofaMinionKills         = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalMinionKills");
-	this.ofaNeutralMonsterKills = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalNeutralMinionsKilled");
-	this.ofaTotalTurretKills    = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalTurretsKilled");
-	}
-	
-	//First Blood 1x1 Stats
-	if(summonerStats.hasSummary("FirstBlood1x1")){
-	this.fb1Wins      = summonerStats.getSummary("FirstBlood1x1").getField("wins");
-	this.fb1Assists	  = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalAssists");
-	this.fb1ChampKills          = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalChampionKills");
-	this.fb1MinionKills         = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalMinionKills");
-	this.fb1NeutralMonsterKills = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalNeutralMinionsKilled");
-	this.fb1TotalTurretKills    = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalTurretsKilled");
-	}
-	
-	//First Blood 2x2 Stats
-	if(summonerStats.hasSummary("FirstBlood2x2")){
-	this.fb2Wins      = summonerStats.getSummary("FirstBlood2x2").getField("wins");
-	this.fb2Assists	  = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalAssists");
-	this.fb2ChampKills          = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalChampionKills");
-	this.fb2MinionKills         = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalMinionKills");
-	this.fb2NeutralMonsterKills = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalNeutralMinionsKilled");
-	this.fb2TotalTurretKills    = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalTurretsKilled");
-	}
-	
-	//Hexakill Stats
-	if(summonerStats.hasSummary("SummonersRift6x6")){
-	this.hexWins      = summonerStats.getSummary("SummonersRift6x6").getField("wins");
-	this.hexAssists	  = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalAssists");
-	this.hexChampKills          = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalChampionKills");
-	this.hexMinionKills         = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalMinionKills");
-	this.hexNeutralMonsterKills = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalNeutralMinionsKilled");
-	this.hexTotalTurretKills    = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalTurretsKilled");
-	}
-	
-	//URF Stats
-	if(summonerStats.hasSummary("URF")){
-	this.urfWins      = summonerStats.getSummary("URF").getField("wins");
-	this.urfAssists	  = summonerStats.getSummary("URF").getAggregatedStat("totalAssists");
-	this.urfChampKills          = summonerStats.getSummary("URF").getAggregatedStat("totalChampionKills");
-	this.urfMinionKills         = summonerStats.getSummary("URF").getAggregatedStat("totalMinionKills");
-	this.urfNeutralMonsterKills = summonerStats.getSummary("URF").getAggregatedStat("totalNeutralMinionsKilled");
-	this.urfTotalTurretKills    = summonerStats.getSummary("URF").getAggregatedStat("totalTurretsKilled");
-	
-	}
 
 	//One For All Stats
-	if(summonerStats.hasSummary("OneForAll5x5")){
-	this.ofaWins                = summonerStats.getSummary("OneForAll5x5").getField("wins");
-	this.ofaAssists	    = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalAssists");
-	this.ofaChampKills          = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalChampionKills");
-	this.ofaMinionKills         = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalMinionKills");
-	this.ofaNeutralMonsterKills = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalNeutralMinionsKilled");
-	this.ofaTotalTurretKills    = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalTurretsKilled");
+	try{
+		if(summonerStats.hasSummary("OneForAll5x5")){
+		this.ofaWins                = summonerStats.getSummary("OneForAll5x5").getField("wins");
+		this.ofaAssists	    = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalAssists");
+		this.ofaChampKills          = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalChampionKills");
+		this.ofaMinionKills         = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalMinionKills");
+		this.ofaNeutralMonsterKills = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalNeutralMinionsKilled");
+		this.ofaTotalTurretKills    = summonerStats.getSummary("OneForAll5x5").getAggregatedStat("totalTurretsKilled");
+		}
+	} catch (JSONException e){
+		this.ofaWins = 0;
+		this.ofaChampKills = 0;
+		this.ofaAssists = 0;
+		this.ofaMinionKills = 0;
+		this.ofaNeutralMonsterKills = 0;
+		this.ofaTotalTurretKills = 0;
 	}
 
 	//First Blood 1x1 Stats
-	if(summonerStats.hasSummary("FirstBlood1x1")){
-	this.fb1Wins                = summonerStats.getSummary("FirstBlood1x1").getField("wins");
-	this.fb1Assists	    = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalAssists");
-	this.fb1ChampKills          = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalChampionKills");
-	this.fb1MinionKills         = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalMinionKills");
-	this.fb1NeutralMonsterKills = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalNeutralMinionsKilled");
-	this.fb1TotalTurretKills    = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalTurretsKilled");
+	try{
+		if(summonerStats.hasSummary("FirstBlood1x1")){
+		this.fb1Wins                = summonerStats.getSummary("FirstBlood1x1").getField("wins");
+		this.fb1Assists	    = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalAssists");
+		this.fb1ChampKills          = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalChampionKills");
+		this.fb1MinionKills         = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalMinionKills");
+		this.fb1NeutralMonsterKills = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalNeutralMinionsKilled");
+		this.fb1TotalTurretKills    = summonerStats.getSummary("FirstBlood1x1").getAggregatedStat("totalTurretsKilled");
+		}
+	} catch (JSONException e) {
+		this.fb1Wins = 0;
+		this.fb1ChampKills = 0;
+		this.fb1Assists = 0;
+		this.fb1MinionKills = 0;
+		this.fb1NeutralMonsterKills = 0;
+		this.fb1TotalTurretKills = 0;
 	}
 
 	//First Blood 2x2 Stats
-	if(summonerStats.hasSummary("FirstBlood2x2")){
-	this.fb2Wins                = summonerStats.getSummary("FirstBlood2x2").getField("wins");
-	this.fb2Assists	    = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalAssists");
-	this.fb2ChampKills          = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalChampionKills");
-	this.fb2MinionKills         = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalMinionKills");
-	this.fb2NeutralMonsterKills = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalNeutralMinionsKilled");
-	this.fb2TotalTurretKills    = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalTurretsKilled");
+	try {
+		if(summonerStats.hasSummary("FirstBlood2x2")){
+		this.fb2Wins                = summonerStats.getSummary("FirstBlood2x2").getField("wins");
+		this.fb2Assists	    		= summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalAssists");
+		this.fb2ChampKills          = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalChampionKills");
+		this.fb2MinionKills         = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalMinionKills");
+		this.fb2NeutralMonsterKills = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalNeutralMinionsKilled");
+		this.fb2TotalTurretKills    = summonerStats.getSummary("FirstBlood2x2").getAggregatedStat("totalTurretsKilled");
+		}
+	} catch (JSONException e){
+		this.fb2Wins = 0;
+		this.fb2ChampKills = 0;
+		this.fb2Assists = 0;
+		this.fb2MinionKills = 0;
+		this.fb2NeutralMonsterKills = 0;
+		this.fb2TotalTurretKills = 0;
 	}
-
+	
 	//Hexakill Stats
-	if(summonerStats.hasSummary("SummonersRift6x6")){
-	this.hexWins                = summonerStats.getSummary("SummonersRift6x6").getField("wins");
-	this.hexAssists	    = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalAssists");
-	this.hexChampKills          = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalChampionKills");
-	this.hexMinionKills         = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalMinionKills");
-	this.hexNeutralMonsterKills = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalNeutralMinionsKilled");
-	this.hexTotalTurretKills    = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalTurretsKilled");
+	try{
+		if(summonerStats.hasSummary("SummonersRift6x6")){
+		this.hexWins                = summonerStats.getSummary("SummonersRift6x6").getField("wins");
+		this.hexAssists	   		    = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalAssists");
+		this.hexChampKills          = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalChampionKills");
+		this.hexMinionKills         = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalMinionKills");
+		this.hexNeutralMonsterKills = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalNeutralMinionsKilled");
+		this.hexTotalTurretKills    = summonerStats.getSummary("SummonersRift6x6").getAggregatedStat("totalTurretsKilled");
+		}
+	} catch (JSONException e){
+		this.hexChampKills = 0;
+		this.hexAssists = 0;
+		this.hexMinionKills = 0;
+		this.hexNeutralMonsterKills = 0;
+		this.hexTotalTurretKills = 0;
 	}
 
 	//URF Stats
-	if(summonerStats.hasSummary("URF")){
-	this.urfWins                = summonerStats.getSummary("URF").getField("wins");
-	this.urfAssists	   	    = summonerStats.getSummary("URF").getAggregatedStat("totalAssists");
-	this.urfChampKills          = summonerStats.getSummary("URF").getAggregatedStat("totalChampionKills");
-	this.urfMinionKills         = summonerStats.getSummary("URF").getAggregatedStat("totalMinionKills");
-	this.urfNeutralMonsterKills = summonerStats.getSummary("URF").getAggregatedStat("totalNeutralMinionsKilled");
-	this.urfTotalTurretKills    = summonerStats.getSummary("URF").getAggregatedStat("totalTurretsKilled");
-	}
-	
-	//Dominion stats
-	if(summonerStats.hasSummary("OdinUnranked")){
-	this.domWins                 = summonerStats.getSummary("OdinUnranked").getField("wins");
-	this.domAssists              = summonerStats.getSummary("OdinUnranked").getAggregatedStat("totalAssists");
-	this.domChampKills           = summonerStats.getSummary("OdinUnranked").getAggregatedStat("totalChampionKills");
-	this.domHighestScore	     = summonerStats.getSummary("OdinUnranked").getAggregatedStat("maxTotalPlayerScore");
-	this.domMostAssists	     = summonerStats.getSummary("OdinUnranked").getAggregatedStat("maxAssists");
-	this.domMostKills	 = summonerStats.getSummary("OdinUnranked").getAggregatedStat("maxChampionsKilled");
-	this.domMostNodesCaptured    = summonerStats.getSummary("OdinUnranked").getAggregatedStat("maxNodeCapture");
-	this.domMostNodesNeutralized = summonerStats.getSummary("OdinUnranked").getAggregatedStat("maxNodeNeutralize");
-	this.domNodesCaptured 	 = summonerStats.getSummary("OdinUnranked").getAggregatedStat("totalNodeCapture");
-	this.domNodesNeutralized	 = summonerStats.getSummary("OdinUnranked").getAggregatedStat("totalNodeNeutralize");
+	try{
+		if(summonerStats.hasSummary("URF")){
+		this.urfWins                = summonerStats.getSummary("URF").getField("wins");
+		this.urfAssists	   	    	= summonerStats.getSummary("URF").getAggregatedStat("totalAssists");
+		this.urfChampKills          = summonerStats.getSummary("URF").getAggregatedStat("totalChampionKills");
+		this.urfMinionKills         = summonerStats.getSummary("URF").getAggregatedStat("totalMinionKills");
+		this.urfNeutralMonsterKills = summonerStats.getSummary("URF").getAggregatedStat("totalNeutralMinionsKilled");
+		this.urfTotalTurretKills    = summonerStats.getSummary("URF").getAggregatedStat("totalTurretsKilled");
+		}
+	} catch (JSONException e){
+		this.urfWins = 0;
+		this.urfChampKills = 0;
+		this.urfAssists = 0;
+		this.urfMinionKills = 0;
+		this.urfNeutralMonsterKills = 0;
+		this.urfTotalTurretKills = 0;
 	}
 	}
 

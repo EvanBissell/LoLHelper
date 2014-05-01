@@ -46,7 +46,7 @@ public class StatSummary {
 		return aggregatedStats.getInt(statName);
 	}
 	
-//	public String toString() {
-//		return stats.toString();
-//	}
+	public String getAgregatedStatString() throws JSONException{
+		return this.aggregatedStats.toString();
+	}
 }
